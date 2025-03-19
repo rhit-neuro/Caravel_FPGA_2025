@@ -1,0 +1,1125 @@
+
+*** Running vivado
+    with args -log caravel.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source caravel.tcl
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source caravel.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/beandog/senior-design/testing-car-on-fpga.srcs/utils_1/imports/synth_1/caravel.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/beandog/senior-design/testing-car-on-fpga.srcs/utils_1/imports/synth_1/caravel.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top caravel -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Vivado_Tcl 4-1810] synth_design options have changed between reference and incremental; A full resynthesis will be run
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 802948
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2043.836 ; gain = 404.715 ; free physical = 236 ; free virtual = 7982
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'qspi_enabled', assumed default net type 'wire' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_core.v:340]
+INFO: [Synth 8-11241] undeclared symbol 'uart_enabled', assumed default net type 'wire' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_core.v:341]
+INFO: [Synth 8-11241] undeclared symbol 'spi_enabled', assumed default net type 'wire' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_core.v:342]
+INFO: [Synth 8-11241] undeclared symbol 'debug_mode', assumed default net type 'wire' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_core.v:343]
+INFO: [Synth 8-11241] undeclared symbol 'ser_tx', assumed default net type 'wire' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_core.v:347]
+INFO: [Synth 8-11241] undeclared symbol 'ser_rx', assumed default net type 'wire' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_core.v:348]
+INFO: [Synth 8-11241] undeclared symbol 'spi_sdi', assumed default net type 'wire' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_core.v:350]
+INFO: [Synth 8-11241] undeclared symbol 'spi_csb', assumed default net type 'wire' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_core.v:351]
+INFO: [Synth 8-11241] undeclared symbol 'spi_sck', assumed default net type 'wire' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_core.v:352]
+INFO: [Synth 8-11241] undeclared symbol 'spi_sdo', assumed default net type 'wire' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_core.v:353]
+INFO: [Synth 8-11241] undeclared symbol 'spi_sdoenb', assumed default net type 'wire' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_core.v:354]
+INFO: [Synth 8-11241] undeclared symbol 'debug_in', assumed default net type 'wire' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_core.v:356]
+INFO: [Synth 8-11241] undeclared symbol 'debug_out', assumed default net type 'wire' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_core.v:357]
+INFO: [Synth 8-11241] undeclared symbol 'debug_oeb', assumed default net type 'wire' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_core.v:358]
+INFO: [Synth 8-11241] undeclared symbol 'trap', assumed default net type 'wire' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_core.v:374]
+INFO: [Synth 8-11241] undeclared symbol 'porb_l', assumed default net type 'wire' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_core.v:534]
+INFO: [Synth 8-11241] undeclared symbol 'ext_reset', assumed default net type 'wire' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_core.v:552]
+INFO: [Synth 8-11241] undeclared symbol 'spi_pll_ena', assumed default net type 'wire' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_core.v:616]
+INFO: [Synth 8-11241] undeclared symbol 'spi_pll_dco_ena', assumed default net type 'wire' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_core.v:617]
+INFO: [Synth 8-11241] undeclared symbol 'ext_clk_sel', assumed default net type 'wire' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_core.v:622]
+WARNING: [Synth 8-10515] begin/end is required for generate-for in this mode of Verilog [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/io_buf.v:17]
+INFO: [Synth 8-11241] undeclared symbol 'resetb', assumed default net type 'wire' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel.v:91]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'ser_rx_out' is not allowed [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel.v:183]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'ser_tx_out' is not allowed [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel.v:184]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'sdo_out' is not allowed [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel.v:186]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'sdi_out' is not allowed [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel.v:187]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'csb_out' is not allowed [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel.v:188]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'sck_out' is not allowed [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel.v:189]
+INFO: [Synth 8-6157] synthesizing module 'caravel' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel.v:46]
+INFO: [Synth 8-6157] synthesizing module 'chip_io_FPGA' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/chip_io_FPGA.v:10]
+INFO: [Synth 8-6157] synthesizing module 'io_buf' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/io_buf.v:1]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'io_buf' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/io_buf.v:1]
+INFO: [Synth 8-6157] synthesizing module 'io_buf__parameterized0' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/io_buf.v:1]
+	Parameter WIDTH bound to: 38 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'io_buf__parameterized0' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/io_buf.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'chip_io_FPGA' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/chip_io_FPGA.v:10]
+WARNING: [Synth 8-7071] port 'flash_csb_ieb_core' of module 'chip_io_FPGA' is unconnected for instance 'padframe' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel.v:240]
+WARNING: [Synth 8-7071] port 'flash_clk_ieb_core' of module 'chip_io_FPGA' is unconnected for instance 'padframe' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel.v:240]
+WARNING: [Synth 8-7023] instance 'padframe' of module 'chip_io_FPGA' has 45 connections declared, but only 43 given [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel.v:240]
+INFO: [Synth 8-6157] synthesizing module 'caravel_core' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_core.v:45]
+INFO: [Synth 8-6157] synthesizing module 'mgmt_core_wrapper' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core_wrapper.v:40]
+INFO: [Synth 8-6157] synthesizing module 'mgmt_core' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:1888]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:6809]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:6825]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7136]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7181]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7204]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7216]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7228]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7261]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7273]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7317]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7410]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7422]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7434]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7482]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7537]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7579]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7591]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7632]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7673]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7714]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7755]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7796]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7837]
+INFO: [Synth 8-6157] synthesizing module 'RAM256' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/RAM256.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'RAM256' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/RAM256.v:1]
+INFO: [Synth 8-6157] synthesizing module 'RAM128' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/RAM128.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'RAM128' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/RAM128.v:1]
+INFO: [Synth 8-6157] synthesizing module 'VexRiscv' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7]
+INFO: [Synth 8-6157] synthesizing module 'InstructionCache' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7503]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionCache' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7503]
+INFO: [Synth 8-6157] synthesizing module 'DataCache' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6613]
+INFO: [Synth 8-6155] done synthesizing module 'DataCache' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6613]
+INFO: [Synth 8-6155] done synthesizing module 'VexRiscv' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:8478]
+WARNING: [Synth 8-689] width (30) of port connection 'dBus_cmd_payload_address' does not match port width (32) of module 'VexRiscv' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:8479]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:8482]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:8483]
+WARNING: [Synth 8-689] width (32) of port connection 'externalInterrupt' does not match port width (1) of module 'VexRiscv' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:8492]
+WARNING: [Synth 8-689] width (30) of port connection 'iBus_cmd_payload_address' does not match port width (32) of module 'VexRiscv' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:8508]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:8509]
+WARNING: [Synth 8-7071] port 'debugReset' of module 'VexRiscv' is unconnected for instance 'VexRiscv' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:8426]
+WARNING: [Synth 8-7023] instance 'VexRiscv' of module 'VexRiscv' has 33 connections declared, but only 32 given [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:8426]
+INFO: [Synth 8-6155] done synthesizing module 'mgmt_core' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:4]
+WARNING: [Synth 8-7071] port 'clk_in' of module 'mgmt_core' is unconnected for instance 'core' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core_wrapper.v:130]
+WARNING: [Synth 8-7071] port 'clk_out' of module 'mgmt_core' is unconnected for instance 'core' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core_wrapper.v:130]
+WARNING: [Synth 8-7071] port 'resetn_in' of module 'mgmt_core' is unconnected for instance 'core' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core_wrapper.v:130]
+WARNING: [Synth 8-7071] port 'resetn_out' of module 'mgmt_core' is unconnected for instance 'core' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core_wrapper.v:130]
+WARNING: [Synth 8-7071] port 'serial_load_in' of module 'mgmt_core' is unconnected for instance 'core' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core_wrapper.v:130]
+WARNING: [Synth 8-7071] port 'serial_load_out' of module 'mgmt_core' is unconnected for instance 'core' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core_wrapper.v:130]
+WARNING: [Synth 8-7071] port 'serial_data_2_in' of module 'mgmt_core' is unconnected for instance 'core' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core_wrapper.v:130]
+WARNING: [Synth 8-7071] port 'serial_data_2_out' of module 'mgmt_core' is unconnected for instance 'core' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core_wrapper.v:130]
+WARNING: [Synth 8-7071] port 'serial_resetn_in' of module 'mgmt_core' is unconnected for instance 'core' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core_wrapper.v:130]
+WARNING: [Synth 8-7071] port 'serial_resetn_out' of module 'mgmt_core' is unconnected for instance 'core' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core_wrapper.v:130]
+WARNING: [Synth 8-7071] port 'serial_clock_in' of module 'mgmt_core' is unconnected for instance 'core' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core_wrapper.v:130]
+WARNING: [Synth 8-7071] port 'serial_clock_out' of module 'mgmt_core' is unconnected for instance 'core' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core_wrapper.v:130]
+WARNING: [Synth 8-7071] port 'rstb_l_in' of module 'mgmt_core' is unconnected for instance 'core' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core_wrapper.v:130]
+WARNING: [Synth 8-7071] port 'rstb_l_out' of module 'mgmt_core' is unconnected for instance 'core' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core_wrapper.v:130]
+WARNING: [Synth 8-7071] port 'por_l_in' of module 'mgmt_core' is unconnected for instance 'core' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core_wrapper.v:130]
+WARNING: [Synth 8-7071] port 'por_l_out' of module 'mgmt_core' is unconnected for instance 'core' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core_wrapper.v:130]
+WARNING: [Synth 8-7071] port 'porb_h_in' of module 'mgmt_core' is unconnected for instance 'core' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core_wrapper.v:130]
+WARNING: [Synth 8-7071] port 'porb_h_out' of module 'mgmt_core' is unconnected for instance 'core' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core_wrapper.v:130]
+WARNING: [Synth 8-7023] instance 'core' of module 'mgmt_core' has 74 connections declared, but only 56 given [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core_wrapper.v:130]
+INFO: [Synth 8-6155] done synthesizing module 'mgmt_core_wrapper' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core_wrapper.v:40]
+INFO: [Synth 8-6157] synthesizing module 'mgmt_protect' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_protect.v:46]
+INFO: [Synth 8-6157] synthesizing module 'mprj_logic_high' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mprj_logic_high.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mprj_logic_high' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mprj_logic_high.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mprj2_logic_high' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mprj2_logic_high.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'mprj2_logic_high' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mprj2_logic_high.v:24]
+INFO: [Synth 8-6157] synthesizing module 'mgmt_protect_hv' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_protect_hv.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'mgmt_protect_hv' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_protect_hv.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'mgmt_protect' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_protect.v:46]
+INFO: [Synth 8-6157] synthesizing module 'user_project_wrapper' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/__user_project_wrapper.v:40]
+INFO: [Synth 8-6157] synthesizing module 'debug_regs' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/debug_regs.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'debug_regs' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/debug_regs.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'user_project_wrapper' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/__user_project_wrapper.v:40]
+INFO: [Synth 8-6157] synthesizing module 'caravel_clocking' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_clocking.v:25]
+INFO: [Synth 8-6157] synthesizing module 'clock_div' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/clock_div.v:23]
+	Parameter SIZE bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'even' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/clock_div.v:177]
+INFO: [Synth 8-6155] done synthesizing module 'even' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/clock_div.v:177]
+INFO: [Synth 8-6157] synthesizing module 'odd' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/clock_div.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'odd' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/clock_div.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'clock_div' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/clock_div.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'caravel_clocking' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_clocking.v:25]
+INFO: [Synth 8-6157] synthesizing module 'FPGA_POR' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/FPGA_POR.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'FPGA_POR' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/FPGA_POR.v:2]
+INFO: [Synth 8-6157] synthesizing module 'housekeeping' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/housekeeping.v:63]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/housekeeping.v:662]
+INFO: [Synth 8-6157] synthesizing module 'housekeeping_spi' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/housekeeping_spi.v:81]
+INFO: [Synth 8-6155] done synthesizing module 'housekeeping_spi' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/housekeeping_spi.v:81]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/housekeeping.v:1132]
+INFO: [Synth 8-6155] done synthesizing module 'housekeeping' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/housekeeping.v:63]
+INFO: [Synth 8-6157] synthesizing module 'mprj_io_buffer' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mprj_io_buffer.v:16]
+WARNING: [Synth 8-6104] Input port 'mgmt_gpio_in' has an internal driver [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mprj_io_buffer.v:41]
+WARNING: [Synth 8-6104] Input port 'mgmt_gpio_oeb' has an internal driver [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mprj_io_buffer.v:42]
+WARNING: [Synth 8-6104] Input port 'mgmt_gpio_out' has an internal driver [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mprj_io_buffer.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'mprj_io_buffer' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mprj_io_buffer.v:16]
+INFO: [Synth 8-6157] synthesizing module 'gpio_defaults_block' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_defaults_block.v:30]
+	Parameter GPIO_CONFIG_INIT bound to: 13'b0010000000011 
+INFO: [Synth 8-6155] done synthesizing module 'gpio_defaults_block' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_defaults_block.v:30]
+INFO: [Synth 8-6157] synthesizing module 'gpio_defaults_block__parameterized0' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_defaults_block.v:30]
+	Parameter GPIO_CONFIG_INIT bound to: 13'b1100000001001 
+INFO: [Synth 8-6155] done synthesizing module 'gpio_defaults_block__parameterized0' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_defaults_block.v:30]
+INFO: [Synth 8-6157] synthesizing module 'gpio_control_block' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_control_block.v:59]
+INFO: [Synth 8-6157] synthesizing module 'gpio_logic_high' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_logic_high.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_logic_high' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_logic_high.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_control_block' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_control_block.v:59]
+INFO: [Synth 8-6157] synthesizing module 'user_id_programming' [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/user_id_programming.v:28]
+	Parameter USER_PROJECT_ID bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'user_id_programming' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/user_id_programming.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'caravel_core' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_core.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'caravel' (0#1) [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel.v:46]
+WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_isIoAccess_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:8026]
+WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_allowRead_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:8028]
+WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_allowWrite_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:8029]
+WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_bypassTranslation_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:8033]
+WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_ways_0_sel_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:8034]
+WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_ways_0_physical_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:8035]
+WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_ways_1_sel_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:8036]
+WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_ways_1_physical_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:8037]
+WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_ways_2_sel_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:8038]
+WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_ways_2_physical_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:8039]
+WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_ways_3_sel_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:8040]
+WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_ways_3_physical_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:8041]
+WARNING: [Synth 8-6014] Unused sequential element tagsWriteLastCmd_valid_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7359]
+WARNING: [Synth 8-6014] Unused sequential element tagsWriteLastCmd_payload_way_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7360]
+WARNING: [Synth 8-6014] Unused sequential element tagsWriteLastCmd_payload_address_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7361]
+WARNING: [Synth 8-6014] Unused sequential element tagsWriteLastCmd_payload_data_valid_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7362]
+WARNING: [Synth 8-6014] Unused sequential element tagsWriteLastCmd_payload_data_error_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7363]
+WARNING: [Synth 8-6014] Unused sequential element tagsWriteLastCmd_payload_data_address_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7364]
+WARNING: [Synth 8-6014] Unused sequential element stageA_request_totalyConsistent_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7368]
+WARNING: [Synth 8-6014] Unused sequential element stageB_request_totalyConsistent_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7382]
+WARNING: [Synth 8-6014] Unused sequential element stageB_mmuRsp_allowExecute_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7390]
+WARNING: [Synth 8-6014] Unused sequential element stageB_mmuRsp_bypassTranslation_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7393]
+WARNING: [Synth 8-6014] Unused sequential element stageB_mmuRsp_ways_0_sel_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7394]
+WARNING: [Synth 8-6014] Unused sequential element stageB_mmuRsp_ways_0_physical_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7395]
+WARNING: [Synth 8-6014] Unused sequential element stageB_mmuRsp_ways_1_sel_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7396]
+WARNING: [Synth 8-6014] Unused sequential element stageB_mmuRsp_ways_1_physical_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7397]
+WARNING: [Synth 8-6014] Unused sequential element stageB_mmuRsp_ways_2_sel_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7398]
+WARNING: [Synth 8-6014] Unused sequential element stageB_mmuRsp_ways_2_physical_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7399]
+WARNING: [Synth 8-6014] Unused sequential element stageB_mmuRsp_ways_3_sel_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7400]
+WARNING: [Synth 8-6014] Unused sequential element stageB_mmuRsp_ways_3_physical_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7401]
+WARNING: [Synth 8-6014] Unused sequential element stageB_mmuRsp_ways_4_sel_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7402]
+WARNING: [Synth 8-6014] Unused sequential element stageB_mmuRsp_ways_4_physical_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7403]
+WARNING: [Synth 8-6014] Unused sequential element stageB_mmuRsp_ways_5_sel_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7404]
+WARNING: [Synth 8-6014] Unused sequential element stageB_mmuRsp_ways_5_physical_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7405]
+WARNING: [Synth 8-6014] Unused sequential element stageB_tagsReadRsp_0_valid_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7408]
+WARNING: [Synth 8-6014] Unused sequential element stageB_tagsReadRsp_0_address_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:7410]
+WARNING: [Synth 8-3848] Net io_cpu_writeBack_exclusiveOk in module/entity DataCache does not have driver. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6668]
+WARNING: [Synth 8-3848] Net io_cpu_writesPending in module/entity DataCache does not have driver. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6674]
+WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_fetchPc_correctionReg_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:3578]
+WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_injector_nextPcCalc_valids_2_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:3685]
+WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_injector_nextPcCalc_valids_3_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:3686]
+WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_injector_nextPcCalc_valids_4_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:3687]
+WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_rspCounter_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:5602]
+WARNING: [Synth 8-6014] Unused sequential element DBusCachedPlugin_rspCounter_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:5603]
+WARNING: [Synth 8-6014] Unused sequential element CsrPlugin_mcycle_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:5631]
+WARNING: [Synth 8-6014] Unused sequential element CsrPlugin_minstret_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:5632]
+WARNING: [Synth 8-6014] Unused sequential element execute_CsrPlugin_wfiWake_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:5642]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_shared_pteBuffer_V_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6060]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_shared_pteBuffer_R_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6061]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_shared_pteBuffer_W_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6062]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_shared_pteBuffer_X_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6063]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_shared_pteBuffer_U_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6064]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_shared_pteBuffer_G_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6065]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_shared_pteBuffer_A_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6066]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_shared_pteBuffer_D_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6067]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_shared_pteBuffer_RSW_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6068]
+WARNING: [Synth 8-6014] Unused sequential element decode_to_execute_FORMAL_PC_NEXT_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:3010]
+WARNING: [Synth 8-6014] Unused sequential element execute_to_memory_FORMAL_PC_NEXT_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:3009]
+WARNING: [Synth 8-6014] Unused sequential element memory_to_writeBack_FORMAL_PC_NEXT_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:3008]
+WARNING: [Synth 8-6014] Unused sequential element decode_to_execute_CSR_READ_OPCODE_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:3020]
+WARNING: [Synth 8-6014] Unused sequential element DebugPlugin_firstCycle_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6529]
+WARNING: [Synth 8-6014] Unused sequential element DebugPlugin_secondCycle_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6533]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_ports_0_cache_0_allowRead_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6097]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_ports_0_cache_0_allowWrite_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6098]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_ports_0_cache_0_allowExecute_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6099]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_ports_0_cache_0_allowUser_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6100]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_ports_0_cache_1_allowRead_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6109]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_ports_0_cache_1_allowWrite_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6110]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_ports_0_cache_1_allowExecute_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6111]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_ports_0_cache_1_allowUser_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6112]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_ports_0_cache_2_allowRead_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6121]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_ports_0_cache_2_allowWrite_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6122]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_ports_0_cache_2_allowExecute_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6123]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_ports_0_cache_2_allowUser_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6124]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_ports_0_cache_3_allowRead_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6133]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_ports_0_cache_3_allowWrite_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6134]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_ports_0_cache_3_allowExecute_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6135]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_ports_0_cache_3_allowUser_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6136]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_ports_1_cache_0_allowUser_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6150]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_ports_1_cache_1_allowUser_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6162]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_ports_1_cache_2_allowUser_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6174]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_ports_1_cache_3_allowUser_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6186]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_ports_1_cache_4_allowUser_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6198]
+WARNING: [Synth 8-6014] Unused sequential element MmuPlugin_ports_1_cache_5_allowUser_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6210]
+WARNING: [Synth 8-3848] Net dataCache_1_io_cpu_writeBack_fence_SW in module/entity VexRiscv does not have driver. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:92]
+WARNING: [Synth 8-3848] Net dataCache_1_io_cpu_writeBack_fence_SR in module/entity VexRiscv does not have driver. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:93]
+WARNING: [Synth 8-3848] Net dataCache_1_io_cpu_writeBack_fence_SO in module/entity VexRiscv does not have driver. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:94]
+WARNING: [Synth 8-3848] Net dataCache_1_io_cpu_writeBack_fence_SI in module/entity VexRiscv does not have driver. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:95]
+WARNING: [Synth 8-3848] Net dataCache_1_io_cpu_writeBack_fence_PW in module/entity VexRiscv does not have driver. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:96]
+WARNING: [Synth 8-3848] Net dataCache_1_io_cpu_writeBack_fence_PR in module/entity VexRiscv does not have driver. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:97]
+WARNING: [Synth 8-3848] Net dataCache_1_io_cpu_writeBack_fence_PO in module/entity VexRiscv does not have driver. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:98]
+WARNING: [Synth 8-3848] Net dataCache_1_io_cpu_writeBack_fence_PI in module/entity VexRiscv does not have driver. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:99]
+WARNING: [Synth 8-3848] Net dataCache_1_io_cpu_writeBack_fence_FM in module/entity VexRiscv does not have driver. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:100]
+WARNING: [Synth 8-3848] Net IBusCachedPlugin_cache_io_cpu_fetch_isRemoved in module/entity VexRiscv does not have driver. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:76]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_vexriscv_ibus_err_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:6771]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_vexriscv_dbus_err_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:6776]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_master_tx_fifo_source_first_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:2869]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_master_tx_fifo_source_last_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:2870]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_master_rx_fifo_source_first_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:6905]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_master_rx_fifo_source_last_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:6906]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_scratch_re_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7200]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_bus_errors_re_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7201]
+WARNING: [Synth 8-6014] Unused sequential element debug_mode_re_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7213]
+WARNING: [Synth 8-6014] Unused sequential element debug_oeb_re_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7225]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_litespimmap_re_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7249]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_master_cs_re_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7253]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_master_phyconfig_re_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7257]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_master_status_re_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7258]
+WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_litespisdrphycore_re_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7270]
+WARNING: [Synth 8-6014] Unused sequential element gpio_mode1_re_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7297]
+WARNING: [Synth 8-6014] Unused sequential element gpio_mode0_re_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7301]
+WARNING: [Synth 8-6014] Unused sequential element gpio_ien_re_reg was removed.  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:7305]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3936] Found unconnected internal register 'litespi_tx_mux_source_payload_mask_reg' and it is trimmed from '8' to '1' bits. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:2187]
+WARNING: [Synth 8-3848] Net mgmtsoc_ibus_ibus_dat_w in module/entity mgmt_core does not have driver. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:104]
+WARNING: [Synth 8-3848] Net mgmtsoc_ibus_ibus_cyc in module/entity mgmt_core does not have driver. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:107]
+WARNING: [Synth 8-3848] Net mgmtsoc_dbus_dbus_cyc in module/entity mgmt_core does not have driver. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:118]
+WARNING: [Synth 8-3848] Net mgmtsoc_ibus_ibus_we in module/entity mgmt_core does not have driver. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:110]
+WARNING: [Synth 8-3848] Net mgmtsoc_ibus_ibus_sel in module/entity mgmt_core does not have driver. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:106]
+WARNING: [Synth 8-3848] Net wbs_dat_o_user in module/entity user_project_wrapper does not have driver. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/__user_project_wrapper.v:117]
+WARNING: [Synth 8-3848] Net la_data_out in module/entity user_project_wrapper does not have driver. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/__user_project_wrapper.v:68]
+WARNING: [Synth 8-3848] Net io_oeb in module/entity user_project_wrapper does not have driver. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/__user_project_wrapper.v:74]
+WARNING: [Synth 8-3848] Net user_irq in module/entity user_project_wrapper does not have driver. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/__user_project_wrapper.v:86]
+WARNING: [Synth 8-7137] Register ext_clk_syncd_pre_reg in module caravel_clocking has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_clocking.v:69]
+WARNING: [Synth 8-7137] Register wb_dat_o_reg in module housekeeping has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/housekeeping.v:690]
+WARNING: [Synth 8-3848] Net mgmt_gpio_in_buf in module/entity mprj_io_buffer does not have driver. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mprj_io_buffer.v:22]
+WARNING: [Synth 8-3848] Net mgmt_gpio_oeb_buf in module/entity mprj_io_buffer does not have driver. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mprj_io_buffer.v:24]
+WARNING: [Synth 8-3848] Net mgmt_gpio_out_buf in module/entity mprj_io_buffer does not have driver. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mprj_io_buffer.v:26]
+WARNING: [Synth 8-7137] Register mgmt_ena_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_control_block.v:193]
+WARNING: [Synth 8-7137] Register gpio_holdover_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_control_block.v:194]
+WARNING: [Synth 8-7137] Register gpio_slow_sel_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_control_block.v:195]
+WARNING: [Synth 8-7137] Register gpio_vtrip_sel_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_control_block.v:196]
+WARNING: [Synth 8-7137] Register gpio_ib_mode_sel_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_control_block.v:197]
+WARNING: [Synth 8-7137] Register gpio_inenb_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_control_block.v:198]
+WARNING: [Synth 8-7137] Register gpio_outenb_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_control_block.v:199]
+WARNING: [Synth 8-7137] Register gpio_dm_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_control_block.v:200]
+WARNING: [Synth 8-7137] Register gpio_ana_en_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_control_block.v:201]
+WARNING: [Synth 8-7137] Register gpio_ana_sel_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_control_block.v:202]
+WARNING: [Synth 8-7137] Register gpio_ana_pol_reg in module gpio_control_block has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_control_block.v:203]
+WARNING: [Synth 8-7129] Port N[0] in module even is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[31] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[30] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[29] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[28] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[27] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[26] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[25] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[24] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[23] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[22] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[21] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[20] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[19] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[18] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[17] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[16] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[15] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[14] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[13] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[12] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[11] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[10] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[9] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[8] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[7] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[6] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[5] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wbs_adr_i[4] in module debug_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[127] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[126] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[125] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[124] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[123] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[122] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[121] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[120] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[119] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[118] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[117] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[116] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[115] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[114] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[113] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[112] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[111] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[110] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[109] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[108] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[107] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[106] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[105] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[104] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[103] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[102] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[101] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[100] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[99] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[98] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[97] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[96] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[95] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[94] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[93] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[92] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[91] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[90] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[89] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[88] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[87] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[86] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[85] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[84] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[83] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[82] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[81] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[80] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[79] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[78] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[77] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[76] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[75] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[74] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[73] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[72] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[71] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[70] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[69] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[68] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[67] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[66] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[65] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[64] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[63] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[62] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[61] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[60] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[59] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[58] in module user_project_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[57] in module user_project_wrapper is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2230.805 ; gain = 591.684 ; free physical = 443 ; free virtual = 7700
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2242.680 ; gain = 603.559 ; free physical = 435 ; free virtual = 7692
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2242.680 ; gain = 603.559 ; free physical = 435 ; free virtual = 7692
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2242.680 ; gain = 0.000 ; free physical = 450 ; free virtual = 7699
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/beandog/senior-design/testing-car-on-fpga.srcs/constrs_1/new/s.xdc]
+Finished Parsing XDC File [/home/beandog/senior-design/testing-car-on-fpga.srcs/constrs_1/new/s.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/beandog/senior-design/testing-car-on-fpga.srcs/constrs_1/new/s.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/caravel_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/caravel_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2381.430 ; gain = 0.000 ; free physical = 436 ; free virtual = 7688
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2381.465 ; gain = 0.000 ; free physical = 435 ; free virtual = 7687
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2381.465 ; gain = 742.344 ; free physical = 484 ; free virtual = 7738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2381.465 ; gain = 742.344 ; free physical = 484 ; free virtual = 7738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2381.465 ; gain = 742.344 ; free physical = 484 ; free virtual = 7738
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'MmuPlugin_shared_pteBuffer_PPN1_reg' and it is trimmed from '12' to '10' bits. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:6070]
+WARNING: [Synth 8-3936] Found unconnected internal register 'memory_to_writeBack_INSTRUCTION_reg' and it is trimmed from '32' to '30' bits. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:3263]
+WARNING: [Synth 8-3936] Found unconnected internal register 'execute_to_memory_INSTRUCTION_reg' and it is trimmed from '32' to '30' bits. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:3051]
+INFO: [Synth 8-802] inferred FSM for state register 'IBusCachedPlugin_injector_port_state_reg' in module 'VexRiscv'
+WARNING: [Synth 8-3936] Found unconnected internal register 'memdat_1_reg' and it is trimmed from '10' to '8' bits. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:8403]
+WARNING: [Synth 8-3936] Found unconnected internal register 'memdat_3_reg' and it is trimmed from '10' to '8' bits. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v:8420]
+INFO: [Synth 8-802] inferred FSM for state register 'litespiphy_state_reg' in module 'mgmt_core'
+INFO: [Synth 8-802] inferred FSM for state register 'spimaster_state_reg' in module 'mgmt_core'
+INFO: [Synth 8-802] inferred FSM for state register 'grant_reg' in module 'mgmt_core'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'housekeeping_spi'
+INFO: [Synth 8-802] inferred FSM for state register 'wbbd_state_reg' in module 'housekeeping'
+INFO: [Synth 8-802] inferred FSM for state register 'xfer_state_reg' in module 'housekeeping'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+                 iSTATE0 |                              001 |                              001
+                 iSTATE1 |                              010 |                              010
+                 iSTATE2 |                              011 |                              011
+                 iSTATE3 |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'IBusCachedPlugin_injector_port_state_reg' using encoding 'sequential' in module 'VexRiscv'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                              001 |                               00
+                  iSTATE |                              010 |                               10
+                 iSTATE0 |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'grant_reg' using encoding 'one-hot' in module 'mgmt_core'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+*
+                  iSTATE |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'spimaster_state_reg' using encoding 'sequential' in module 'mgmt_core'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+*
+                  iSTATE |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'litespiphy_state_reg' using encoding 'sequential' in module 'mgmt_core'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                            00001 |                              000
+                 iSTATE1 |                            00010 |                              101
+                 iSTATE3 |                            00100 |                              100
+                 iSTATE2 |                            01000 |                              001
+                  iSTATE |                            10000 |                              010
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'housekeeping_spi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+                 iSTATE1 |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'xfer_state_reg' using encoding 'sequential' in module 'housekeeping'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE4 |                             0000 |                             0000
+                 iSTATE3 |                             0001 |                             0001
+                 iSTATE1 |                             0010 |                             0010
+                  iSTATE |                             0011 |                             0011
+                 iSTATE0 |                             0100 |                             0100
+                 iSTATE9 |                             0101 |                             0101
+                 iSTATE8 |                             0110 |                             0110
+                 iSTATE6 |                             0111 |                             0111
+                 iSTATE7 |                             1000 |                             1000
+                 iSTATE5 |                             1001 |                             1001
+                 iSTATE2 |                             1010 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wbbd_state_reg' using encoding 'sequential' in module 'housekeeping'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2381.465 ; gain = 742.344 ; free physical = 538 ; free virtual = 7729
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_2'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_3'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_4'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_5'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_7'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_8'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_9'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_10'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_11'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_12'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_13'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_14'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_15'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_16'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_17'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_18'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_19'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_20'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_21'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_22'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_23'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_24'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_25'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_26'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_27'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_28'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_29'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_30'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_31'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_32'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_33'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_34'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_35'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_36'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_37'
+INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_1' (gpio_defaults_block__parameterized0) to 'chip_core/gpio_defaults_block_6'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 1     
+	   3 Input   52 Bit       Adders := 1     
+	   2 Input   33 Bit       Adders := 5     
+	   3 Input   33 Bit       Adders := 1     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 7     
+	   2 Input   30 Bit       Adders := 1     
+	   2 Input   24 Bit       Adders := 3     
+	   2 Input   16 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 7     
+	   3 Input    8 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 15    
+	   2 Input    3 Bit       Adders := 15    
+	   2 Input    2 Bit       Adders := 4     
+	   2 Input    1 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 17    
++---Registers : 
+	               65 Bit    Registers := 1     
+	               52 Bit    Registers := 1     
+	               38 Bit    Registers := 1     
+	               34 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 73    
+	               30 Bit    Registers := 3     
+	               26 Bit    Registers := 1     
+	               24 Bit    Registers := 2     
+	               22 Bit    Registers := 3     
+	               20 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               13 Bit    Registers := 78    
+	               10 Bit    Registers := 45    
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 30    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 18    
+	                3 Bit    Registers := 65    
+	                2 Bit    Registers := 23    
+	                1 Bit    Registers := 1036  
++---RAMs : 
+	              32K Bit	(1024 X 32 bit)          RAMs := 1     
+	               8K Bit	(256 X 32 bit)          RAMs := 1     
+	               8K Bit	(1024 X 8 bit)          RAMs := 4     
+	               4K Bit	(128 X 32 bit)          RAMs := 1     
+	               2K Bit	(128 X 22 bit)          RAMs := 2     
+	               2K Bit	(1024 X 2 bit)          RAMs := 1     
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
+	              160 Bit	(16 X 10 bit)          RAMs := 2     
++---Muxes : 
+	   6 Input   38 Bit        Muxes := 1     
+	   2 Input   38 Bit        Muxes := 2     
+	  97 Input   38 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 3     
+	   2 Input   32 Bit        Muxes := 139   
+	   4 Input   32 Bit        Muxes := 5     
+	   3 Input   32 Bit        Muxes := 4     
+	   7 Input   32 Bit        Muxes := 2     
+	   5 Input   32 Bit        Muxes := 1     
+	   9 Input   32 Bit        Muxes := 2     
+	  11 Input   32 Bit        Muxes := 2     
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   30 Bit        Muxes := 3     
+	   9 Input   30 Bit        Muxes := 1     
+	   2 Input   26 Bit        Muxes := 1     
+	  98 Input   26 Bit        Muxes := 1     
+	   2 Input   25 Bit        Muxes := 1     
+	  97 Input   24 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 2     
+	   2 Input   17 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 2     
+	  98 Input   13 Bit        Muxes := 38    
+	   4 Input   13 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 12    
+	   2 Input    8 Bit        Muxes := 29    
+	   4 Input    8 Bit        Muxes := 4     
+	   7 Input    8 Bit        Muxes := 3     
+	   5 Input    8 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 2     
+	  11 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 8     
+	   5 Input    7 Bit        Muxes := 1     
+	 113 Input    7 Bit        Muxes := 4     
+	   2 Input    6 Bit        Muxes := 3     
+	   9 Input    6 Bit        Muxes := 1     
+	   4 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 6     
+	   3 Input    5 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 9     
+	   5 Input    4 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 1     
+	  11 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 102   
+	   4 Input    3 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 2     
+	   7 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 2     
+	  97 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 17    
+	   3 Input    2 Bit        Muxes := 1     
+	   5 Input    2 Bit        Muxes := 1     
+	   7 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 3     
+	   9 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1379  
+	   4 Input    1 Bit        Muxes := 34    
+	   3 Input    1 Bit        Muxes := 13    
+	   5 Input    1 Bit        Muxes := 3     
+	   6 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 12    
+	   9 Input    1 Bit        Muxes := 9     
+	  97 Input    1 Bit        Muxes := 10    
+	  98 Input    1 Bit        Muxes := 1     
+	  11 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'memory_to_writeBack_MUL_HH_reg' and it is trimmed from '34' to '32' bits. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:3031]
+WARNING: [Synth 8-3936] Found unconnected internal register 'execute_to_memory_MUL_HH_reg' and it is trimmed from '34' to '32' bits. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:2958]
+WARNING: [Synth 8-3936] Found unconnected internal register 'MmuPlugin_shared_dBusRspStaged_payload_data_reg' and it is trimmed from '32' to '30' bits. [/home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v:4379]
+DSP Report: Generating DSP memory_to_writeBack_MUL_HH_reg, operation Mode is: (A*B)'.
+DSP Report: register memory_to_writeBack_MUL_HH_reg is absorbed into DSP memory_to_writeBack_MUL_HH_reg.
+DSP Report: register execute_to_memory_MUL_HH_reg is absorbed into DSP memory_to_writeBack_MUL_HH_reg.
+DSP Report: operator execute_MUL_HH is absorbed into DSP memory_to_writeBack_MUL_HH_reg.
+DSP Report: Generating DSP execute_to_memory_MUL_LH_reg, operation Mode is: (A*B)'.
+DSP Report: register execute_to_memory_MUL_LH_reg is absorbed into DSP execute_to_memory_MUL_LH_reg.
+DSP Report: operator execute_MUL_LH is absorbed into DSP execute_to_memory_MUL_LH_reg.
+DSP Report: Generating DSP execute_to_memory_MUL_HL_reg, operation Mode is: (A*B)'.
+DSP Report: register execute_to_memory_MUL_HL_reg is absorbed into DSP execute_to_memory_MUL_HL_reg.
+DSP Report: operator execute_MUL_HL is absorbed into DSP execute_to_memory_MUL_HL_reg.
+DSP Report: Generating DSP execute_to_memory_MUL_LL_reg, operation Mode is: (A*B)'.
+DSP Report: register execute_to_memory_MUL_LL_reg is absorbed into DSP execute_to_memory_MUL_LL_reg.
+DSP Report: operator execute_MUL_LL is absorbed into DSP execute_to_memory_MUL_LL_reg.
+INFO: [Synth 8-3971] The signal "chip_core/\soc/core /VexRiscv/RegFilePlugin_regFile_reg" was recognized as a true dual port RAM template.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_LDC) is unused and will be removed from module gpio_control_block__1.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_C) is unused and will be removed from module gpio_control_block__1.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_LDC) is unused and will be removed from module gpio_control_block__1.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_C) is unused and will be removed from module gpio_control_block__1.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_LDC) is unused and will be removed from module gpio_control_block__1.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_C) is unused and will be removed from module gpio_control_block__1.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_LDC) is unused and will be removed from module gpio_control_block__2.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_C) is unused and will be removed from module gpio_control_block__2.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_LDC) is unused and will be removed from module gpio_control_block__2.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_C) is unused and will be removed from module gpio_control_block__2.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_LDC) is unused and will be removed from module gpio_control_block__2.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_C) is unused and will be removed from module gpio_control_block__2.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_LDC) is unused and will be removed from module gpio_control_block__3.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_C) is unused and will be removed from module gpio_control_block__3.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_LDC) is unused and will be removed from module gpio_control_block__3.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_C) is unused and will be removed from module gpio_control_block__3.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_LDC) is unused and will be removed from module gpio_control_block__3.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_C) is unused and will be removed from module gpio_control_block__3.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_LDC) is unused and will be removed from module gpio_control_block__4.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_C) is unused and will be removed from module gpio_control_block__4.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_LDC) is unused and will be removed from module gpio_control_block__4.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_C) is unused and will be removed from module gpio_control_block__4.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_LDC) is unused and will be removed from module gpio_control_block__4.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_C) is unused and will be removed from module gpio_control_block__4.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_LDC) is unused and will be removed from module gpio_control_block__5.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_C) is unused and will be removed from module gpio_control_block__5.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_LDC) is unused and will be removed from module gpio_control_block__5.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_C) is unused and will be removed from module gpio_control_block__5.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_LDC) is unused and will be removed from module gpio_control_block__5.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_C) is unused and will be removed from module gpio_control_block__5.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_LDC) is unused and will be removed from module gpio_control_block__6.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_C) is unused and will be removed from module gpio_control_block__6.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_LDC) is unused and will be removed from module gpio_control_block__6.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_C) is unused and will be removed from module gpio_control_block__6.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_LDC) is unused and will be removed from module gpio_control_block__6.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_C) is unused and will be removed from module gpio_control_block__6.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_LDC) is unused and will be removed from module gpio_control_block__7.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_C) is unused and will be removed from module gpio_control_block__7.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_LDC) is unused and will be removed from module gpio_control_block__7.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_C) is unused and will be removed from module gpio_control_block__7.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_LDC) is unused and will be removed from module gpio_control_block__7.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_C) is unused and will be removed from module gpio_control_block__7.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_LDC) is unused and will be removed from module gpio_control_block__8.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_C) is unused and will be removed from module gpio_control_block__8.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_LDC) is unused and will be removed from module gpio_control_block__8.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_C) is unused and will be removed from module gpio_control_block__8.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_LDC) is unused and will be removed from module gpio_control_block__8.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_C) is unused and will be removed from module gpio_control_block__8.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_LDC) is unused and will be removed from module gpio_control_block__9.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_C) is unused and will be removed from module gpio_control_block__9.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_LDC) is unused and will be removed from module gpio_control_block__9.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_C) is unused and will be removed from module gpio_control_block__9.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_LDC) is unused and will be removed from module gpio_control_block__9.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_C) is unused and will be removed from module gpio_control_block__9.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_LDC) is unused and will be removed from module gpio_control_block__10.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_C) is unused and will be removed from module gpio_control_block__10.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_LDC) is unused and will be removed from module gpio_control_block__10.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_C) is unused and will be removed from module gpio_control_block__10.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_LDC) is unused and will be removed from module gpio_control_block__10.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_C) is unused and will be removed from module gpio_control_block__10.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_LDC) is unused and will be removed from module gpio_control_block__11.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_C) is unused and will be removed from module gpio_control_block__11.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_LDC) is unused and will be removed from module gpio_control_block__11.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_C) is unused and will be removed from module gpio_control_block__11.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_LDC) is unused and will be removed from module gpio_control_block__11.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_C) is unused and will be removed from module gpio_control_block__11.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_LDC) is unused and will be removed from module gpio_control_block__12.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_C) is unused and will be removed from module gpio_control_block__12.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_LDC) is unused and will be removed from module gpio_control_block__12.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_C) is unused and will be removed from module gpio_control_block__12.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_LDC) is unused and will be removed from module gpio_control_block__12.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_C) is unused and will be removed from module gpio_control_block__12.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[2]_LDC) is unused and will be removed from module gpio_control_block__13.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[2]_C) is unused and will be removed from module gpio_control_block__13.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[1]_LDC) is unused and will be removed from module gpio_control_block__13.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[1]_C) is unused and will be removed from module gpio_control_block__13.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_LDC) is unused and will be removed from module gpio_control_block__13.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_C) is unused and will be removed from module gpio_control_block__13.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_LDC) is unused and will be removed from module gpio_control_block__14.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_C) is unused and will be removed from module gpio_control_block__14.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_LDC) is unused and will be removed from module gpio_control_block__14.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_C) is unused and will be removed from module gpio_control_block__14.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_LDC) is unused and will be removed from module gpio_control_block__14.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_C) is unused and will be removed from module gpio_control_block__14.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_LDC) is unused and will be removed from module gpio_control_block__15.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_C) is unused and will be removed from module gpio_control_block__15.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_LDC) is unused and will be removed from module gpio_control_block__15.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_C) is unused and will be removed from module gpio_control_block__15.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_LDC) is unused and will be removed from module gpio_control_block__15.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_C) is unused and will be removed from module gpio_control_block__15.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_LDC) is unused and will be removed from module gpio_control_block__16.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_C) is unused and will be removed from module gpio_control_block__16.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_LDC) is unused and will be removed from module gpio_control_block__16.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_C) is unused and will be removed from module gpio_control_block__16.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_LDC) is unused and will be removed from module gpio_control_block__16.
+WARNING: [Synth 8-3332] Sequential element (gpio_outenb_reg_C) is unused and will be removed from module gpio_control_block__16.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_LDC) is unused and will be removed from module gpio_control_block__17.
+WARNING: [Synth 8-3332] Sequential element (gpio_dm_reg[0]_C) is unused and will be removed from module gpio_control_block__17.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_LDC) is unused and will be removed from module gpio_control_block__17.
+WARNING: [Synth 8-3332] Sequential element (mgmt_ena_reg_C) is unused and will be removed from module gpio_control_block__17.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 2381.465 ; gain = 742.344 ; free physical = 578 ; free virtual = 7780
+---------------------------------------------------------------------------------
+ Sort Area is  memory_to_writeBack_MUL_HH_reg_5 : 0 0 : 2328 2328 : Used 1 time 0
+ Sort Area is  execute_to_memory_MUL_HL_reg_2 : 0 0 : 2298 2298 : Used 1 time 0
+ Sort Area is  execute_to_memory_MUL_LH_reg_4 : 0 0 : 2298 2298 : Used 1 time 0
+ Sort Area is  execute_to_memory_MUL_LL_reg_0 : 0 0 : 1978 1978 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-------------+------------+---------------+----------------+
+|Module Name  | RTL Object | Depth x Width | Implemented As | 
++-------------+------------+---------------+----------------+
+|housekeeping | spiaddr    | 1024x7        | LUT            | 
+|housekeeping | spiaddr0   | 1024x7        | LUT            | 
+|housekeeping | spiaddr1   | 1024x7        | LUT            | 
+|housekeeping | spiaddr2   | 1024x7        | LUT            | 
++-------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++-----------------------------------------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                          | RTL Object              | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------------------------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|chip_core/\soc/core /RAM256                          | RAM_reg                 | 256 x 32(READ_FIRST)   | W |   | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|chip_core/\soc/core /RAM128                          | RAM_reg                 | 128 x 32(READ_FIRST)   | W |   | 128 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|chip_core/\soc/core /VexRiscv/IBusCachedPlugin_cache | banks_0_reg             | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|chip_core/\soc/core /VexRiscv/IBusCachedPlugin_cache | ways_0_tags_reg         | 128 x 22(READ_FIRST)   | W |   | 128 x 22(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|chip_core/\soc/core /VexRiscv/dataCache_1            | ways_0_tags_reg         | 128 x 22(READ_FIRST)   | W |   | 128 x 22(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|chip_core/\soc/core /VexRiscv/dataCache_1            | ways_0_data_symbol0_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|chip_core/\soc/core /VexRiscv/dataCache_1            | ways_0_data_symbol1_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|chip_core/\soc/core /VexRiscv/dataCache_1            | ways_0_data_symbol2_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|chip_core/\soc/core /VexRiscv/dataCache_1            | ways_0_data_symbol3_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|chip_core/\soc/core /VexRiscv                        | _zz_3_reg               | 1 K x 2(READ_FIRST)    | W |   | 1 K x 2(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++-----------------------------------------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++---------------------+---------------+-----------+----------------------+-------------+
+|Module Name          | RTL Object    | Inference | Size (Depth x Width) | Primitives  | 
++---------------------+---------------+-----------+----------------------+-------------+
+|chip_core/\soc/core  | storage_1_reg | Implied   | 16 x 8               | RAM32M x 2  | 
+|chip_core/\soc/core  | storage_reg   | Implied   | 16 x 8               | RAM32M x 2  | 
++---------------------+---------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|VexRiscv    | (A*B)'      | 17     | 17     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 1    | 1    | 
+|VexRiscv    | (A*B)'      | 17     | 17     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|VexRiscv    | (A*B)'      | 17     | 17     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|VexRiscv    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 1    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 2381.465 ; gain = 742.344 ; free physical = 572 ; free virtual = 7782
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 2381.465 ; gain = 742.344 ; free physical = 573 ; free virtual = 7783
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-----------------------------------------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                          | RTL Object              | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------------------------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|chip_core/\soc/core /RAM256                          | RAM_reg                 | 256 x 32(READ_FIRST)   | W |   | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|chip_core/\soc/core /RAM128                          | RAM_reg                 | 128 x 32(READ_FIRST)   | W |   | 128 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|chip_core/\soc/core /VexRiscv/IBusCachedPlugin_cache | banks_0_reg             | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|chip_core/\soc/core /VexRiscv/IBusCachedPlugin_cache | ways_0_tags_reg         | 128 x 22(READ_FIRST)   | W |   | 128 x 22(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|chip_core/\soc/core /VexRiscv/dataCache_1            | ways_0_tags_reg         | 128 x 22(READ_FIRST)   | W |   | 128 x 22(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|chip_core/\soc/core /VexRiscv/dataCache_1            | ways_0_data_symbol0_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|chip_core/\soc/core /VexRiscv/dataCache_1            | ways_0_data_symbol1_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|chip_core/\soc/core /VexRiscv/dataCache_1            | ways_0_data_symbol2_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|chip_core/\soc/core /VexRiscv/dataCache_1            | ways_0_data_symbol3_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|chip_core/\soc/core /VexRiscv                        | _zz_3_reg               | 1 K x 2(READ_FIRST)    | W |   | 1 K x 2(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++-----------------------------------------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++---------------------+---------------+-----------+----------------------+-------------+
+|Module Name          | RTL Object    | Inference | Size (Depth x Width) | Primitives  | 
++---------------------+---------------+-----------+----------------------+-------------+
+|chip_core/\soc/core  | storage_1_reg | Implied   | 16 x 8               | RAM32M x 2  | 
+|chip_core/\soc/core  | storage_reg   | Implied   | 16 x 8               | RAM32M x 2  | 
++---------------------+---------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance chip_core/soc/core/RAM256/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance chip_core/soc/core/RAM128/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance chip_core/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance chip_core/soc/core/VexRiscv/dataCache_1/ways_0_tags_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance chip_core/soc/core/VexRiscv/RegFilePlugin_regFile_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance chip_core/soc/core/VexRiscv/RegFilePlugin_regFile_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 2381.465 ; gain = 742.344 ; free physical = 541 ; free virtual = 7758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2381.465 ; gain = 742.344 ; free physical = 537 ; free virtual = 7754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2381.465 ; gain = 742.344 ; free physical = 537 ; free virtual = 7754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 2381.465 ; gain = 742.344 ; free physical = 537 ; free virtual = 7754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 2381.465 ; gain = 742.344 ; free physical = 537 ; free virtual = 7754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 2381.465 ; gain = 742.344 ; free physical = 537 ; free virtual = 7754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 2381.465 ; gain = 742.344 ; free physical = 537 ; free virtual = 7754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                 | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|caravel     | chip_core/por_fpga/reset_reg                             | 9      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|caravel     | chip_core/gpio_control_in_1[10]/shift_register_reg[10]   | 9      | 11    | YES          | NO                 | YES               | 11     | 0       | 
+|caravel     | chip_core/gpio_control_in_1a[5]/shift_register_reg[10]   | 9      | 6     | YES          | NO                 | YES               | 6      | 0       | 
+|caravel     | chip_core/gpio_control_bidir_1[1]/shift_register_reg[10] | 9      | 2     | YES          | NO                 | YES               | 2      | 0       | 
+|caravel     | chip_core/gpio_control_bidir_2[2]/shift_register_reg[10] | 9      | 3     | YES          | NO                 | YES               | 3      | 0       | 
+|caravel     | chip_core/gpio_control_in_2[15]/shift_register_reg[10]   | 9      | 16    | YES          | NO                 | YES               | 16     | 0       | 
++------------+----------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|VexRiscv    | ((A*B)')'   | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 1    | 1    | 
+|VexRiscv    | (A*B)'      | 16     | 18     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|VexRiscv    | (A*B)'      | 30     | 16     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|VexRiscv    | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     5|
+|2     |CARRY4   |   202|
+|3     |DSP48E1  |     4|
+|5     |LUT1     |   229|
+|6     |LUT2     |   492|
+|7     |LUT3     |   509|
+|8     |LUT4     |   723|
+|9     |LUT5     |  1083|
+|10    |LUT6     |  2009|
+|11    |MUXF7    |   164|
+|12    |MUXF8    |    44|
+|13    |RAM32M   |     4|
+|14    |RAMB18E1 |    11|
+|17    |RAMB36E1 |     1|
+|18    |SRL16E   |    39|
+|19    |FDCE     |   989|
+|20    |FDPE     |   277|
+|21    |FDRE     |  3109|
+|22    |FDSE     |    52|
+|23    |LDC      |    76|
+|24    |IBUF     |     3|
+|25    |IOBUF    |    39|
+|26    |OBUF     |     8|
+|27    |OBUFT    |     1|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 2381.465 ; gain = 742.344 ; free physical = 537 ; free virtual = 7754
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1213 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 2381.465 ; gain = 603.559 ; free physical = 537 ; free virtual = 7754
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 2381.465 ; gain = 742.344 ; free physical = 537 ; free virtual = 7754
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2381.465 ; gain = 0.000 ; free physical = 811 ; free virtual = 8029
+INFO: [Netlist 29-17] Analyzing 545 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2381.465 ; gain = 0.000 ; free physical = 816 ; free virtual = 8028
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 119 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 39 instances
+  LDC => LDCE: 76 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+
+Synth Design complete | Checksum: 436ce34a
+INFO: [Common 17-83] Releasing license: Synthesis
+191 Infos, 388 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:52 . Memory (MB): peak = 2381.465 ; gain = 1064.938 ; free physical = 816 ; free virtual = 8028
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2034.146; main = 1711.978; forked = 421.916
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3333.535; main = 2381.434; forked = 984.117
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00 . Memory (MB): peak = 2405.441 ; gain = 0.000 ; free physical = 816 ; free virtual = 8029
+INFO: [Common 17-1381] The checkpoint '/home/beandog/senior-design/testing-car-on-fpga.runs/synth_1/caravel.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file caravel_utilization_synth.rpt -pb caravel_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 11 18:00:04 2025...

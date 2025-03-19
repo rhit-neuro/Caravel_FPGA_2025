@@ -1,0 +1,3 @@
+[submodule "24-25_npu"]
+	path = 24-25_npu
+	url = git@github.com:rhit-neuro/24-25_npu.git
