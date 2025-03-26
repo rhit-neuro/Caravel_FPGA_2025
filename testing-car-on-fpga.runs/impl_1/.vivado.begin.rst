@@ -1,20 +1,25 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="beandog" Host="archlinux" Pid="804952" HostCore="16" HostMemory="11627320">
+    <Process Command="vivado" Owner="beandog" Host="archlinux" Pid="18144" HostCore="16" HostMemory="11626600">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="beandog" Host="archlinux" Pid="806533" HostCore="16" HostMemory="11627320">
+    <Process Command="vivado" Owner="beandog" Host="archlinux" Pid="46722" HostCore="16" HostMemory="11626600">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="beandog" Host="archlinux" Pid="807932" HostCore="16" HostMemory="11627320">
+    <Process Command="vivado" Owner="beandog" Host="archlinux" Pid="57693" HostCore="16" HostMemory="11626600">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="beandog" Host="archlinux" Pid="837069" HostCore="16" HostMemory="11627320">
+    <Process Command="vivado" Owner="beandog" Host="archlinux" Pid="86296" HostCore="16" HostMemory="11626600">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="beandog" Host="archlinux" Pid="93380" HostCore="16" HostMemory="11626600">
     </Process>
 </ProcessHandle>

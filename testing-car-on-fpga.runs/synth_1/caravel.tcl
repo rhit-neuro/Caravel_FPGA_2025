@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/beandog/senior-design/testing-car-on-fpga.runs/synth_1/caravel.tcl"
+  variable script "/home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.runs/synth_1/caravel.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,49 +70,54 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param xicom.use_bs_reader 1
+set_param chipscope.maxJobs 4
+set_param checkpoint.writeSynthRtdsInDcp 1
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/beandog/senior-design/testing-car-on-fpga.cache/wt [current_project]
-set_property parent.project_path /home/beandog/senior-design/testing-car-on-fpga.xpr [current_project]
+set_property webtalk.parent_dir /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.cache/wt [current_project]
+set_property parent.project_path /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:zedboard:part0:1.1 [current_project]
-set_property ip_output_repo /home/beandog/senior-design/testing-car-on-fpga.cache/ip [current_project]
+set_property ip_output_repo /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/FPGA_POR.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/RAM128.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/RAM256.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/defines.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/__user_project_wrapper.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_clocking.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/user_defines.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_core.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/chip_io_FPGA.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/clock_div.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/debug_regs.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_control_block.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_defaults_block.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_logic_high.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/housekeeping.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/housekeeping_spi.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/io_buf.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core_wrapper.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_protect.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_protect_hv.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mprj2_logic_high.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mprj_io_buffer.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/mprj_logic_high.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/user_id_programming.v
-  /home/beandog/senior-design/testing-car-on-fpga.srcs/sources_1/imports/src/caravel.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/FPGA_POR.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/RAM128.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/RAM256.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/Caravel_on_FPGA/VexRiscv.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/defines.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/__user_project_wrapper.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_clocking.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/user_defines.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/caravel_core.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/chip_io_FPGA.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/clock_div.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/debug_regs.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_control_block.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_defaults_block.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/gpio_logic_high.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/housekeeping.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/housekeeping_spi.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/io_buf.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_core_wrapper.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_protect.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/mgmt_protect_hv.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/mprj2_logic_high.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/mprj_io_buffer.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/mprj_logic_high.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/user_id_programming.v
+  /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/sources_1/imports/src/caravel.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -123,12 +128,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/beandog/senior-design/testing-car-on-fpga.srcs/constrs_1/new/s.xdc
-set_property used_in_implementation false [get_files /home/beandog/senior-design/testing-car-on-fpga.srcs/constrs_1/new/s.xdc]
+read_xdc /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/constrs_1/new/s.xdc
+set_property used_in_implementation false [get_files /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/constrs_1/new/s.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental /home/beandog/senior-design/testing-car-on-fpga.srcs/utils_1/imports/synth_1/caravel.dcp
+read_checkpoint -auto_incremental -incremental /home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.srcs/utils_1/imports/synth_1/caravel.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

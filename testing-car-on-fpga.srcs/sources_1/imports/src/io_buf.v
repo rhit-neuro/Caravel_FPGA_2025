@@ -6,19 +6,12 @@ module io_buf #(parameter WIDTH=1) (
 );
 
 //`ifdef USE_IO_BUF_BEH
-
-
-
-//COMMENTED OUT BY BEN
     assign dout_o  = dio_buf;
     generate
         genvar i;
         for (i=0; i<WIDTH; i=i+1)
             assign dio_buf[i] = in_not_out_i[i] ? 1'bz : din_i[i];
     endgenerate
-
-//END COMMENTED OUT BY BEN
-
 /*`else
     IOBUF io_data [WIDTH-1:0] (
         .O (dout_o),        // data from the pad to the fabric

@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/beandog/senior-design/testing-car-on-fpga.runs/synth_1'
+HD_PWD='/home/beandog/senior-design/Caravel_FPGA_2025/testing-car-on-fpga.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
