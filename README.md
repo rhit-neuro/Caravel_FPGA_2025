@@ -2,11 +2,11 @@
 See [this link](https://github.com/efabless/Caravel_on_FPGA) to original repo by Efabless.
 ## Adding VexRiscv Core:
 - Generated compatible VexRiscv core using [this SpinalHDL](https://github.com/SpinalHDL/VexRiscv) repo. The file used is found [here](SpinalHDL_Scala_files/VexRiscvCachedWishboneForSim.scala) and was run from [this folder](https://github.com/SpinalHDL/VexRiscv/tree/master/src/main/scala/vexriscv/demo) using the SinalHDL instructions.
-- The generated verilog VexRiscv core was imported into a Vivado project containing all of the verilog from [this folder](src/).
+- The generated verilog VexRiscv core was imported into a Vivado project containing all of the verilog from [this folder](CARAVEL/CARAVEL.srcs/sources_1/imports/src).
 ## Configuring the original repo for Nexys A7:
 - We did not have a Cmod Artix 7-35T FPGA or QSPI SST26VF080A Flash module, so we used the Nexys A7-100T Digilent board as it has an integrated QSPI flash connected directly to FPGA fabric.
-- The Cmod Artix 7-35T has a 12MHz oscillator but our Nexys A7-100T has a 100MHz oscillator, so we used Vivado Clock wizard to generate a clk_fix part to convert clocks as seen [here](src/caravel.v).
-- The clock pin to the Nexys QSPI flash is not accessable using the I/O planner and instead must be set with the STARTUPE2 primative. Our configuration of STARTUPE2 is found [here](src/caravel.v).
+- The Cmod Artix 7-35T has a 12MHz oscillator but our Nexys A7-100T has a 100MHz oscillator, so we used Vivado Clock wizard to generate a clk_fix part to convert clocks as seen [here](CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel.v).
+- The clock pin to the Nexys QSPI flash is not accessable using the I/O planner and instead must be set with the STARTUPE2 primative. Our configuration of STARTUPE2 is found [here](CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel.v).
 - Since we are using a different FPGA, we had to make our own configuration file. Our configuration file is found [here](CARAVEL/CARAVEL.srcs/constrs_1/new/CARVEL.xdc).
 - We used the Raspberry Pi Pico method of flashing the QSPI flash as described by the original repo. However, we had to alter some of the code for compatability with our flash. The updated code is found [here](Micropython_scripts/flash).
 ## Loading Caravel and Flashing the QSPI Flash
