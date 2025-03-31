@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Mar 30 12:21:33 2025
+# Process ID: 34240
+# Current directory: C:/Xilinx/CaravelFPGA/Caravel_on_FPGA/Caravel/CARAVEL/CARAVEL.runs/clk_fix_synth_1
+# Command line: vivado.exe -log clk_fix.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_fix.tcl
+# Log file: C:/Xilinx/CaravelFPGA/Caravel_on_FPGA/Caravel/CARAVEL/CARAVEL.runs/clk_fix_synth_1/clk_fix.vds
+# Journal file: C:/Xilinx/CaravelFPGA/Caravel_on_FPGA/Caravel/CARAVEL/CARAVEL.runs/clk_fix_synth_1\vivado.jou
+#-----------------------------------------------------------
+source clk_fix.tcl -notrace

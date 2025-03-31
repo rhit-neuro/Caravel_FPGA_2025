@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1743372957">
+  <File Type="PA-TCL" Name="caravel.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="caravel_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="caravel_reports.tcl"/>
+  <File Type="RDS-RDS" Name="caravel.vds"/>
+  <File Type="RDS-UTIL" Name="caravel_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="caravel_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="caravel.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="caravel_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="caravel_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/src/FPGA_POR.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/FPGA_POR.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/RAM128.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/RAM128.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/RAM256.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/RAM256.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/VexRiscv.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/VexRiscv.v"/>
+        <Attr Name="ImportTime" Val="1743351381"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/defines.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/defines.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/__user_project_wrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/__user_project_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/caravel_clocking.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/caravel_clocking.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/user_defines.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/user_defines.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/caravel_core.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/caravel_core.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/chip_io_FPGA.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/chip_io_FPGA.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/clock_div.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/clock_div.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/debug_regs.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/debug_regs.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/gpio_control_block.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/gpio_control_block.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/gpio_defaults_block.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/gpio_defaults_block.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/gpio_logic_high.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/gpio_logic_high.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/housekeeping.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/housekeeping.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/housekeeping_spi.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/housekeeping_spi.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/io_buf.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/io_buf.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/mgmt_core.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/mgmt_core.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/mgmt_core_wrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/mgmt_core_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/mgmt_protect.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/mgmt_protect.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/mgmt_protect_hv.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/mgmt_protect_hv.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/mprj2_logic_high.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/mprj2_logic_high.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/mprj_io_buffer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/mprj_io_buffer.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/mprj_logic_high.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/mprj_logic_high.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/user_id_programming.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/user_id_programming.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/caravel.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/caravel.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/pads.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/pads.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/constant_block_antmicro.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/constant_block_antmicro.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/mprj_io_antmicro.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/mprj_io_antmicro.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/chip_io_antmicro.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/chip_io_antmicro.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/io_buf copy.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/io_buf copy.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/caravel_openframe.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/caravel_openframe.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/digital_pll.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/digital_pll.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/simple_por.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/simple_por.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/openframe_netlists.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/openframe_netlists.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/caravel_netlists.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/caravel_netlists.v"/>
+        <Attr Name="ImportTime" Val="1743179106"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="caravel"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/CARVEL.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/CARVEL.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_fix"/>
+</GenRun>
