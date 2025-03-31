@@ -1,7 +1,7 @@
 # Caravel FPGA 2025
 See [this link](https://github.com/efabless/Caravel_on_FPGA) to original repo by Efabless.
 ## Adding VexRiscv Core:
-- Generated compatible VexRiscv core using [this SpinalHDL](https://github.com/SpinalHDL/VexRiscv) repo. The file used is found [here](SpinalHDL_Scala_files/VexRiscvCachedWishboneForSim.scala) and was run from [this folder](src/main/scala/vexriscv/demo) using the SinalHDL instructions.
+- Generated compatible VexRiscv core using [this SpinalHDL](https://github.com/SpinalHDL/VexRiscv) repo. The file used is found [here](SpinalHDL_Scala_files/VexRiscvCachedWishboneForSim.scala) and was run from [this folder](https://github.com/SpinalHDL/VexRiscv/tree/master/src/main/scala/vexriscv/demo) using the SinalHDL instructions.
 - The generated verilog VexRiscv core was imported into a Vivado project containing all of the verilog from [this folder](src/).
 ## Configuring the original repo for Nexys A7:
 - We did not have a Cmod Artix 7-35T FPGA or QSPI SST26VF080A Flash module, so we used the Nexys A7-100T Digilent board as it has an integrated QSPI flash connected directly to FPGA fabric.
