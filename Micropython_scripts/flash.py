@@ -206,7 +206,7 @@ def check():
 
 
 def erase(debug=False):
-    print("innnnnnnn")
+    # print("innnnnnnn")
     # machine.reset()
     led = Led()
     # led = Led(None)
@@ -251,9 +251,9 @@ def erase(debug=False):
         print(" ")
         print("JEDEC = {}".format(binascii.hexlify(jedec)))
 
-    if jedec[0:1] != binascii.unhexlify('ef'):
+    if jedec[0:1] != binascii.unhexlify('01'): #altered from ef to 01 for spansion
     # if jedec[0:1] != bytes.fromhex('e6'):
-        print("Winbond SRAM not found")
+        print("Spansion SRAM not found")
         sys.exit()
 
     if debug:
@@ -329,9 +329,9 @@ def flash(file_path, debug=False):
         print(" ")
         print("JEDEC = {}".format(binascii.hexlify(jedec)))
 
-    if jedec[0:1] != binascii.unhexlify('ef'):
+    if jedec[0:1] != binascii.unhexlify('01'): #altered from ef to 01 for spansion
     # if jedec[0:1] != bytes.fromhex('e6'):
-        print("Winbond SRAM not found")
+        print("Spansion SRAM not found")
         sys.exit()
 
     buf = bytearray()
