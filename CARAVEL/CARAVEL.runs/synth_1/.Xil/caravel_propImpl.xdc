@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Xilinx/CaravelFPGA/Caravel_on_FPGA/Caravel/CARAVEL/CARAVEL.srcs/constrs_1/new/CARVEL.xdc rfile:../../../CARAVEL.srcs/constrs_1/new/CARVEL.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/constrs_1/new/CARVEL.xdc rfile:../../../CARAVEL.srcs/constrs_1/new/CARVEL.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
 create_generated_clock -name clock12 clk_fix/inst/mmcm_adv_inst/CLKOUT0;
 set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]

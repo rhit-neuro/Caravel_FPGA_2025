@@ -1,0 +1,238 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date             : Wed Mar 26 12:06:58 2025
+| Host             : archlinux running 64-bit unknown
+| Command          : report_power -file caravel_power_routed.rpt -pb caravel_power_summary_routed.pb -rpx caravel_power_routed.rpx
+| Design           : caravel
+| Device           : xc7z020clg484-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+----------------------------------+
+| Total On-Chip Power (W)  | 82.045 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                     |
+| Power Budget Margin (W)  | NA                               |
+| Dynamic (W)              | 80.990                           |
+| Device Static (W)        | 1.055                            |
+| Effective TJA (C/W)      | 11.5                             |
+| Max Ambient (C)          | 0.0                              |
+| Junction Temperature (C) | 125.0                            |
+| Confidence Level         | Low                              |
+| Setting File             | ---                              |
+| Simulation Activity File | ---                              |
+| Design Nets Matched      | NA                               |
++--------------------------+----------------------------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Slice Logic              |    12.516 |     9938 |       --- |             --- |
+|   LUT as Logic           |    11.189 |     4490 |     53200 |            8.44 |
+|   CARRY4                 |     0.609 |      202 |     13300 |            1.52 |
+|   Register               |     0.463 |     4347 |    106400 |            4.09 |
+|   F7/F8 Muxes            |     0.140 |      208 |     53200 |            0.39 |
+|   LUT as Shift Register  |     0.085 |       39 |     17400 |            0.22 |
+|   BUFG                   |     0.021 |        5 |        32 |           15.63 |
+|   LUT as Distributed RAM |     0.008 |       16 |     17400 |            0.09 |
+|   Others                 |     0.000 |      101 |       --- |             --- |
+| Signals                  |    15.678 |     8218 |       --- |             --- |
+| Block RAM                |     0.888 |      6.5 |       140 |            4.64 |
+| DSPs                     |     4.234 |        4 |       220 |            1.82 |
+| I/O                      |    47.675 |       51 |       200 |           25.50 |
+| Static Power             |     1.055 |          |           |                 |
+| Total                    |    82.045 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint    |       1.000 |    33.807 |      33.501 |      0.306 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     1.839 |       1.739 |      0.100 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |    13.433 |      13.432 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.068 |       0.034 |      0.034 |       NA    | Unspecified | NA         |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccpint   |       1.000 |     0.473 |       0.000 |      0.473 |       NA    | Unspecified | NA         |
+| Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |       NA    | Unspecified | NA         |
+| Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |       NA    | Unspecified | NA         |
+| Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco_mio0 |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco_mio1 |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+------------------------+
+| Ambient Temp (C)      | 25.0                   |
+| ThetaJA (C/W)         | 11.5                   |
+| Airflow (LFM)         | 250                    |
+| Heat Sink             | none                   |
+| ThetaSA (C/W)         | 0.0                    |
+| Board Selection       | medium (10"x10")       |
+| # of Board Layers     | 8to11 (8 to 11 Layers) |
+| Board Temperature (C) | 25.0                   |
++-----------------------+------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-----------------------------+-----------+
+| Name                        | Power (W) |
++-----------------------------+-----------+
+| caravel                     |    80.990 |
+|   chip_core                 |    32.407 |
+|     clock_ctrl              |     0.007 |
+|     gpio_control_bidir_1[0] |     0.159 |
+|     gpio_control_bidir_1[1] |     0.090 |
+|     gpio_control_bidir_2[0] |     0.110 |
+|     gpio_control_bidir_2[1] |     0.134 |
+|     gpio_control_bidir_2[2] |     0.143 |
+|     gpio_control_in_1[0]    |     0.038 |
+|     gpio_control_in_1[10]   |     0.011 |
+|     gpio_control_in_1[1]    |     0.036 |
+|     gpio_control_in_1[2]    |     0.028 |
+|     gpio_control_in_1[3]    |     0.027 |
+|     gpio_control_in_1[4]    |     0.022 |
+|     gpio_control_in_1[5]    |     0.021 |
+|     gpio_control_in_1[6]    |     0.021 |
+|     gpio_control_in_1[7]    |     0.019 |
+|     gpio_control_in_1[8]    |     0.014 |
+|     gpio_control_in_1[9]    |     0.013 |
+|     gpio_control_in_1a[0]   |     0.072 |
+|     gpio_control_in_1a[1]   |     0.074 |
+|     gpio_control_in_1a[2]   |     0.066 |
+|     gpio_control_in_1a[3]   |     0.106 |
+|     gpio_control_in_1a[4]   |     0.049 |
+|     gpio_control_in_1a[5]   |     0.044 |
+|     gpio_control_in_2[0]    |     0.012 |
+|     gpio_control_in_2[10]   |     0.040 |
+|     gpio_control_in_2[11]   |     0.048 |
+|     gpio_control_in_2[12]   |     0.051 |
+|     gpio_control_in_2[13]   |     0.057 |
+|     gpio_control_in_2[14]   |     0.071 |
+|     gpio_control_in_2[15]   |     0.119 |
+|     gpio_control_in_2[1]    |     0.013 |
+|     gpio_control_in_2[2]    |     0.015 |
+|     gpio_control_in_2[3]    |     0.021 |
+|     gpio_control_in_2[4]    |     0.018 |
+|     gpio_control_in_2[5]    |     0.021 |
+|     gpio_control_in_2[6]    |     0.024 |
+|     gpio_control_in_2[7]    |     0.026 |
+|     gpio_control_in_2[8]    |     0.029 |
+|     gpio_control_in_2[9]    |     0.033 |
+|     housekeeping            |     8.788 |
+|       hkspi                 |     5.713 |
+|     soc                     |    21.568 |
+|       core                  |    21.542 |
+|   mprj_io_IOBUF[0]_inst     |     1.242 |
+|   mprj_io_IOBUF[10]_inst    |     0.898 |
+|   mprj_io_IOBUF[11]_inst    |     0.874 |
+|   mprj_io_IOBUF[12]_inst    |     0.845 |
+|   mprj_io_IOBUF[13]_inst    |     0.819 |
+|   mprj_io_IOBUF[14]_inst    |     0.803 |
+|   mprj_io_IOBUF[15]_inst    |     0.787 |
+|   mprj_io_IOBUF[16]_inst    |     0.777 |
+|   mprj_io_IOBUF[17]_inst    |     0.769 |
+|   mprj_io_IOBUF[18]_inst    |     0.763 |
+|   mprj_io_IOBUF[19]_inst    |     0.761 |
+|   mprj_io_IOBUF[1]_inst     |     1.407 |
+|   mprj_io_IOBUF[20]_inst    |     0.765 |
+|   mprj_io_IOBUF[21]_inst    |     0.774 |
+|   mprj_io_IOBUF[22]_inst    |     0.785 |
+|   mprj_io_IOBUF[23]_inst    |     0.798 |
+|   mprj_io_IOBUF[24]_inst    |     0.813 |
+|   mprj_io_IOBUF[25]_inst    |     0.832 |
+|   mprj_io_IOBUF[26]_inst    |     0.857 |
+|   mprj_io_IOBUF[27]_inst    |     0.888 |
+|   mprj_io_IOBUF[28]_inst    |     0.920 |
+|   mprj_io_IOBUF[29]_inst    |     0.962 |
+|   mprj_io_IOBUF[2]_inst     |     1.445 |
+|   mprj_io_IOBUF[30]_inst    |     1.013 |
+|   mprj_io_IOBUF[31]_inst    |     1.074 |
+|   mprj_io_IOBUF[32]_inst    |     1.127 |
+|   mprj_io_IOBUF[33]_inst    |     1.199 |
+|   mprj_io_IOBUF[34]_inst    |     1.332 |
+|   mprj_io_IOBUF[35]_inst    |     1.375 |
+|   mprj_io_IOBUF[36]_inst    |     1.458 |
+|   mprj_io_IOBUF[37]_inst    |     1.439 |
+|   mprj_io_IOBUF[3]_inst     |     1.388 |
+|   mprj_io_IOBUF[4]_inst     |     1.277 |
+|   mprj_io_IOBUF[5]_inst     |     1.220 |
+|   mprj_io_IOBUF[6]_inst     |     1.117 |
+|   mprj_io_IOBUF[7]_inst     |     1.047 |
+|   mprj_io_IOBUF[8]_inst     |     0.985 |
+|   mprj_io_IOBUF[9]_inst     |     0.933 |
++-----------------------------+-----------+
+
+

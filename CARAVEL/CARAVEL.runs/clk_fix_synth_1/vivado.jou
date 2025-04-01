@@ -1,12 +1,14 @@
 #-----------------------------------------------------------
-# Vivado v2019.2 (64-bit)
-# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
-# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sun Mar 30 12:21:33 2025
-# Process ID: 34240
-# Current directory: C:/Xilinx/CaravelFPGA/Caravel_on_FPGA/Caravel/CARAVEL/CARAVEL.runs/clk_fix_synth_1
-# Command line: vivado.exe -log clk_fix.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_fix.tcl
-# Log file: C:/Xilinx/CaravelFPGA/Caravel_on_FPGA/Caravel/CARAVEL/CARAVEL.runs/clk_fix_synth_1/clk_fix.vds
-# Journal file: C:/Xilinx/CaravelFPGA/Caravel_on_FPGA/Caravel/CARAVEL/CARAVEL.runs/clk_fix_synth_1\vivado.jou
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Mar 31 17:57:12 2025
+# Process ID: 5232
+# Current directory: /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/clk_fix_synth_1
+# Command line: vivado -log clk_fix.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_fix.tcl
+# Log file: /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/clk_fix_synth_1/clk_fix.vds
+# Journal file: /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/clk_fix_synth_1/vivado.jou
+# Running On: archlinux, OS: Linux, CPU Frequency: 3600.404 MHz, CPU Physical cores: 16, Host memory: 11905 MB
 #-----------------------------------------------------------
 source clk_fix.tcl -notrace
