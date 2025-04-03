@@ -34,7 +34,7 @@ void loadMemory() {
 	base_address = base_address + 1;
     *base_address = (float) 0xc1339ce7; 
 	base_address = base_address + 1;
-    *base_address = (float) 0xc12739ce 
+    *base_address = (float) 0xc12739ce; 
 	base_address = base_address + 1;
     *base_address = (float) 0xc11ad6b6; 
 	base_address = base_address + 1;
@@ -160,7 +160,6 @@ void loadMemory() {
     *base_address = (float) 0x2d05a248;  
 	base_address = base_address + 1;
     *base_address = (float) 0x2cb5d776; 
-	base_address = base_address + 1;
    
     // load b tables into memory
 	base_address = (float *)0x30000300;
@@ -227,8 +226,7 @@ void loadMemory() {
 	base_address = base_address + 1;
     *base_address = (float) 0x31a83cd3;  
 	base_address = base_address + 1;
-    *base_address = (float) 0x31a93d1a; 
-	base_address = base_address + 1;
+    *base_address = (float) 0x31a93d1a;
 }
 
 // Sets up the config files for the DMA 
@@ -252,12 +250,12 @@ void dma_config(uint32_t control_value, uint32_t length_value, uint32_t from_val
         *control =  control_value;
 
 		//arbitrary longggg delay until implement interrupt to ensure transfer
-		for(j = 0; j < 5; j++) {
+		for(int j = 0; j < 5; j++) {
 		// Slow blink for demonstration board 
-			for (i = 0; i < 500000; i++) {
+			for (int i = 0; i < 500000; i++) {
 				reg_gpio_out = 1;
 			}
-			for (i = 0; i < 500000; i++) {
+			for (int i = 0; i < 500000; i++) {
 				reg_gpio_out = 0;
 			}
 		}
@@ -272,12 +270,12 @@ void lut_function1(float input, float *memory){
 	*memory = func1_result;	//write to memory
 
 	//arbitrary longggg delay to read display
-	for(j = 0; j < 10; j++) {
+	for(int j = 0; j < 10; j++) {
 	// Slow blink for demonstration board 
-		for (i = 0; i < 500000; i++) {
+		for (int i = 0; i < 500000; i++) {
 			reg_gpio_out = 1;
 		}
-		for (i = 0; i < 500000; i++) {
+		for (int i = 0; i < 500000; i++) {
 			reg_gpio_out = 0;
 		}
 	}
@@ -294,8 +292,6 @@ void main()
 
     reg_gpio_out = 1;
     reg_gpio_out = 0;
-
-	int i;
 
 	reg_gpio_out = 0;
     reg_gpio_ien = 1;
