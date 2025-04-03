@@ -119,7 +119,7 @@ module caravel (
       .EOS());
     
         wire [31:0] SevenSegDisplay;
-        wire [7:0] D7,D6,D3,D2,D1,D0;
+        wire [7:0] D7,D6,D5,D4,D3,D2,D1,D0;
         
         HEXto7Segment Dig7(SevenSegDisplay[31:28],D7);
         HEXto7Segment Dig6(SevenSegDisplay[27:24],D6);
