@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Thu Apr  3 00:35:32 2025
+| Date             : Thu Apr  3 01:18:28 2025
 | Host             : RHIT-R912GAAZ running 64-bit major release  (build 9200)
 | Command          : report_power -file caravel_power_routed.rpt -pb caravel_power_summary_routed.pb -rpx caravel_power_routed.rpx
 | Design           : caravel
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.006 |        5 |       --- |             --- |
-| Slice Logic              |     0.004 |    35232 |       --- |             --- |
-|   LUT as Logic           |     0.004 |    14547 |     63400 |           22.94 |
-|   Register               |    <0.001 |    16841 |    126800 |           13.28 |
+| Slice Logic              |     0.004 |    35261 |       --- |             --- |
+|   LUT as Logic           |     0.004 |    14555 |     63400 |           22.96 |
+|   Register               |    <0.001 |    16853 |    126800 |           13.29 |
 |   CARRY4                 |    <0.001 |      629 |     15850 |            3.97 |
-|   F7/F8 Muxes            |    <0.001 |      606 |     63400 |            0.96 |
+|   F7/F8 Muxes            |    <0.001 |      612 |     63400 |            0.97 |
 |   LUT as Shift Register  |    <0.001 |       40 |     19000 |            0.21 |
 |   LUT as Distributed RAM |    <0.001 |      228 |     19000 |            1.20 |
 |   BUFG                   |    <0.001 |        4 |        32 |           12.50 |
 |   Others                 |     0.000 |      171 |       --- |             --- |
-| Signals                  |     0.007 |    30199 |       --- |             --- |
+| Signals                  |     0.007 |    30182 |       --- |             --- |
 | Block RAM                |     0.003 |      9.5 |       135 |            7.04 |
 | MMCM                     |     0.121 |        1 |         6 |           16.67 |
 | DSPs                     |    <0.001 |        9 |       240 |            3.75 |
@@ -153,8 +153,8 @@ Table of Contents
 |   chip_core              |     0.021 |
 |     mprj                 |     0.008 |
 |       TopLevel           |     0.008 |
-|     soc                  |     0.011 |
-|       core               |     0.011 |
+|     soc                  |     0.012 |
+|       core               |     0.012 |
 |   clk_fix                |     0.121 |
 |     inst                 |     0.121 |
 |   mprj_io_IOBUF[14]_inst |     0.001 |
