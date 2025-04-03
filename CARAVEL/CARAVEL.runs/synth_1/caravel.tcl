@@ -3,58 +3,6 @@
 # 
 
 set TIME_start [clock seconds] 
-namespace eval ::optrace {
-  variable script "/home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1/caravel.tcl"
-  variable category "vivado_synth"
-}
-
-# Try to connect to running dispatch if we haven't done so already.
-# This code assumes that the Tcl interpreter is not using threads,
-# since the ::dispatch::connected variable isn't mutex protected.
-if {![info exists ::dispatch::connected]} {
-  namespace eval ::dispatch {
-    variable connected false
-    if {[llength [array get env XILINX_CD_CONNECT_ID]] > 0} {
-      set result "true"
-      if {[catch {
-        if {[lsearch -exact [package names] DispatchTcl] < 0} {
-          set result [load librdi_cd_clienttcl[info sharedlibextension]] 
-        }
-        if {$result eq "false"} {
-          puts "WARNING: Could not load dispatch client library"
-        }
-        set connect_id [ ::dispatch::init_client -mode EXISTING_SERVER ]
-        if { $connect_id eq "" } {
-          puts "WARNING: Could not initialize dispatch client"
-        } else {
-          puts "INFO: Dispatch client connection id - $connect_id"
-          set connected true
-        }
-      } catch_res]} {
-        puts "WARNING: failed to connect to dispatch server - $catch_res"
-      }
-    }
-  }
-}
-if {$::dispatch::connected} {
-  # Remove the dummy proc if it exists.
-  if { [expr {[llength [info procs ::OPTRACE]] > 0}] } {
-    rename ::OPTRACE ""
-  }
-  proc ::OPTRACE { task action {tags {} } } {
-    ::vitis_log::op_trace "$task" $action -tags $tags -script $::optrace::script -category $::optrace::category
-  }
-  # dispatch is generic. We specifically want to attach logging.
-  ::vitis_log::connect_client
-} else {
-  # Add dummy proc if it doesn't exist.
-  if { [expr {[llength [info procs ::OPTRACE]] == 0}] } {
-    proc ::OPTRACE {{arg1 \"\" } {arg2 \"\"} {arg3 \"\" } {arg4 \"\"} {arg5 \"\" } {arg6 \"\"}} {
-        # Do nothing
-    }
-  }
-}
-
 proc create_report { reportName command } {
   set status "."
   append status $reportName ".fail"
@@ -69,96 +17,91 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 4
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param synth.incrementalSynthesisCache ./.Xil/Vivado-274389-archlinux/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
-OPTRACE "Creating in-memory project" START { }
+set_param chipscope.maxJobs 3
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.cache/wt [current_project]
-set_property parent.project_path /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.xpr [current_project]
+set_property webtalk.parent_dir C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.cache/wt [current_project]
+set_property parent.project_path C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.cache/ip [current_project]
+set_property ip_output_repo c:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-OPTRACE "Creating in-memory project" END { }
-OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/FPGA_POR.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/LUT_Module/FloatingAddition.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/LUT_Module/FloatingCompare.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/LUT_Module/FloatingMultiplication.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/LUT_Module/Indexing_Unit.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/new/LUT_Arbiter.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/LUT_Module/LUT_MAC_Module.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/LUT_Module/LUT_Module.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/new/Memory_Arbiter.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/LUT_Module/Memory_Unit.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/LUT_Module/Parallel_Memory_Unit.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/LUT_Module/Priority_Encoder.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/RAM128.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/RAM256.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/TopLevel/defines.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/TopLevel/TopLevel.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/LUT_Module/WB3_Interface.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/LUT_Module/WB4_Interface.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/defines.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/__user_project_wrapper.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel_clocking.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/user_defines.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel_core.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/chip_io_FPGA.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/clock_div.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/debug_regs.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/gpio_control_block.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/gpio_defaults_block.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/gpio_logic_high.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/housekeeping.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/housekeeping_spi.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/io_buf.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/SD_Card_Interface_Module/llsdspi.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/Memory/memory_intf.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core_wrapper.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_protect.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_protect_hv.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mprj2_logic_high.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mprj_io_buffer.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mprj_logic_high.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/SD_Card_Interface_Module/sdspi.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/DMA_Module/sfifo.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/SD_Card_Interface_Module/spicmd.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/SD_Card_Interface_Module/spirxdata.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/SD_Card_Interface_Module/spitxdata.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/user_id_programming.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/DMA_Module/wbarbiter.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/DMA_Module/zipdma.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/DMA_Module/zipdma_ctrl.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/DMA_Module/zipdma_fsm.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/DMA_Module/zipdma_mm2s.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/DMA_Module/zipdma_rxgears.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/DMA_Module/zipdma_s2mm.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/imports/DMA_Module/zipdma_txgears.v
-  /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/lab6ece433fall2024tempate/DisplayMuxNexysA7.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/FPGA_POR.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/FloatingAddition.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/FloatingCompare.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/FloatingMultiplication.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/lab6ece433fall2024tempate/HEXto7Segment.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/Indexing_Unit.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/LUT_Arbiter.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/LUT_MAC_Module.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/LUT_Module.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/Memory/Memory_Arbiter.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/Memory_Unit.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/Parallel_Memory_Unit.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/Priority_Encoder.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/RAM128.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/RAM256.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/lab6ece433fall2024tempate/Refreshing7SegNexysA7.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/lab6ece433fall2024tempate/SevenSegDriverNexysA7.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/TopLevel/defines.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/TopLevel/TopLevel.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/WB3_Interface.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/WB4_Interface.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/defines.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/__user_project_wrapper.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel_clocking.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/user_defines.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel_core.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/chip_io_FPGA.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/clock_div.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/debug_regs.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/gpio_control_block.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/gpio_defaults_block.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/gpio_logic_high.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/housekeeping.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/housekeeping_spi.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/io_buf.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/llsdspi.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/Memory/memory_intf.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core_wrapper.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_protect.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_protect_hv.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mprj2_logic_high.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mprj_io_buffer.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mprj_logic_high.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/sdspi.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/sfifo.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/spicmd.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/spirxdata.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/spitxdata.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/user_id_programming.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/wbarbiter.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_ctrl.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_fsm.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_mm2s.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_rxgears.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_s2mm.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_txgears.v
+  C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel.v
 }
-read_ip -quiet /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/ip/clk_fix/clk_fix.xci
-set_property used_in_implementation false [get_files -all /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.gen/sources_1/ip/clk_fix/clk_fix_board.xdc]
-set_property used_in_implementation false [get_files -all /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.gen/sources_1/ip/clk_fix/clk_fix.xdc]
-set_property used_in_implementation false [get_files -all /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.gen/sources_1/ip/clk_fix/clk_fix_ooc.xdc]
+read_ip -quiet c:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/ip/clk_fix_1/clk_fix.xci
+set_property used_in_implementation false [get_files -all c:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/ip/clk_fix_1/clk_fix_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/ip/clk_fix_1/clk_fix.xdc]
+set_property used_in_implementation false [get_files -all c:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/ip/clk_fix_1/clk_fix_ooc.xdc]
 
-read_ip -quiet /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/ip/bram/bram.xci
-set_property used_in_implementation false [get_files -all /home/beandog/senior-design/Caravel_FPGA_2025/24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/ip/bram/bram_ooc.xdc]
+read_ip -quiet c:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/ip/bram/bram.xci
+set_property used_in_implementation false [get_files -all c:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/ip/bram/bram_ooc.xdc]
 
-OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -167,28 +110,18 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/constrs_1/new/CARVEL.xdc
-set_property used_in_implementation false [get_files /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/constrs_1/new/CARVEL.xdc]
+read_xdc C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/constrs_1/imports/new/CARVEL.xdc
+set_property used_in_implementation false [get_files C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/constrs_1/imports/new/CARVEL.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-OPTRACE "synth_design" START { }
 synth_design -top caravel -part xc7a100tcsg324-1
-OPTRACE "synth_design" END { }
-if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
- send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"
-}
 
 
-OPTRACE "write_checkpoint" START { CHECKPOINT }
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
 write_checkpoint -force -noxdef caravel.dcp
-OPTRACE "write_checkpoint" END { }
-OPTRACE "synth reports" START { REPORT }
 create_report "synth_1_synth_report_utilization_0" "report_utilization -file caravel_utilization_synth.rpt -pb caravel_utilization_synth.pb"
-OPTRACE "synth reports" END { }
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]
-OPTRACE "synth_1" END { }

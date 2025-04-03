@@ -1,2 +1,0 @@
-DualPortMemory.v,verilog,xil_defaultlib,../../../../../24-25_npu/NPU_Userspace/NPU_Userspace.srcs/sources_1/ip/DualPortMemory/sim/DualPortMemory.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v

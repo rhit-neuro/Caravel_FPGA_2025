@@ -1,14 +1,12 @@
 #-----------------------------------------------------------
-# Vivado v2023.2 (64-bit)
-# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
-# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
-# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Tue Apr  1 14:00:53 2025
-# Process ID: 284051
-# Current directory: /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1
-# Command line: vivado -log caravel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source caravel.tcl
-# Log file: /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1/caravel.vds
-# Journal file: /home/beandog/senior-design/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1/vivado.jou
-# Running On: archlinux, OS: Linux, CPU Frequency: 4170.484 MHz, CPU Physical cores: 16, Host memory: 11905 MB
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Apr  3 00:07:17 2025
+# Process ID: 2816
+# Current directory: C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1
+# Command line: vivado.exe -log caravel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source caravel.tcl
+# Log file: C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1/caravel.vds
+# Journal file: C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source caravel.tcl -notrace

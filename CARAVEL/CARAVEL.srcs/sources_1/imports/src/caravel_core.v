@@ -106,7 +106,10 @@ module caravel_core (
 
     // User project direct access to gpio pad connections for analog
     // (all but the lowest-numbered 7 pads)
-    inout [`MPRJ_IO_PADS-10:0] mprj_analog_io
+    inout [`MPRJ_IO_PADS-10:0] mprj_analog_io,
+    
+    //CUSTOM DATA FOR 7 SEG DISPLAY **NOT CARAVEL**
+    output [31:0] SevenSegDisplay
 );
 
     //------------------------------------------------------------
@@ -479,7 +482,10 @@ module caravel_core (
 	.user_clock2(mprj_clock2),
 
 	// IRQ
-	.user_irq(user_irq_core)
+	.user_irq(user_irq_core),
+	
+	//CUSTOM DATA FOR 7 SEG DISPLAY **NOT CARAVEL**
+    .SevenSegDisplay(SevenSegDisplay)
     );
 
     /*------------------------------------------*/
