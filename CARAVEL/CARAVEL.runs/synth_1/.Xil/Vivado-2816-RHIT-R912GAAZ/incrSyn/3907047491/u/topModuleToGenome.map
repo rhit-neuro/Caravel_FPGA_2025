@@ -1,5 +1,0 @@
-caravel: caravel__GC0, caravel_core, 
-caravel_core: caravel_core__GCB3, caravel_core__GCB2, caravel_core__GCB1, caravel_core__GCB0, user_project_wrapper, 
-user_project_wrapper: user_project_wrapper__GC0, TopLevel, 
-TopLevel: TopLevel__GC0, LUT_Module, 
-LUT_Module: LUT_Module__GB1, LUT_Module__GB0, 

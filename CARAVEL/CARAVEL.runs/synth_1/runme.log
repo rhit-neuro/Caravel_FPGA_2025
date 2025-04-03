@@ -2709,3 +2709,724 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'i_0/SevenSegUnit/DisplayInput/Digit6_reg[7]' (FDR) to 'i_0/SevenSegUnit/DisplayInput/Digit2_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/SevenSegUnit/DisplayInput/Digit3_reg[7]' (FDR) to 'i_0/SevenSegUnit/DisplayInput/Digit2_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/SevenSegUnit/DisplayInput/Digit2_reg[7]' (FDR) to 'i_0/SevenSegUnit/DisplayInput/Digit0_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/SevenSegUnit/DisplayInput/Digit1_reg[7]' (FDR) to 'i_0/SevenSegUnit/DisplayInput/Digit0_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/SevenSegUnit/DisplayInput/Digit0_reg[7]' (FDR) to 'i_0/SevenSegUnit/DisplayInput/Digit7_reg[7]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[0]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[1]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[2]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[3]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[4]/gpio_dm_reg[1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[4]/gpio_dm_reg[2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[5]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[0]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[1]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[2]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[3]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[4]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[5]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[6]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[7]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[8]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[9]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[10]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[0]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[1]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[2]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[3]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[4]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[5]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[6]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[7]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[8]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[9]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[10]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[11]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[12]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[13]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[14]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[15]/gpio_dm_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[0]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[0]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[1]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[1]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[2]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[2]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[3]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[3]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[4]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[5]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[5]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[0]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[0]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[1]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[1]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[2]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[2]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[3]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[3]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[4]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[4]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[5]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[5]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[6]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[6]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[7]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[7]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[8]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[8]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[9]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[9]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[10]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[10]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[0]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[0]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[1]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[1]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[2]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[2]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[3]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[3]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[4]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[4]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[5]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[5]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[6]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[6]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[7]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[7]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[8]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[8]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[9]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[9]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[10]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[10]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[11]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[11]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[12]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[12]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[13]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[13]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[14]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[14]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[15]/gpio_outenb_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[15]/mgmt_ena_reg_LDC )
+INFO: [Synth 8-5545] ROM "Invalid" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+DSP Report: Generating DSP multiplier/Product, operation Mode is: A*B.
+DSP Report: operator multiplier/Product is absorbed into DSP multiplier/Product.
+DSP Report: operator multiplier/Product is absorbed into DSP multiplier/Product.
+DSP Report: Generating DSP multiplier/Product, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multiplier/Product is absorbed into DSP multiplier/Product.
+DSP Report: operator multiplier/Product is absorbed into DSP multiplier/Product.
+INFO: [Synth 8-4471] merging register 'pre_shift_reg[1:0]' into 'pre_shift_reg[1:0]' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_mm2s.v:687]
+INFO: [Synth 8-4471] merging register 'fill_reg[3:0]' into 'fill_reg[3:0]' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_rxgears.v:124]
+INFO: [Synth 8-4471] merging register 'decode_mul_rData_rs2_mantissa_reg[22:0]' into 'decode_mul_rData_rs2_mantissa_reg[22:0]' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12407]
+INFO: [Synth 8-4471] merging register 'decode_mul_rData_rs2_mantissa_reg[22:0]' into 'decode_mul_rData_rs2_mantissa_reg[22:0]' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12407]
+INFO: [Synth 8-4471] merging register 'decode_mul_rData_rs1_mantissa_reg[22:0]' into 'decode_mul_rData_rs1_mantissa_reg[22:0]' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12403]
+INFO: [Synth 8-4471] merging register 'decode_mul_rData_rs1_mantissa_reg[22:0]' into 'decode_mul_rData_rs1_mantissa_reg[22:0]' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12403]
+WARNING: [Synth 8-3936] Found unconnected internal register 'roundBack_input_payload_exactMask_reg' and it is trimmed from '25' to '24' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:9113]
+DSP Report: Generating DSP mul_sum1_output_rData_muls2_0_reg, operation Mode is: (A''*B2)'.
+DSP Report: register mul_sum1_output_rData_muls2_1_reg is absorbed into DSP mul_sum1_output_rData_muls2_0_reg.
+DSP Report: register decode_mul_rData_rs2_mantissa_reg is absorbed into DSP mul_sum1_output_rData_muls2_0_reg.
+DSP Report: register mul_sum1_output_rData_muls2_0_reg is absorbed into DSP mul_sum1_output_rData_muls2_0_reg.
+DSP Report: register mul_sum1_output_rData_muls2_0_reg is absorbed into DSP mul_sum1_output_rData_muls2_0_reg.
+DSP Report: register mul_mul_output_rData_muls_2_reg is absorbed into DSP mul_sum1_output_rData_muls2_0_reg.
+DSP Report: operator mul_mul_output_payload_muls_2 is absorbed into DSP mul_sum1_output_rData_muls2_0_reg.
+DSP Report: Generating DSP mul_mul_output_rData_muls_1_reg, operation Mode is: (A''*B2)'.
+DSP Report: register mul_sum1_output_rData_muls2_1_reg is absorbed into DSP mul_mul_output_rData_muls_1_reg.
+DSP Report: register decode_mul_rData_rs1_mantissa_reg is absorbed into DSP mul_mul_output_rData_muls_1_reg.
+DSP Report: register mul_mul_output_rData_muls_1_reg is absorbed into DSP mul_mul_output_rData_muls_1_reg.
+DSP Report: register mul_mul_output_rData_muls_1_reg is absorbed into DSP mul_mul_output_rData_muls_1_reg.
+DSP Report: operator mul_mul_output_payload_muls_1 is absorbed into DSP mul_mul_output_rData_muls_1_reg.
+DSP Report: Generating DSP mul_mul_output_rData_muls_0_reg, operation Mode is: (C+A''*B'')'.
+DSP Report: register decode_mul_rData_rs2_mantissa_reg is absorbed into DSP mul_mul_output_rData_muls_0_reg.
+DSP Report: register mul_mul_output_rData_muls_0_reg is absorbed into DSP mul_mul_output_rData_muls_0_reg.
+DSP Report: register decode_mul_rData_rs1_mantissa_reg is absorbed into DSP mul_mul_output_rData_muls_0_reg.
+DSP Report: register mul_mul_output_rData_muls_1_reg is absorbed into DSP mul_mul_output_rData_muls_0_reg.
+DSP Report: register mul_mul_output_rData_muls_0_reg is absorbed into DSP mul_mul_output_rData_muls_0_reg.
+DSP Report: operator mul_mul_output_payload_muls_0 is absorbed into DSP mul_mul_output_rData_muls_0_reg.
+DSP Report: operator mul_mul_output_payload_muls_0 is absorbed into DSP mul_mul_output_rData_muls_0_reg.
+INFO: [Synth 8-4471] merging register 'decode_to_execute_IS_RS1_SIGNED_reg' into 'decode_to_execute_IS_RS2_SIGNED_reg' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:3611]
+WARNING: [Synth 8-3936] Found unconnected internal register 'memory_to_writeBack_MUL_HH_reg' and it is trimmed from '34' to '32' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:3617]
+DSP Report: Generating DSP memory_to_writeBack_MUL_HH_reg, operation Mode is: (A*B)'.
+DSP Report: register memory_to_writeBack_MUL_HH_reg is absorbed into DSP memory_to_writeBack_MUL_HH_reg.
+DSP Report: register execute_to_memory_MUL_HH_reg is absorbed into DSP memory_to_writeBack_MUL_HH_reg.
+DSP Report: operator execute_MUL_HH is absorbed into DSP memory_to_writeBack_MUL_HH_reg.
+DSP Report: Generating DSP execute_to_memory_MUL_LH_reg, operation Mode is: (A*B)'.
+DSP Report: register execute_to_memory_MUL_LH_reg is absorbed into DSP execute_to_memory_MUL_LH_reg.
+DSP Report: operator execute_MUL_LH is absorbed into DSP execute_to_memory_MUL_LH_reg.
+DSP Report: Generating DSP execute_to_memory_MUL_HL_reg, operation Mode is: (A*B)'.
+DSP Report: register execute_to_memory_MUL_HL_reg is absorbed into DSP execute_to_memory_MUL_HL_reg.
+DSP Report: operator execute_MUL_HL is absorbed into DSP execute_to_memory_MUL_HL_reg.
+DSP Report: Generating DSP execute_to_memory_MUL_LL_reg, operation Mode is: (A*B)'.
+DSP Report: register execute_to_memory_MUL_LL_reg is absorbed into DSP execute_to_memory_MUL_LL_reg.
+DSP Report: operator execute_MUL_LL is absorbed into DSP execute_to_memory_MUL_LL_reg.
+WARNING: [Synth 8-3917] design caravel_core__GCB0 has port mprj_vcc_pwrgood driven by constant 1
+WARNING: [Synth 8-3917] design caravel_core__GCB0 has port mprj2_vcc_pwrgood driven by constant 1
+WARNING: [Synth 8-3917] design caravel_core__GCB0 has port mprj_vdd_pwrgood driven by constant 1
+WARNING: [Synth 8-3917] design caravel_core__GCB0 has port mprj2_vdd_pwrgood driven by constant 1
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM banks_0_reg to conserve power
+INFO: [Synth 8-3971] The signal "\soc/core /VexRiscv/FpuPlugin_fpu/rf_ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "\soc/core /VexRiscv/RegFilePlugin_regFile_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/FpuPlugin_fpu/mul_result_mulToAdd_rData_rs2_mantissa_reg[0]' (FDE) to 'soc/core/VexRiscv/FpuPlugin_fpu/mul_result_mulToAdd_rData_rs2_mantissa_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\soc/core /VexRiscv/FpuPlugin_fpu/\mul_result_mulToAdd_rData_rs2_mantissa_reg[1] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/FpuPlugin_fpu/mul_preMul_output_rData_rs2_mantissa_reg[21]' (FDE) to 'soc/core/VexRiscv/FpuPlugin_fpu/mul_sum1_output_rData_muls2_1_reg[-1111111108]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/FpuPlugin_fpu/mul_sum1_output_rData_muls2_1_reg[-1111111107]' (FDE) to 'soc/core/VexRiscv/FpuPlugin_fpu/mul_preMul_output_rData_rs2_mantissa_reg[22]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/FpuPlugin_fpu/mul_sum1_output_rData_muls2_1_reg[-1111111106]' (FDE) to 'soc/core/VexRiscv/FpuPlugin_fpu/mul_sum1_output_rData_muls2_1_reg[-1111111106]__0'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/FpuPlugin_fpu/mul_preMul_output_rData_rs1_mantissa_reg[18]' (FDE) to 'soc/core/VexRiscv/FpuPlugin_fpu/mul_sum1_output_rData_muls2_1_reg[-1111111111]__0'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/FpuPlugin_fpu/mul_preMul_output_rData_rs1_mantissa_reg[19]' (FDE) to 'soc/core/VexRiscv/FpuPlugin_fpu/mul_sum1_output_rData_muls2_1_reg[-1111111110]__0'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/FpuPlugin_fpu/mul_preMul_output_rData_rs1_mantissa_reg[20]' (FDE) to 'soc/core/VexRiscv/FpuPlugin_fpu/mul_sum1_output_rData_muls2_1_reg[-1111111109]__0'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/FpuPlugin_fpu/mul_preMul_output_rData_rs2_mantissa_reg[18]' (FDE) to 'soc/core/VexRiscv/FpuPlugin_fpu/mul_sum1_output_rData_muls2_1_reg[-1111111111]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/FpuPlugin_fpu/mul_preMul_output_rData_rs1_mantissa_reg[21]' (FDE) to 'soc/core/VexRiscv/FpuPlugin_fpu/mul_sum1_output_rData_muls2_1_reg[-1111111108]__0'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/FpuPlugin_fpu/mul_sum1_output_rData_muls2_1_reg[-1111111107]__0' (FDE) to 'soc/core/VexRiscv/FpuPlugin_fpu/mul_preMul_output_rData_rs1_mantissa_reg[22]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/FpuPlugin_fpu/mul_preMul_output_rData_rs2_mantissa_reg[19]' (FDE) to 'soc/core/VexRiscv/FpuPlugin_fpu/mul_sum1_output_rData_muls2_1_reg[-1111111110]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/FpuPlugin_fpu/mul_preMul_output_rData_rs2_mantissa_reg[20]' (FDE) to 'soc/core/VexRiscv/FpuPlugin_fpu/mul_sum1_output_rData_muls2_1_reg[-1111111109]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/CsrPlugin_interrupt_code_reg[0]' (FDSE) to 'soc/core/VexRiscv/CsrPlugin_interrupt_code_reg[1]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[0]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[0]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[1]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[1]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[2]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[2]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[3]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[3]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[4]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[4]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[5]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[5]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[6]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[6]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[7]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[7]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[8]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[8]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[9]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[9]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[10]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[10]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[11]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[11]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[12]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[12]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[13]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[13]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[14]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[14]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[15]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[15]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[16]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[16]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[17]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[17]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[18]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[18]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[19]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[19]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[20]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[20]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[21]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[21]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[22]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[22]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[23]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[23]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[24]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[24]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[25]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[25]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[26]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[26]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[27]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[27]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[28]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[28]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[29]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[29]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[30]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[30]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[31]' (FD) to 'soc/core/VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/IBusCachedPlugin_fetchPc_pcReg_reg[0]' (FDCPE) to 'soc/core/VexRiscv/IBusCachedPlugin_fetchPc_pcReg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/CsrPlugin_interrupt_targetPrivilege_reg[0]' (FDSE) to 'soc/core/VexRiscv/CsrPlugin_interrupt_targetPrivilege_reg[1]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/_zz_IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_payload_reg[0]' (FDE) to 'soc/core/VexRiscv/_zz_IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_payload_reg[1]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/decode_to_execute_ALU_BITWISE_CTRL_reg[1]' (FDE) to 'soc/core/VexRiscv/decode_to_execute_INSTRUCTION_reg[12]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/decode_to_execute_INSTRUCTION_reg[5]' (FDE) to 'soc/core/VexRiscv/decode_to_execute_MEMORY_WR_reg'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/decode_to_execute_PC_reg[0]' (FDE) to 'soc/core/VexRiscv/decode_to_execute_PC_reg[1]'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/dataCache_1/stageB_mmuRsp_refilling_reg' (FDE) to 'soc/core/VexRiscv/dataCache_1/stageB_mmuRsp_exception_reg'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/dataCache_1/stageB_mmuRsp_exception_reg' (FDE) to 'soc/core/VexRiscv/dataCache_1/stageB_mmuRsp_isPaging_reg'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/dataCache_1/stageB_mmuRsp_allowWrite_reg' (FDE) to 'soc/core/VexRiscv/dataCache_1/stageB_mmuRsp_allowRead_reg'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/IBusCachedPlugin_cache/decodeStage_mmuRsp_exception_reg' (FDE) to 'soc/core/VexRiscv/IBusCachedPlugin_cache/decodeStage_mmuRsp_refilling_reg'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/IBusCachedPlugin_cache/decodeStage_mmuRsp_isPaging_reg' (FDE) to 'soc/core/VexRiscv/IBusCachedPlugin_cache/decodeStage_mmuRsp_refilling_reg'
+INFO: [Synth 8-3886] merging instance 'soc/core/VexRiscv/IBusCachedPlugin_s2_tightlyCoupledHit_reg' (FDE) to 'soc/core/VexRiscv/_zz_IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_payload_reg[1]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface18_bank_bus_dat_r_reg[1]' (FDR) to 'soc/core/interface18_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface17_bank_bus_dat_r_reg[1]' (FDR) to 'soc/core/interface17_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface16_bank_bus_dat_r_reg[1]' (FDR) to 'soc/core/interface16_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface15_bank_bus_dat_r_reg[1]' (FDR) to 'soc/core/interface15_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface14_bank_bus_dat_r_reg[1]' (FDR) to 'soc/core/interface14_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface13_bank_bus_dat_r_reg[1]' (FDR) to 'soc/core/interface13_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface5_bank_bus_dat_r_reg[1]' (FDR) to 'soc/core/interface5_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface18_bank_bus_dat_r_reg[2]' (FDR) to 'soc/core/interface18_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface17_bank_bus_dat_r_reg[2]' (FDR) to 'soc/core/interface17_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface16_bank_bus_dat_r_reg[2]' (FDR) to 'soc/core/interface16_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface15_bank_bus_dat_r_reg[2]' (FDR) to 'soc/core/interface15_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface14_bank_bus_dat_r_reg[2]' (FDR) to 'soc/core/interface14_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface13_bank_bus_dat_r_reg[2]' (FDR) to 'soc/core/interface13_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface5_bank_bus_dat_r_reg[2]' (FDR) to 'soc/core/interface5_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface18_bank_bus_dat_r_reg[3]' (FDR) to 'soc/core/interface18_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface17_bank_bus_dat_r_reg[3]' (FDR) to 'soc/core/interface17_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface16_bank_bus_dat_r_reg[3]' (FDR) to 'soc/core/interface16_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface15_bank_bus_dat_r_reg[3]' (FDR) to 'soc/core/interface15_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface14_bank_bus_dat_r_reg[3]' (FDR) to 'soc/core/interface14_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface13_bank_bus_dat_r_reg[3]' (FDR) to 'soc/core/interface13_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface5_bank_bus_dat_r_reg[3]' (FDR) to 'soc/core/interface5_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface18_bank_bus_dat_r_reg[4]' (FDR) to 'soc/core/interface18_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface17_bank_bus_dat_r_reg[4]' (FDR) to 'soc/core/interface17_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface16_bank_bus_dat_r_reg[4]' (FDR) to 'soc/core/interface16_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface15_bank_bus_dat_r_reg[4]' (FDR) to 'soc/core/interface15_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface14_bank_bus_dat_r_reg[4]' (FDR) to 'soc/core/interface14_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface13_bank_bus_dat_r_reg[4]' (FDR) to 'soc/core/interface13_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface5_bank_bus_dat_r_reg[4]' (FDR) to 'soc/core/interface5_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface18_bank_bus_dat_r_reg[5]' (FDR) to 'soc/core/interface18_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface17_bank_bus_dat_r_reg[5]' (FDR) to 'soc/core/interface17_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface16_bank_bus_dat_r_reg[5]' (FDR) to 'soc/core/interface16_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface15_bank_bus_dat_r_reg[5]' (FDR) to 'soc/core/interface15_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface14_bank_bus_dat_r_reg[5]' (FDR) to 'soc/core/interface14_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface13_bank_bus_dat_r_reg[5]' (FDR) to 'soc/core/interface13_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface5_bank_bus_dat_r_reg[5]' (FDR) to 'soc/core/interface5_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface18_bank_bus_dat_r_reg[6]' (FDR) to 'soc/core/interface18_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface17_bank_bus_dat_r_reg[6]' (FDR) to 'soc/core/interface17_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'soc/core/interface16_bank_bus_dat_r_reg[6]' (FDR) to 'soc/core/interface16_bank_bus_dat_r_reg[31]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:10:09 ; elapsed = 00:11:08 . Memory (MB): peak = 1233.066 ; gain = 672.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping	Report (see note below)
++-------------------------------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                | RTL Object              | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------------------------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|TopLevel__GC0                              | SD/fifo_b_reg           | 128 x 32(READ_FIRST)   | W |   | 128 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|TopLevel__GC0                              | SD/fifo_a_reg           | 128 x 32(READ_FIRST)   | W |   | 128 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|\soc/core /RAM256                          | RAM_reg                 | 256 x 32(READ_FIRST)   | W |   | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|\soc/core /RAM128                          | RAM_reg                 | 128 x 32(READ_FIRST)   | W |   | 128 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|\soc/core /VexRiscv/IBusCachedPlugin_cache | banks_0_reg             | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\soc/core /VexRiscv/IBusCachedPlugin_cache | ways_0_tags_reg         | 128 x 22(READ_FIRST)   | W |   | 128 x 22(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|\soc/core /VexRiscv/dataCache_1            | ways_0_tags_reg         | 128 x 22(READ_FIRST)   | W |   | 128 x 22(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|\soc/core /VexRiscv/dataCache_1            | ways_0_data_symbol0_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|\soc/core /VexRiscv/dataCache_1            | ways_0_data_symbol1_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|\soc/core /VexRiscv/dataCache_1            | ways_0_data_symbol2_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|\soc/core /VexRiscv/dataCache_1            | ways_0_data_symbol3_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++-------------------------------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++----------------------------------+-----------------------------+----------------+----------------------+---------------+
+|Module Name                       | RTL Object                  | Inference      | Size (Depth x Width) | Primitives    | 
++----------------------------------+-----------------------------+----------------+----------------------+---------------+
+|DMA                               | u_sfifo/mem_reg             | Implied        | 256 x 36             | RAM64M x 48	  | 
+|\soc/core /VexRiscv/FpuPlugin_fpu | rf_scoreboards_0_target_reg | User Attribute | 32 x 1               | RAM32X1D x 4	 | 
+|\soc/core /VexRiscv/FpuPlugin_fpu | rf_scoreboards_0_hit_reg    | User Attribute | 32 x 1               | RAM32X1D x 5	 | 
+|\soc/core /VexRiscv/FpuPlugin_fpu | rf_scoreboards_0_writes_reg | User Attribute | 32 x 1               | RAM32X1D x 1	 | 
+|\soc/core                         | storage_1_reg               | Implied        | 16 x 8               | RAM32M x 2	   | 
+|\soc/core                         | storage_reg                 | Implied        | 16 x 8               | RAM32M x 2	   | 
++----------------------------------+-----------------------------+----------------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping	Report (see note below)
++-----------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name            | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FpuCore                | (A''*B2)'      | 18     | 6      | -      | -      | 24     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|FpuCore                | (A''*B2)'      | 18     | 6      | -      | -      | 24     | 2    | 1    | -    | -    | -     | 1    | 0    | 
+|FpuCore                | (C+A''*B'')'   | 18     | 17     | 35     | -      | 36     | 2    | 2    | 0    | -    | -     | 0    | 1    | 
+|VexRiscv               | (A*B)'         | 17     | 17     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 1    | 1    | 
+|VexRiscv               | (A*B)'         | 17     | 17     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|VexRiscv               | (A*B)'         | 17     | 17     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|VexRiscv               | (A*B)'         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 1    | 0    | 
++-----------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------------+------------+----------+
+|      |RTL Partition             |Replication |Instances |
++------+--------------------------+------------+----------+
+|1     |LUT_Module__GB0           |           1|     20630|
+|2     |LUT_Module__GB1           |           1|     12368|
+|3     |TopLevel__GC0             |           1|      7580|
+|4     |user_project_wrapper__GC0 |           1|       355|
+|5     |caravel_core__GCB0        |           1|     23302|
+|6     |caravel_core__GCB1        |           1|      4348|
+|7     |caravel_core__GCB2        |           1|       141|
+|8     |caravel_core__GCB3        |           1|       857|
+|9     |caravel__GC0              |           1|       524|
++------+--------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'clock100'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:10:22 ; elapsed = 00:11:21 . Memory (MB): peak = 1233.066 ; gain = 672.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:15:56 ; elapsed = 00:17:09 . Memory (MB): peak = 5331.281 ; gain = 4770.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++-------------------------------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                | RTL Object              | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------------------------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|TopLevel__GC0                              | SD/fifo_a_reg           | 128 x 32(READ_FIRST)   | W |   | 128 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|TopLevel__GC0                              | SD/fifo_b_reg           | 128 x 32(READ_FIRST)   | W |   | 128 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|\soc/core /RAM256                          | RAM_reg                 | 256 x 32(READ_FIRST)   | W |   | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|\soc/core /RAM128                          | RAM_reg                 | 128 x 32(READ_FIRST)   | W |   | 128 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|\soc/core /VexRiscv/IBusCachedPlugin_cache | banks_0_reg             | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\soc/core /VexRiscv/IBusCachedPlugin_cache | ways_0_tags_reg         | 128 x 22(READ_FIRST)   | W |   | 128 x 22(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|\soc/core /VexRiscv/dataCache_1            | ways_0_tags_reg         | 128 x 22(READ_FIRST)   | W |   | 128 x 22(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|\soc/core /VexRiscv/dataCache_1            | ways_0_data_symbol0_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|\soc/core /VexRiscv/dataCache_1            | ways_0_data_symbol1_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|\soc/core /VexRiscv/dataCache_1            | ways_0_data_symbol2_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|\soc/core /VexRiscv/dataCache_1            | ways_0_data_symbol3_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++-------------------------------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping	Report
++----------------------------------+-----------------------------+----------------+----------------------+---------------+
+|Module Name                       | RTL Object                  | Inference      | Size (Depth x Width) | Primitives    | 
++----------------------------------+-----------------------------+----------------+----------------------+---------------+
+|\soc/core /VexRiscv/FpuPlugin_fpu | rf_scoreboards_0_target_reg | User Attribute | 32 x 1               | RAM32X1D x 4	 | 
+|\soc/core /VexRiscv/FpuPlugin_fpu | rf_scoreboards_0_hit_reg    | User Attribute | 32 x 1               | RAM32X1D x 5	 | 
+|\soc/core /VexRiscv/FpuPlugin_fpu | rf_scoreboards_0_writes_reg | User Attribute | 32 x 1               | RAM32X1D x 1	 | 
+|\soc/core                         | storage_1_reg               | Implied        | 16 x 8               | RAM32M x 2	   | 
+|\soc/core                         | storage_reg                 | Implied        | 16 x 8               | RAM32M x 2	   | 
+|DMA                               | u_sfifo/mem_reg             | Implied        | 256 x 36             | RAM64M x 48	  | 
++----------------------------------+-----------------------------+----------------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |caravel_core__GCB1 |           1|      4150|
+|2     |caravel_core__GCB2 |           1|       141|
+|3     |caravel_core__GCB3 |           1|       857|
+|4     |caravel__GC0       |           1|       523|
+|5     |caravel_GT0        |           1|      6670|
+|6     |caravel_GT1        |           1|      3338|
+|7     |caravel_GT2        |           1|     47189|
+|8     |caravel_GT3        |           1|      4184|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7053] The timing for the instance chip_corei_1/chip_core/mprj/TopLevel/SD/fifo_a_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_corei_2/chip_core/mprj/TopLevel/SD/fifo_b_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+WARNING: [Synth 8-565] redefining clock 'clock100'
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12403]
+INFO: [Synth 8-7053] The timing for the instance chip_corei_3/chip_core/soc/core/RAM256/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_corei_3/chip_core/soc/core/RAM128/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_corei_3/chip_core/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_corei_3/chip_core/soc/core/VexRiscv/dataCache_1/ways_0_tags_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_corei_3/chip_core/soc/core/VexRiscv/FpuPlugin_fpu/rf_ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_corei_3/chip_core/soc/core/VexRiscv/FpuPlugin_fpu/rf_ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_corei_3/chip_core/soc/core/VexRiscv/FpuPlugin_fpu/rf_ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_corei_3/chip_core/soc/core/VexRiscv/RegFilePlugin_regFile_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_corei_3/chip_core/soc/core/VexRiscv/RegFilePlugin_regFile_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:16:05 ; elapsed = 00:22:26 . Memory (MB): peak = 5331.281 ; gain = 4770.773
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |caravel_core__GCB1 |           1|      2052|
+|2     |caravel_core__GCB2 |           1|       108|
+|3     |caravel_core__GCB3 |           1|       692|
+|4     |caravel__GC0       |           1|       256|
+|5     |caravel_GT0        |           1|      6668|
+|6     |caravel_GT1        |           1|      3343|
+|7     |caravel_GT2        |           1|     19954|
+|8     |caravel_GT3        |           1|      2150|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12403]
+INFO: [Synth 8-7053] The timing for the instance chip_core/mprj/TopLevel/SD/fifo_a_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_core/mprj/TopLevel/SD/fifo_b_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_core/soc/core/RAM256/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_core/soc/core/RAM128/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_core/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_core/soc/core/VexRiscv/dataCache_1/ways_0_tags_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_core/soc/core/VexRiscv/FpuPlugin_fpu/rf_ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_core/soc/core/VexRiscv/FpuPlugin_fpu/rf_ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_core/soc/core/VexRiscv/FpuPlugin_fpu/rf_ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_core/soc/core/VexRiscv/RegFilePlugin_regFile_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_core/soc/core/VexRiscv/RegFilePlugin_regFile_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6030] Inout pin 'flash_io1' is read and/or written without using tristate logic. Proper direction of connection may be wrongly inferred. Please use specific direction to avoid any incorrect logic issue [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel.v:46]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:16:14 ; elapsed = 00:22:37 . Memory (MB): peak = 5331.281 ; gain = 4770.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:16:15 ; elapsed = 00:22:37 . Memory (MB): peak = 5331.281 ; gain = 4770.773
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:16:21 ; elapsed = 00:22:43 . Memory (MB): peak = 5331.281 ; gain = 4770.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:16:21 ; elapsed = 00:22:43 . Memory (MB): peak = 5331.281 ; gain = 4770.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:16:22 ; elapsed = 00:22:44 . Memory (MB): peak = 5331.281 ; gain = 4770.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:16:22 ; elapsed = 00:22:44 . Memory (MB): peak = 5331.281 ; gain = 4770.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|caravel     | chip_core/por_fpga/reset_reg                                       | 9      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|caravel     | chip_core/mprj/TopLevel/SD/GEN_CARD_DETECT.raw_card_present_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|caravel     | chip_core/gpio_control_bidir_1[0]/shift_register_reg[10]           | 9      | 2     | YES          | NO                 | YES               | 2      | 0       | 
+|caravel     | chip_core/gpio_control_bidir_2[2]/shift_register_reg[10]           | 9      | 3     | YES          | NO                 | YES               | 3      | 0       | 
+|caravel     | chip_core/gpio_control_in_1a[5]/shift_register_reg[10]             | 9      | 6     | YES          | NO                 | YES               | 6      | 0       | 
+|caravel     | chip_core/gpio_control_in_2[15]/shift_register_reg[10]             | 9      | 16    | YES          | NO                 | YES               | 16     | 0       | 
+|caravel     | chip_core/gpio_control_in_1[10]/shift_register_reg[10]             | 9      | 11    | YES          | NO                 | YES               | 11     | 0       | 
++------------+--------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_fix       |         1|
+|2     |bram          |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |bram       |     1|
+|2     |clk_fix    |     1|
+|3     |BUFG       |     4|
+|4     |CARRY4     |   636|
+|5     |DSP48E1    |     1|
+|6     |DSP48E1_1  |     1|
+|7     |DSP48E1_4  |     1|
+|8     |DSP48E1_6  |     1|
+|9     |DSP48E1_7  |     1|
+|10    |DSP48E1_8  |     1|
+|11    |DSP48E1_9  |     3|
+|12    |LUT1       |   500|
+|13    |LUT2       |  1200|
+|14    |LUT3       |  2231|
+|15    |LUT4       |  1851|
+|16    |LUT5       |  3381|
+|17    |LUT6       |  7729|
+|18    |MUXF7      |   532|
+|19    |MUXF8      |    75|
+|20    |RAM32M     |     4|
+|21    |RAM32X1D   |    10|
+|22    |RAM64M     |    48|
+|23    |RAMB18E1   |    10|
+|24    |RAMB18E1_2 |     1|
+|25    |RAMB18E1_3 |     4|
+|26    |RAMB36E1   |     1|
+|27    |SRL16E     |    40|
+|28    |STARTUPE2  |     1|
+|29    |FDCE       |  1099|
+|30    |FDPE       |   281|
+|31    |FDRE       | 15033|
+|32    |FDSE       |   432|
+|33    |IBUF       |     2|
+|34    |IOBUF      |    40|
+|35    |OBUF       |    24|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------------------------------+------------------------+------+
+|      |Instance                         |Module                  |Cells |
++------+---------------------------------+------------------------+------+
+|1     |top                              |                        | 35211|
+|2     |  Dig0                           |HEXto7Segment           |     6|
+|3     |  Dig1                           |HEXto7Segment_0         |     6|
+|4     |  Dig2                           |HEXto7Segment_1         |     6|
+|5     |  Dig3                           |HEXto7Segment_2         |     6|
+|6     |  Dig4                           |HEXto7Segment_3         |     1|
+|7     |  Dig5                           |HEXto7Segment_4         |     1|
+|8     |  Dig6                           |HEXto7Segment_5         |     6|
+|9     |  Dig7                           |HEXto7Segment_6         |     6|
+|10    |  SevenSegUnit                   |SevenSegDriverNexysA7   |   128|
+|11    |    DisplayInput                 |DisplayMuxNexysA7       |    60|
+|12    |    Update                       |Refreshing7SegNexysA7   |    68|
+|13    |  chip_core                      |caravel_core            | 34973|
+|14    |    clock_ctrl                   |caravel_clocking        |     8|
+|15    |    \gpio_control_bidir_1[0]     |gpio_control_block      |    17|
+|16    |    \gpio_control_bidir_1[1]     |gpio_control_block_7    |    17|
+|17    |    \gpio_control_bidir_2[0]     |gpio_control_block_8    |    16|
+|18    |    \gpio_control_bidir_2[1]     |gpio_control_block_9    |    16|
+|19    |    \gpio_control_bidir_2[2]     |gpio_control_block_10   |    16|
+|20    |    \gpio_control_in_1[0]        |gpio_control_block_11   |    16|
+|21    |    \gpio_control_in_1[10]       |gpio_control_block_12   |    15|
+|22    |    \gpio_control_in_1[1]        |gpio_control_block_13   |    16|
+|23    |    \gpio_control_in_1[2]        |gpio_control_block_14   |    16|
+|24    |    \gpio_control_in_1[3]        |gpio_control_block_15   |    16|
+|25    |    \gpio_control_in_1[4]        |gpio_control_block_16   |    16|
+|26    |    \gpio_control_in_1[5]        |gpio_control_block_17   |    16|
+|27    |    \gpio_control_in_1[6]        |gpio_control_block_18   |    16|
+|28    |    \gpio_control_in_1[7]        |gpio_control_block_19   |    16|
+|29    |    \gpio_control_in_1[8]        |gpio_control_block_20   |    16|
+|30    |    \gpio_control_in_1[9]        |gpio_control_block_21   |    16|
+|31    |    \gpio_control_in_1a[0]       |gpio_control_block_22   |    16|
+|32    |    \gpio_control_in_1a[1]       |gpio_control_block_23   |    16|
+|33    |    \gpio_control_in_1a[2]       |gpio_control_block_24   |    16|
+|34    |    \gpio_control_in_1a[3]       |gpio_control_block_25   |    16|
+|35    |    \gpio_control_in_1a[4]       |gpio_control_block_26   |    16|
+|36    |    \gpio_control_in_1a[5]       |gpio_control_block_27   |    16|
+|37    |    \gpio_control_in_2[0]        |gpio_control_block_28   |    15|
+|38    |    \gpio_control_in_2[10]       |gpio_control_block_29   |    16|
+|39    |    \gpio_control_in_2[11]       |gpio_control_block_30   |    16|
+|40    |    \gpio_control_in_2[12]       |gpio_control_block_31   |    16|
+|41    |    \gpio_control_in_2[13]       |gpio_control_block_32   |    16|
+|42    |    \gpio_control_in_2[14]       |gpio_control_block_33   |    16|
+|43    |    \gpio_control_in_2[15]       |gpio_control_block_34   |    16|
+|44    |    \gpio_control_in_2[1]        |gpio_control_block_35   |    16|
+|45    |    \gpio_control_in_2[2]        |gpio_control_block_36   |    16|
+|46    |    \gpio_control_in_2[3]        |gpio_control_block_37   |    16|
+|47    |    \gpio_control_in_2[4]        |gpio_control_block_38   |    16|
+|48    |    \gpio_control_in_2[5]        |gpio_control_block_39   |    16|
+|49    |    \gpio_control_in_2[6]        |gpio_control_block_40   |    16|
+|50    |    \gpio_control_in_2[7]        |gpio_control_block_41   |    16|
+|51    |    \gpio_control_in_2[8]        |gpio_control_block_42   |    16|
+|52    |    \gpio_control_in_2[9]        |gpio_control_block_43   |    16|
+|53    |    housekeeping                 |housekeeping            |  1947|
+|54    |      hkspi                      |housekeeping_spi        |   642|
+|55    |    mprj                         |user_project_wrapper    | 20652|
+|56    |      TopLevel                   |TopLevel                | 20610|
+|57    |        DMA                      |zipdma                  |  2302|
+|58    |          u_arbiter              |wbarbiter               |     6|
+|59    |          u_controller           |zipdma_ctrl             |   161|
+|60    |          u_dma_fsm              |zipdma_fsm              |   508|
+|61    |          u_mm2s                 |zipdma_mm2s             |   847|
+|62    |          u_rxgears              |zipdma_rxgears          |   156|
+|63    |          u_s2mm                 |zipdma_s2mm             |   326|
+|64    |          u_sfifo                |sfifo                   |   180|
+|65    |          u_txgears              |zipdma_txgears          |   118|
+|66    |        LUT                      |LUT_Module              | 16780|
+|67    |          B_Unit_1               |Memory_Unit             |  1376|
+|68    |          B_Unit_2               |Memory_Unit_44          |  1436|
+|69    |          B_Unit_3               |Memory_Unit_45          |  1408|
+|70    |          MAC_Unit               |LUT_MAC_Module          |   758|
+|71    |            adder                |FloatingAddition        |    16|
+|72    |              pe                 |Priority_Encoder        |     2|
+|73    |            multiplier           |FloatingMultiplication  |   742|
+|74    |          M_Unit_1               |Memory_Unit_46          |  1511|
+|75    |          M_Unit_2               |Memory_Unit_47          |  1472|
+|76    |          M_Unit_3               |Memory_Unit_48          |  1484|
+|77    |          V_Unit_1               |Parallel_Memory_Unit    |  1376|
+|78    |          V_Unit_2               |Parallel_Memory_Unit_49 |  1376|
+|79    |          V_Unit_3               |Parallel_Memory_Unit_50 |  2400|
+|80    |          lut_arb                |LUT_Arbiter             |  2140|
+|81    |          wb3_intf               |WB3_Interface_51        |     7|
+|82    |          wb4_intf               |WB4_Interface_52        |    36|
+|83    |        Mem                      |memory_intf             |   151|
+|84    |          mem_arb                |Memory_Arbiter          |   104|
+|85    |          wb3_intf               |WB3_Interface           |    10|
+|86    |          wb4_intf               |WB4_Interface           |     5|
+|87    |        SD                       |sdspi                   |  1357|
+|88    |          lowlevel               |llsdspi                 |   124|
+|89    |          spicmdi                |spicmd                  |   289|
+|90    |          spirxdatai             |spirxdata               |   262|
+|91    |          spitxdatai             |spitxdata               |   316|
+|92    |      debug                      |debug_regs              |     4|
+|93    |    por_fpga                     |FPGA_POR                |     2|
+|94    |    soc                          |mgmt_core_wrapper       | 11710|
+|95    |      core                       |mgmt_core               | 11673|
+|96    |        RAM128                   |RAM128                  |    63|
+|97    |        RAM256                   |RAM256                  |    86|
+|98    |        VexRiscv                 |VexRiscv                |  9098|
+|99    |          FpuPlugin_fpu          |FpuCore                 |  4390|
+|100   |            div_divider          |FpuDiv                  |   420|
+|101   |            sqrt_sqrt            |FpuSqrt                 |   316|
+|102   |          IBusCachedPlugin_cache |InstructionCache        |  1733|
+|103   |          dataCache_1            |DataCache               |   611|
++------+---------------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:16:22 ; elapsed = 00:22:44 . Memory (MB): peak = 5331.281 ; gain = 4770.773
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 130 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:16:02 ; elapsed = 00:22:38 . Memory (MB): peak = 5331.281 ; gain = 4570.836
+Synthesis Optimization Complete : Time (s): cpu = 00:16:22 ; elapsed = 00:22:47 . Memory (MB): peak = 5331.281 ; gain = 4770.773
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.492 . Memory (MB): peak = 5331.281 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1371 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 5331.281 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 102 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 40 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 10 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 48 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+566 Infos, 301 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:16:32 ; elapsed = 00:22:59 . Memory (MB): peak = 5331.281 ; gain = 5037.355
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 5331.281 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1/caravel.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file caravel_utilization_synth.rpt -pb caravel_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  3 00:30:28 2025...
