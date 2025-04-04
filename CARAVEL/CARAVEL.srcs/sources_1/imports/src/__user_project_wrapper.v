@@ -86,7 +86,7 @@ module user_project_wrapper #(
     output [2:0] user_irq,
     
     //CUSTOM DATA FOR 7 SEG DISPLAY **NOT CARAVEL**
-    output reg [31:0] SevenSegDisplay
+    output wire [31:0] SevenSegDisplay
 );
 
 // splitting the address space to user address space and debug address space 
@@ -105,15 +105,6 @@ assign wbs_cyc_i_debug = (wbs_adr_i[31:3] == 29'h601FFFF) ? wbs_cyc_i : 0;
 
 assign wbs_ack_o = (wbs_adr_i[31:3] == 28'h601FFFF) ? wbs_ack_o_debug : wbs_ack_o_user; 
 assign wbs_dat_o = (wbs_adr_i[31:3] == 28'h601FFFF) ? wbs_dat_o_debug : wbs_dat_o_user; 
-
-//register to hold last memory writes for 7 segment display
-wire enable_last_mem = (wbs_adr_i[31:24] == 8'h30) && wbs_we_i && wbs_cyc_i_user && wbs_stb_i && !wbs_ack_o;
-always @(posedge wb_clk_i)
-    if (wb_rst_i)
-        SevenSegDisplay <= 32'b0;
-    else if (enable_last_mem) begin
-            SevenSegDisplay <= wbs_dat_i;
-    end
 
 
 debug_regs debug(
@@ -149,7 +140,10 @@ TopLevel TopLevel(
     .io_oeb(io_oeb),
     .analog_io(analog_io),
     .user_clock2(user_clock2),
-    .user_irq(user_irq)
+    .user_irq(user_irq),
+    
+    //CUSTOM DATA FOR 7 SEG DISPLAY **NOT CARAVEL**
+    .SevenSegDisplay(SevenSegDisplay)
 );
 
 endmodule	// user_project_wrapper

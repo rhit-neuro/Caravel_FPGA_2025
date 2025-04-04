@@ -67,7 +67,10 @@ module TopLevel #(
     input wire user_clock2,
 
     // User maskable interrupt signals
-    output wire [2:0] user_irq
+    output wire [2:0] user_irq,
+    
+    //CUSTOM DATA FOR 7 SEG DISPLAY **NOT CARAVEL**
+    output wire [31:0] SevenSegDisplay
 );
 
 //Assign Address Space
@@ -288,7 +291,11 @@ memory_intf Mem(
     .wb4_sel_i(usr_wb_sel),
     .wb4_dat_i(usr_wb_dat_mo),
     .wb4_dat_o(mem_dat_4),
-    .wb4_ack_o(mem_ack_4), .wb4_stall_o(mem_stall_4), .wb4_err_o(usr_wb_err)
+    .wb4_ack_o(mem_ack_4), .wb4_stall_o(mem_stall_4), .wb4_err_o(usr_wb_err),
+    
+        //CUSTOM DATA FOR 7 SEG DISPLAY **NOT CARAVEL**
+    .SevenSegDisplay(SevenSegDisplay)
+    
 );
 
 

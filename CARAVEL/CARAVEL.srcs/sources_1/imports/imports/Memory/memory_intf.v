@@ -44,9 +44,21 @@ input wire [AddressWidth-1:0] wb4_adr_i,
 input wire [(DataWidth/8)-1:0] wb4_sel_i,
 input wire [DataWidth-1:0] wb4_dat_i,
 output wire [DataWidth-1:0] wb4_dat_o,
-output wire wb4_ack_o, wb4_stall_o, wb4_err_o
+output wire wb4_ack_o, wb4_stall_o, wb4_err_o,
+
+    //CUSTOM DATA FOR 7 SEG DISPLAY **NOT CARAVEL**
+    output reg [31:0] SevenSegDisplay
 
 );
+
+//register to hold last memory writes for 7 segment display
+wire enable_last_mem = wb3_we_i && wb3_cyc_i && wb3_stb_i && !wb3_ack_o;
+always @(posedge clock or posedge reset)
+    if (reset)
+        SevenSegDisplay <= 32'b0;
+    else if (enable_last_mem) begin
+            SevenSegDisplay <= wb3_dat_i;
+    end
 
     // b3 wires
     wire [31:0] b3_adr;

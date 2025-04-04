@@ -58,7 +58,7 @@ module WB3_Interface (
     assign wbs3_ack_o = b3_active ? (current_state == WRITE_ACK | (current_state == READ_ACK & ~b3_busy)) : 1'b0;
     
     // State transition logic
-    always @(posedge wb3_clk_i) begin
+    always @(posedge wb3_clk_i or posedge wb3_rst_i) begin
         if (wb3_rst_i) begin
             current_state <= READY;
         end else begin
