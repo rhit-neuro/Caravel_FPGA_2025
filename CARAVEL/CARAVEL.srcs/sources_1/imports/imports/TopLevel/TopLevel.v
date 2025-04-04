@@ -72,11 +72,11 @@ module TopLevel #(
 
 //Assign Address Space
 //this will be the top 8 bits of the address
-localparam [7:0] ADDR_MEMORY = 8'h30,
-                 ADDR_DMA = 8'h40,
-                 ADDR_LUT = 8'h50,
-                 ADDR_SD = 8'h60,
-                 ADDR_SYNAPTIC = 8'h70;
+localparam [11:0] ADDR_MEMORY = 12'h300,
+                  ADDR_DMA = 12'h304,
+                  ADDR_LUT = 12'h305,
+                  ADDR_SD = 12'h306,
+                  ADDR_SYNAPTIC = 12'h307;
 
 //Userspace Wishbone wires (B4 wishbone, DMA controlled)
 wire usr_wb_clk = wb_clk_i; //same clock for now
@@ -115,7 +115,7 @@ reg dma_stb;
 reg lut3_stb;
         
 always @(*)
-    case(wbs_adr_i[31:24])
+    case(wbs_adr_i[31:20])
     ADDR_MEMORY: begin
         mem3_stb <= wbs_stb_i;
         dma_stb <= 0;
@@ -145,7 +145,7 @@ reg sd_stb;
 reg synaptic_stb;
         
 always @(*)
-    case(usr_wb_adr[31:24])
+    case(usr_wb_adr[31:20])
     ADDR_MEMORY: begin
         mem4_stb <= usr_wb_stb;
         lut4_stb <= 0;
@@ -183,7 +183,7 @@ wire mem_ack_3, dma_ack_3, lut_ack_3;
 wire [31:0] mem_dat_3, dma_dat_3, lut_dat_3;
 
 always @(*)
-    case(wbs_adr_i[31:24])
+    case(wbs_adr_i[31:20])
     ADDR_MEMORY: begin
         wbs_ack_o <= mem_ack_3;
         wbs_dat_o <= mem_dat_3;
@@ -208,7 +208,7 @@ wire mem_stall_4, lut_stall_4, sd_stall_4, syn_stall_4;
 wire [31:0] mem_dat_4, lut_dat_4, sd_dat_4, syn_dat_4;
   
 always @(*)
-    case(usr_wb_adr[31:24])
+    case(usr_wb_adr[31:20])
     ADDR_MEMORY: begin
         usr_wb_ack <= mem_ack_4;
         usr_wb_stall <= mem_stall_4;

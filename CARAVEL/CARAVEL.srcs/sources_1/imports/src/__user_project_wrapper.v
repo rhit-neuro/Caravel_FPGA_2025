@@ -100,18 +100,17 @@ wire wbs_ack_o_debug;
 wire [31:0] wbs_dat_o_debug;
 
 // reserve the last 2 regs for debugging registers
-// base address for debugging is 0x30FFFFFa
-assign wbs_cyc_i_user  = (wbs_adr_i[31:3] != 29'h61FFFFF) ? wbs_cyc_i : 0; 
-assign wbs_cyc_i_debug = (wbs_adr_i[31:3] == 29'h61FFFFF) ? wbs_cyc_i : 0; 
+assign wbs_cyc_i_user  = (wbs_adr_i[31:3] != 29'h601FFFF) ? wbs_cyc_i : 0; 
+assign wbs_cyc_i_debug = (wbs_adr_i[31:3] == 29'h601FFFF) ? wbs_cyc_i : 0; 
 
-assign wbs_ack_o = (wbs_adr_i[31:3] == 28'h61FFFFF) ? wbs_ack_o_debug : wbs_ack_o_user; 
-assign wbs_dat_o = (wbs_adr_i[31:3] == 28'h61FFFFF) ? wbs_dat_o_debug : wbs_dat_o_user; 
+assign wbs_ack_o = (wbs_adr_i[31:3] == 28'h601FFFF) ? wbs_ack_o_debug : wbs_ack_o_user; 
+assign wbs_dat_o = (wbs_adr_i[31:3] == 28'h601FFFF) ? wbs_dat_o_debug : wbs_dat_o_user; 
 
 //register to hold last memory writes for 7 segment display
-wire enable_last_mem = (wbs_adr_i[31:24] == 8'h30) & wbs_we_i & wbs_cyc_i_user & wbs_stb_i;
+wire enable_last_mem = (wbs_adr_i[31:24] == 8'h30) && wbs_we_i && wbs_cyc_i_user && wbs_stb_i && !wbs_ack_o;
 always @(posedge wb_clk_i)
     if (wb_rst_i)
-        SevenSegDisplay = 32'b0;
+        SevenSegDisplay <= 32'b0;
     else if (enable_last_mem) begin
             SevenSegDisplay <= wbs_dat_i;
     end

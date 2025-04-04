@@ -15,7 +15,7 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 28820 
+INFO: Helper process launched with PID 12352 
 WARNING: [Synth 8-2507] parameter declaration becomes local in Refreshing7SegNexysA7 with formal parameter declaration list [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/lab6ece433fall2024tempate/Refreshing7SegNexysA7.v:12]
 WARNING: [Synth 8-2507] parameter declaration becomes local in Refreshing7SegNexysA7 with formal parameter declaration list [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/lab6ece433fall2024tempate/Refreshing7SegNexysA7.v:13]
 WARNING: [Synth 8-2611] redeclaration of ansi port ser_rx_out is not allowed [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel.v:236]
@@ -25,12 +25,12 @@ WARNING: [Synth 8-2611] redeclaration of ansi port sdi_out is not allowed [C:/Xi
 WARNING: [Synth 8-2611] redeclaration of ansi port csb_out is not allowed [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel.v:241]
 WARNING: [Synth 8-2611] redeclaration of ansi port sck_out is not allowed [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel.v:242]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 803.102 ; gain = 243.309
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 800.078 ; gain = 240.723
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'caravel' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel.v:46]
 	Parameter USER_PROJECT_ID bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'clk_fix' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1/.Xil/Vivado-18416-RHIT-R912GAAZ/realtime/clk_fix_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_fix' (1#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1/.Xil/Vivado-18416-RHIT-R912GAAZ/realtime/clk_fix_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_fix' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1/.Xil/Vivado-32416-RHIT-R912GAAZ/realtime/clk_fix_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_fix' (1#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1/.Xil/Vivado-32416-RHIT-R912GAAZ/realtime/clk_fix_stub.v:5]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel.v:98]
 INFO: [Synth 8-6157] synthesizing module 'STARTUPE2' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:78135]
 	Parameter PROG_USR bound to: FALSE - type: string 
@@ -365,11 +365,11 @@ INFO: [Synth 8-6157] synthesizing module 'debug_regs' [C:/Xilinx/CaravelFPGA/Car
 INFO: [Synth 8-6155] done synthesizing module 'debug_regs' (26#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/debug_regs.v:2]
 INFO: [Synth 8-6157] synthesizing module 'TopLevel' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/TopLevel/TopLevel.v:15]
 	Parameter BITS bound to: 32 - type: integer 
-	Parameter ADDR_MEMORY bound to: 8'b00110000 
-	Parameter ADDR_DMA bound to: 8'b01000000 
-	Parameter ADDR_LUT bound to: 8'b01010000 
-	Parameter ADDR_SD bound to: 8'b01100000 
-	Parameter ADDR_SYNAPTIC bound to: 8'b01110000 
+	Parameter ADDR_MEMORY bound to: 12'b001100000000 
+	Parameter ADDR_DMA bound to: 12'b001100000100 
+	Parameter ADDR_LUT bound to: 12'b001100000101 
+	Parameter ADDR_SD bound to: 12'b001100000110 
+	Parameter ADDR_SYNAPTIC bound to: 12'b001100000111 
 INFO: [Synth 8-6157] synthesizing module 'zipdma' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma.v:42]
 	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
 	Parameter LGMEMLEN bound to: 10 - type: integer 
@@ -463,8 +463,8 @@ INFO: [Synth 8-6157] synthesizing module 'memory_intf' [C:/Xilinx/CaravelFPGA/Ca
 	Parameter AddressWidth bound to: 32 - type: integer 
 	Parameter DataWidth bound to: 32 - type: integer 
 	Parameter MemWidth bound to: 10 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'bram' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1/.Xil/Vivado-18416-RHIT-R912GAAZ/realtime/bram_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'bram' (36#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1/.Xil/Vivado-18416-RHIT-R912GAAZ/realtime/bram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bram' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1/.Xil/Vivado-32416-RHIT-R912GAAZ/realtime/bram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bram' (36#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1/.Xil/Vivado-32416-RHIT-R912GAAZ/realtime/bram_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'WB3_Interface' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/WB3_Interface.v:19]
 	Parameter READY bound to: 2'b00 
 	Parameter READ_ACK bound to: 2'b01 
@@ -771,7 +771,7 @@ WARNING: [Synth 8-3331] design TopLevel has unconnected port la_data_in[69]
 WARNING: [Synth 8-3331] design TopLevel has unconnected port la_data_in[68]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1032.961 ; gain = 473.168
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1031.562 ; gain = 472.207
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -784,12 +784,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1032.961 ; gain = 473.168
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1044.297 ; gain = 484.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1032.961 ; gain = 473.168
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1044.297 ; gain = 484.941
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.583 . Memory (MB): peak = 1032.961 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.649 . Memory (MB): peak = 1044.297 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -820,20 +820,20 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/caravel_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1223.613 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1231.211 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.152 . Memory (MB): peak = 1223.613 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.168 . Memory (MB): peak = 1231.211 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1223.613 ; gain = 663.820
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1231.211 ; gain = 671.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1223.613 ; gain = 663.820
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1231.211 ; gain = 671.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -843,7 +843,7 @@ Applied set_property CLOCK_BUFFER_TYPE = NONE for clock100. (constraint file  c:
 Applied set_property DONT_TOUCH = true for clk_fix. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for chip_core/mprj/TopLevel/Mem/bram_wb. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1223.613 ; gain = 663.820
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1231.211 ; gain = 671.855
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'decode_mul_rData_msb2_reg' into 'decode_mul_rData_msb1_reg' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12419]
 INFO: [Synth 8-4471] merging register 'mul_preMul_output_rData_msb2_reg' into 'mul_preMul_output_rData_msb1_reg' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12467]
@@ -1052,7 +1052,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'xfer_state_reg' using enco
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'wbbd_state_reg' using encoding 'sequential' in module 'housekeeping'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1223.613 ; gain = 663.820
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1231.211 ; gain = 671.855
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_2'
 INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_3'
@@ -1097,8 +1097,8 @@ Report RTL Partitions:
 +------+--------------------------+------------+----------+
 |1     |LUT_Module__GB0           |           1|     27028|
 |2     |LUT_Module__GB1           |           1|     13975|
-|3     |TopLevel__GC0             |           1|     10881|
-|4     |user_project_wrapper__GC0 |           1|       669|
+|3     |TopLevel__GC0             |           1|     10843|
+|4     |user_project_wrapper__GC0 |           1|       606|
 |5     |caravel_core__GCB0        |           1|     32074|
 |6     |caravel_core__GCB1        |           1|     11222|
 |7     |caravel_core__GCB2        |           1|       580|
@@ -1216,12 +1216,12 @@ Detailed RTL Component Info :
 	   2 Input     35 Bit        Muxes := 1     
 	   2 Input     33 Bit        Muxes := 12    
 	   4 Input     33 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 223   
+	   2 Input     32 Bit        Muxes := 221   
 	  11 Input     32 Bit        Muxes := 3     
 	  13 Input     32 Bit        Muxes := 2     
 	   4 Input     32 Bit        Muxes := 10    
 	   3 Input     32 Bit        Muxes := 5     
-	   5 Input     32 Bit        Muxes := 3     
+	   5 Input     32 Bit        Muxes := 2     
 	   7 Input     32 Bit        Muxes := 2     
 	   9 Input     32 Bit        Muxes := 2     
 	   2 Input     31 Bit        Muxes := 1     
@@ -1275,9 +1275,9 @@ Detailed RTL Component Info :
 	   3 Input      3 Bit        Muxes := 6     
 	   2 Input      3 Bit        Muxes := 136   
 	   4 Input      3 Bit        Muxes := 3     
-	   5 Input      3 Bit        Muxes := 3     
 	   6 Input      3 Bit        Muxes := 1     
 	   7 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
 	  10 Input      3 Bit        Muxes := 1     
 	  97 Input      3 Bit        Muxes := 1     
 	   9 Input      3 Bit        Muxes := 1     
@@ -1288,7 +1288,7 @@ Detailed RTL Component Info :
 	   7 Input      2 Bit        Muxes := 1     
 	   6 Input      2 Bit        Muxes := 1     
 	   9 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2065  
+	   2 Input      1 Bit        Muxes := 2063  
 	   3 Input      1 Bit        Muxes := 314   
 	  33 Input      1 Bit        Muxes := 1     
 	  13 Input      1 Bit        Muxes := 10    
@@ -1885,8 +1885,6 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   4 Input     32 Bit        Muxes := 1     
 	   2 Input     32 Bit        Muxes := 2     
-	   5 Input     32 Bit        Muxes := 1     
-	   5 Input      3 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 4     
 	   2 Input      1 Bit        Muxes := 9     
 	   5 Input      1 Bit        Muxes := 3     
@@ -1903,8 +1901,8 @@ Detailed RTL Component Info :
 +---Registers : 
 	               32 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 Module RAM256 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -2973,7 +2971,7 @@ INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instan
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:09:22 ; elapsed = 00:10:18 . Memory (MB): peak = 1223.613 ; gain = 663.820
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:10:05 ; elapsed = 00:11:08 . Memory (MB): peak = 1231.211 ; gain = 671.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2983,8 +2981,8 @@ Block RAM: Preliminary Mapping	Report (see note below)
 +-------------------------------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 |Module Name                                | RTL Object              | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
 +-------------------------------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|TopLevel__GC0                              | SD/fifo_b_reg           | 128 x 32(READ_FIRST)   | W |   | 128 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
-|TopLevel__GC0                              | SD/fifo_a_reg           | 128 x 32(READ_FIRST)   | W |   | 128 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|SD                                         | fifo_b_reg              | 128 x 32(READ_FIRST)   | W |   | 128 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|SD                                         | fifo_a_reg              | 128 x 32(READ_FIRST)   | W |   | 128 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
 |\soc/core /RAM256                          | RAM_reg                 | 256 x 32(READ_FIRST)   | W |   | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
 |\soc/core /RAM128                          | RAM_reg                 | 128 x 32(READ_FIRST)   | W |   | 128 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
 |\soc/core /VexRiscv/IBusCachedPlugin_cache | banks_0_reg             | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
@@ -3038,8 +3036,8 @@ Report RTL Partitions:
 +------+--------------------------+------------+----------+
 |1     |LUT_Module__GB0           |           1|     20630|
 |2     |LUT_Module__GB1           |           1|     12368|
-|3     |TopLevel__GC0             |           1|      7580|
-|4     |user_project_wrapper__GC0 |           1|       355|
+|3     |TopLevel__GC0             |           1|      6950|
+|4     |user_project_wrapper__GC0 |           1|       312|
 |5     |caravel_core__GCB0        |           1|     23302|
 |6     |caravel_core__GCB1        |           1|      4348|
 |7     |caravel_core__GCB2        |           1|       141|
@@ -3051,13 +3049,13 @@ Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-565] redefining clock 'clock100'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:09:34 ; elapsed = 00:10:29 . Memory (MB): peak = 1223.613 ; gain = 663.820
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:10:17 ; elapsed = 00:11:20 . Memory (MB): peak = 1231.211 ; gain = 671.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:14:40 ; elapsed = 00:15:38 . Memory (MB): peak = 5308.777 ; gain = 4748.984
+Finished Timing Optimization : Time (s): cpu = 00:15:08 ; elapsed = 00:16:14 . Memory (MB): peak = 5277.156 ; gain = 4717.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -3067,8 +3065,8 @@ Block RAM: Final Mapping	Report
 +-------------------------------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 |Module Name                                | RTL Object              | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
 +-------------------------------------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|TopLevel__GC0                              | SD/fifo_a_reg           | 128 x 32(READ_FIRST)   | W |   | 128 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
-|TopLevel__GC0                              | SD/fifo_b_reg           | 128 x 32(READ_FIRST)   | W |   | 128 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|SD                                         | fifo_b_reg              | 128 x 32(READ_FIRST)   | W |   | 128 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|SD                                         | fifo_a_reg              | 128 x 32(READ_FIRST)   | W |   | 128 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
 |\soc/core /RAM256                          | RAM_reg                 | 256 x 32(READ_FIRST)   | W |   | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
 |\soc/core /RAM128                          | RAM_reg                 | 128 x 32(READ_FIRST)   | W |   | 128 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
 |\soc/core /VexRiscv/IBusCachedPlugin_cache | banks_0_reg             | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
@@ -3085,12 +3083,12 @@ Distributed RAM: Final Mapping	Report
 +----------------------------------+-----------------------------+----------------+----------------------+---------------+
 |Module Name                       | RTL Object                  | Inference      | Size (Depth x Width) | Primitives    | 
 +----------------------------------+-----------------------------+----------------+----------------------+---------------+
+|DMA                               | u_sfifo/mem_reg             | Implied        | 256 x 36             | RAM64M x 48	  | 
 |\soc/core /VexRiscv/FpuPlugin_fpu | rf_scoreboards_0_target_reg | User Attribute | 32 x 1               | RAM32X1D x 4	 | 
 |\soc/core /VexRiscv/FpuPlugin_fpu | rf_scoreboards_0_hit_reg    | User Attribute | 32 x 1               | RAM32X1D x 5	 | 
 |\soc/core /VexRiscv/FpuPlugin_fpu | rf_scoreboards_0_writes_reg | User Attribute | 32 x 1               | RAM32X1D x 1	 | 
 |\soc/core                         | storage_1_reg               | Implied        | 16 x 8               | RAM32M x 2	   | 
 |\soc/core                         | storage_reg                 | Implied        | 16 x 8               | RAM32M x 2	   | 
-|DMA                               | u_sfifo/mem_reg             | Implied        | 256 x 36             | RAM64M x 48	  | 
 +----------------------------------+-----------------------------+----------------+----------------------+---------------+
 
 ---------------------------------------------------------------------------------
@@ -3105,16 +3103,16 @@ Report RTL Partitions:
 |2     |caravel_core__GCB2 |           1|       141|
 |3     |caravel_core__GCB3 |           1|       857|
 |4     |caravel__GC0       |           1|       600|
-|5     |caravel_GT0        |           1|      6670|
-|6     |caravel_GT1        |           1|      3338|
-|7     |caravel_GT2        |           1|     47189|
-|8     |caravel_GT3        |           1|      4184|
+|5     |caravel_GT0        |           1|      8060|
+|6     |caravel_GT1        |           1|      3236|
+|7     |caravel_GT2        |           1|     49469|
+|8     |memory_intf        |           1|       365|
 +------+-------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-7053] The timing for the instance chip_corei_1/chip_core/mprj/TopLevel/SD/fifo_a_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance chip_corei_2/chip_core/mprj/TopLevel/SD/fifo_b_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_corei_2/chip_core/mprj/TopLevel/SD/fifo_a_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 WARNING: [Synth 8-565] redefining clock 'clock100'
 INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12403]
 INFO: [Synth 8-7053] The timing for the instance chip_corei_3/chip_core/soc/core/RAM256/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
@@ -3127,7 +3125,7 @@ INFO: [Synth 8-7053] The timing for the instance chip_corei_3/chip_core/soc/core
 INFO: [Synth 8-7053] The timing for the instance chip_corei_3/chip_core/soc/core/VexRiscv/RegFilePlugin_regFile_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance chip_corei_3/chip_core/soc/core/VexRiscv/RegFilePlugin_regFile_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:14:48 ; elapsed = 00:20:49 . Memory (MB): peak = 5308.777 ; gain = 4748.984
+Finished Technology Mapping : Time (s): cpu = 00:15:16 ; elapsed = 00:21:50 . Memory (MB): peak = 5277.156 ; gain = 4717.801
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -3138,10 +3136,10 @@ Report RTL Partitions:
 |2     |caravel_core__GCB2 |           1|       108|
 |3     |caravel_core__GCB3 |           1|       692|
 |4     |caravel__GC0       |           1|       285|
-|5     |caravel_GT0        |           1|      6668|
-|6     |caravel_GT1        |           1|      3343|
-|7     |caravel_GT2        |           1|     19954|
-|8     |caravel_GT3        |           1|      2150|
+|5     |caravel_GT0        |           1|      8039|
+|6     |caravel_GT1        |           1|      2602|
+|7     |caravel_GT2        |           1|     21133|
+|8     |memory_intf        |           1|       232|
 +------+-------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -3156,8 +3154,8 @@ Finished Flattening Before IO Insertion
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12403]
-INFO: [Synth 8-7053] The timing for the instance chip_core/mprj/TopLevel/SD/fifo_a_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance chip_core/mprj/TopLevel/SD/fifo_b_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_core/mprj/TopLevel/SD/fifo_a_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance chip_core/soc/core/RAM256/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance chip_core/soc/core/RAM128/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance chip_core/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
@@ -3172,13 +3170,13 @@ Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Synth 8-6030] Inout pin 'flash_io1' is read and/or written without using tristate logic. Proper direction of connection may be wrongly inferred. Please use specific direction to avoid any incorrect logic issue [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel.v:46]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:14:57 ; elapsed = 00:20:59 . Memory (MB): peak = 5308.777 ; gain = 4748.984
+Finished IO Insertion : Time (s): cpu = 00:15:24 ; elapsed = 00:21:59 . Memory (MB): peak = 5277.156 ; gain = 4717.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:14:57 ; elapsed = 00:20:59 . Memory (MB): peak = 5308.777 ; gain = 4748.984
+Finished Renaming Generated Instances : Time (s): cpu = 00:15:24 ; elapsed = 00:21:59 . Memory (MB): peak = 5277.156 ; gain = 4717.801
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -3197,25 +3195,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:15:03 ; elapsed = 00:21:05 . Memory (MB): peak = 5308.777 ; gain = 4748.984
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:15:30 ; elapsed = 00:22:06 . Memory (MB): peak = 5277.156 ; gain = 4717.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:15:03 ; elapsed = 00:21:05 . Memory (MB): peak = 5308.777 ; gain = 4748.984
+Finished Renaming Generated Ports : Time (s): cpu = 00:15:31 ; elapsed = 00:22:06 . Memory (MB): peak = 5277.156 ; gain = 4717.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:15:04 ; elapsed = 00:21:06 . Memory (MB): peak = 5308.777 ; gain = 4748.984
+Finished Handling Custom Attributes : Time (s): cpu = 00:15:31 ; elapsed = 00:22:06 . Memory (MB): peak = 5277.156 ; gain = 4717.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:15:04 ; elapsed = 00:21:06 . Memory (MB): peak = 5308.777 ; gain = 4748.984
+Finished Renaming Generated Nets : Time (s): cpu = 00:15:31 ; elapsed = 00:22:07 . Memory (MB): peak = 5277.156 ; gain = 4717.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -3264,13 +3262,13 @@ Report Cell Usage:
 |9     |DSP48E1_7  |     1|
 |10    |DSP48E1_8  |     1|
 |11    |DSP48E1_9  |     3|
-|12    |LUT1       |   500|
-|13    |LUT2       |  1200|
-|14    |LUT3       |  2230|
-|15    |LUT4       |  1863|
-|16    |LUT5       |  3381|
-|17    |LUT6       |  7729|
-|18    |MUXF7      |   538|
+|12    |LUT1       |   504|
+|13    |LUT2       |  1195|
+|14    |LUT3       |  2191|
+|15    |LUT4       |  1885|
+|16    |LUT5       |  3367|
+|17    |LUT6       |  7659|
+|18    |MUXF7      |   519|
 |19    |MUXF8      |    75|
 |20    |RAM32M     |     4|
 |21    |RAM32X1D   |    10|
@@ -3283,8 +3281,8 @@ Report Cell Usage:
 |28    |STARTUPE2  |     1|
 |29    |FDCE       |  1099|
 |30    |FDPE       |   281|
-|31    |FDRE       | 15045|
-|32    |FDSE       |   432|
+|31    |FDRE       | 15027|
+|32    |FDSE       |   447|
 |33    |IBUF       |     2|
 |34    |IOBUF      |    40|
 |35    |OBUF       |    24|
@@ -3294,7 +3292,7 @@ Report Instance Areas:
 +------+---------------------------------+------------------------+------+
 |      |Instance                         |Module                  |Cells |
 +------+---------------------------------+------------------------+------+
-|1     |top                              |                        | 35240|
+|1     |top                              |                        | 35116|
 |2     |  Dig0                           |HEXto7Segment           |     6|
 |3     |  Dig1                           |HEXto7Segment_0         |     6|
 |4     |  Dig2                           |HEXto7Segment_1         |     6|
@@ -3306,8 +3304,8 @@ Report Instance Areas:
 |10    |  SevenSegUnit                   |SevenSegDriverNexysA7   |   145|
 |11    |    DisplayInput                 |DisplayMuxNexysA7       |    78|
 |12    |    Update                       |Refreshing7SegNexysA7   |    67|
-|13    |  chip_core                      |caravel_core            | 34975|
-|14    |    clock_ctrl                   |caravel_clocking        |     8|
+|13    |  chip_core                      |caravel_core            | 34851|
+|14    |    clock_ctrl                   |caravel_clocking        |     9|
 |15    |    \gpio_control_bidir_1[0]     |gpio_control_block      |    17|
 |16    |    \gpio_control_bidir_1[1]     |gpio_control_block_7    |    17|
 |17    |    \gpio_control_bidir_2[0]     |gpio_control_block_8    |    16|
@@ -3346,71 +3344,71 @@ Report Instance Areas:
 |50    |    \gpio_control_in_2[7]        |gpio_control_block_41   |    16|
 |51    |    \gpio_control_in_2[8]        |gpio_control_block_42   |    16|
 |52    |    \gpio_control_in_2[9]        |gpio_control_block_43   |    16|
-|53    |    housekeeping                 |housekeeping            |  1947|
+|53    |    housekeeping                 |housekeeping            |  1946|
 |54    |      hkspi                      |housekeeping_spi        |   642|
-|55    |    mprj                         |user_project_wrapper    | 20654|
-|56    |      TopLevel                   |TopLevel                | 20610|
-|57    |        DMA                      |zipdma                  |  2302|
-|58    |          u_arbiter              |wbarbiter               |     6|
-|59    |          u_controller           |zipdma_ctrl             |   161|
-|60    |          u_dma_fsm              |zipdma_fsm              |   508|
-|61    |          u_mm2s                 |zipdma_mm2s             |   847|
-|62    |          u_rxgears              |zipdma_rxgears          |   156|
-|63    |          u_s2mm                 |zipdma_s2mm             |   326|
+|55    |    mprj                         |user_project_wrapper    | 20593|
+|56    |      TopLevel                   |TopLevel                | 20549|
+|57    |        DMA                      |zipdma                  |  2099|
+|58    |          u_arbiter              |wbarbiter               |     9|
+|59    |          u_controller           |zipdma_ctrl             |   164|
+|60    |          u_dma_fsm              |zipdma_fsm              |   509|
+|61    |          u_mm2s                 |zipdma_mm2s             |   530|
+|62    |          u_rxgears              |zipdma_rxgears          |   152|
+|63    |          u_s2mm                 |zipdma_s2mm             |   437|
 |64    |          u_sfifo                |sfifo                   |   180|
 |65    |          u_txgears              |zipdma_txgears          |   118|
-|66    |        LUT                      |LUT_Module              | 16780|
-|67    |          B_Unit_1               |Memory_Unit             |  1376|
-|68    |          B_Unit_2               |Memory_Unit_44          |  1436|
+|66    |        LUT                      |LUT_Module              | 16861|
+|67    |          B_Unit_1               |Memory_Unit             |  1408|
+|68    |          B_Unit_2               |Memory_Unit_44          |  1408|
 |69    |          B_Unit_3               |Memory_Unit_45          |  1408|
-|70    |          MAC_Unit               |LUT_MAC_Module          |   758|
-|71    |            adder                |FloatingAddition        |    16|
+|70    |          MAC_Unit               |LUT_MAC_Module          |   573|
+|71    |            adder                |FloatingAddition        |    68|
 |72    |              pe                 |Priority_Encoder        |     2|
-|73    |            multiplier           |FloatingMultiplication  |   742|
-|74    |          M_Unit_1               |Memory_Unit_46          |  1511|
+|73    |            multiplier           |FloatingMultiplication  |   505|
+|74    |          M_Unit_1               |Memory_Unit_46          |  1488|
 |75    |          M_Unit_2               |Memory_Unit_47          |  1472|
-|76    |          M_Unit_3               |Memory_Unit_48          |  1484|
+|76    |          M_Unit_3               |Memory_Unit_48          |  1504|
 |77    |          V_Unit_1               |Parallel_Memory_Unit    |  1376|
-|78    |          V_Unit_2               |Parallel_Memory_Unit_49 |  1376|
-|79    |          V_Unit_3               |Parallel_Memory_Unit_50 |  2400|
-|80    |          lut_arb                |LUT_Arbiter             |  2140|
+|78    |          V_Unit_2               |Parallel_Memory_Unit_49 |  1408|
+|79    |          V_Unit_3               |Parallel_Memory_Unit_50 |  1408|
+|80    |          lut_arb                |LUT_Arbiter             |  3397|
 |81    |          wb3_intf               |WB3_Interface_51        |     7|
-|82    |          wb4_intf               |WB4_Interface_52        |    36|
-|83    |        Mem                      |memory_intf             |   151|
-|84    |          mem_arb                |Memory_Arbiter          |   104|
-|85    |          wb3_intf               |WB3_Interface           |    10|
-|86    |          wb4_intf               |WB4_Interface           |     5|
-|87    |        SD                       |sdspi                   |  1357|
-|88    |          lowlevel               |llsdspi                 |   124|
-|89    |          spicmdi                |spicmd                  |   289|
-|90    |          spirxdatai             |spirxdata               |   262|
-|91    |          spitxdatai             |spitxdata               |   316|
+|82    |          wb4_intf               |WB4_Interface_52        |     4|
+|83    |        Mem                      |memory_intf             |   228|
+|84    |          mem_arb                |Memory_Arbiter          |    52|
+|85    |          wb3_intf               |WB3_Interface           |     3|
+|86    |          wb4_intf               |WB4_Interface           |    20|
+|87    |        SD                       |sdspi                   |  1324|
+|88    |          lowlevel               |llsdspi                 |   114|
+|89    |          spicmdi                |spicmd                  |   295|
+|90    |          spirxdatai             |spirxdata               |   254|
+|91    |          spitxdatai             |spitxdata               |   293|
 |92    |      debug                      |debug_regs              |     4|
 |93    |    por_fpga                     |FPGA_POR                |     2|
-|94    |    soc                          |mgmt_core_wrapper       | 11710|
-|95    |      core                       |mgmt_core               | 11673|
-|96    |        RAM128                   |RAM128                  |    63|
-|97    |        RAM256                   |RAM256                  |    86|
-|98    |        VexRiscv                 |VexRiscv                |  9098|
+|94    |    soc                          |mgmt_core_wrapper       | 11647|
+|95    |      core                       |mgmt_core               | 11601|
+|96    |        RAM128                   |RAM128                  |    76|
+|97    |        RAM256                   |RAM256                  |    74|
+|98    |        VexRiscv                 |VexRiscv                |  9030|
 |99    |          FpuPlugin_fpu          |FpuCore                 |  4390|
 |100   |            div_divider          |FpuDiv                  |   420|
 |101   |            sqrt_sqrt            |FpuSqrt                 |   316|
-|102   |          IBusCachedPlugin_cache |InstructionCache        |  1733|
-|103   |          dataCache_1            |DataCache               |   611|
+|102   |          IBusCachedPlugin_cache |InstructionCache        |  1662|
+|103   |          dataCache_1            |DataCache               |   618|
 +------+---------------------------------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:15:04 ; elapsed = 00:21:06 . Memory (MB): peak = 5308.777 ; gain = 4748.984
+Finished Writing Synthesis Report : Time (s): cpu = 00:15:32 ; elapsed = 00:22:07 . Memory (MB): peak = 5277.156 ; gain = 4717.801
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 1 critical warnings and 130 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:14:43 ; elapsed = 00:20:59 . Memory (MB): peak = 5308.777 ; gain = 4558.332
-Synthesis Optimization Complete : Time (s): cpu = 00:15:04 ; elapsed = 00:21:08 . Memory (MB): peak = 5308.777 ; gain = 4748.984
+Synthesis Optimization Runtime : Time (s): cpu = 00:15:07 ; elapsed = 00:21:58 . Memory (MB): peak = 5277.156 ; gain = 4530.887
+Synthesis Optimization Complete : Time (s): cpu = 00:15:32 ; elapsed = 00:22:08 . Memory (MB): peak = 5277.156 ; gain = 4717.801
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.511 . Memory (MB): peak = 5308.777 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1377 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.489 . Memory (MB): peak = 5277.156 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1358 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 5308.777 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 5277.156 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 102 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 40 instances
@@ -3421,10 +3419,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 566 Infos, 299 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:15:14 ; elapsed = 00:21:19 . Memory (MB): peak = 5308.777 ; gain = 5015.027
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 5308.777 ; gain = 0.000
+synth_design: Time (s): cpu = 00:15:43 ; elapsed = 00:22:21 . Memory (MB): peak = 5277.156 ; gain = 4979.477
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 5277.156 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1/caravel.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file caravel_utilization_synth.rpt -pb caravel_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Apr  3 01:13:25 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  3 22:05:38 2025...

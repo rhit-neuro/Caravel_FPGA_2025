@@ -1,0 +1,48 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 41a4b1c30b854d759b876c47b9b9f5e3 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TopLevel_tb_behav xil_defaultlib.TopLevel_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.zipdma_ctrl(ADDRESS_WIDTH=32,LGD...
+Compiling module xil_defaultlib.zipdma_fsm(LGDMALENGTH=32)
+Compiling module xil_defaultlib.zipdma_mm2s(ADDRESS_WIDTH=32,BUS...
+Compiling module xil_defaultlib.zipdma_rxgears(BUS_WIDTH=32)
+Compiling module xil_defaultlib.sfifo(BW=36,LGFLEN=8)
+Compiling module xil_defaultlib.zipdma_txgears(BUS_WIDTH=32)
+Compiling module xil_defaultlib.zipdma_s2mm(ADDRESS_WIDTH=32,BUS...
+Compiling module xil_defaultlib.wbarbiter(AW=30)
+Compiling module xil_defaultlib.zipdma_default
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.bram
+Compiling module xil_defaultlib.WB3_Interface
+Compiling module xil_defaultlib.WB4_Interface
+Compiling module xil_defaultlib.Memory_Arbiter
+Compiling module xil_defaultlib.memory_intf
+Compiling module xil_defaultlib.llsdspi(SPDBITS=8,STARTUP_CLOCKS...
+Compiling module xil_defaultlib.spicmd
+Compiling module xil_defaultlib.spirxdata
+Compiling module xil_defaultlib.spitxdata_default
+Compiling module xil_defaultlib.sdspi_default
+Compiling module xil_defaultlib.Parallel_Memory_Unit
+Compiling module xil_defaultlib.FloatingCompare
+Compiling module xil_defaultlib.Indexing_Unit
+Compiling module xil_defaultlib.Memory_Unit
+Compiling module xil_defaultlib.FloatingMultiplication
+Compiling module xil_defaultlib.Priority_Encoder
+Compiling module xil_defaultlib.FloatingAddition
+Compiling module xil_defaultlib.LUT_MAC_Module
+Compiling module xil_defaultlib.LUT_Arbiter
+Compiling module xil_defaultlib.LUT_Module
+Compiling module xil_defaultlib.TopLevel
+Compiling module xil_defaultlib.TopLevel_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TopLevel_tb_behav

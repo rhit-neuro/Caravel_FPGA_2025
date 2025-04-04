@@ -1,0 +1,63 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/ip/bram/sim/bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/FloatingAddition.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FloatingAddition
+INFO: [VRFC 10-2458] undeclared symbol perform, assumed default net type wire [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/FloatingAddition.v:59]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/FloatingCompare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FloatingCompare
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/FloatingMultiplication.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FloatingMultiplication
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/Indexing_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Indexing_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/LUT_Arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LUT_Arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/LUT_MAC_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LUT_MAC_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/LUT_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LUT_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/Memory/Memory_Arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory_Arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/Memory_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/Parallel_Memory_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Parallel_Memory_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/Priority_Encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Priority_Encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/TopLevel/TopLevel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/WB3_Interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB3_Interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/WB4_Interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB4_Interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/llsdspi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module llsdspi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/Memory/memory_intf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_intf
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/sdspi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sdspi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/sfifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sfifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/spicmd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spicmd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/spirxdata.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spirxdata
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/spitxdata.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spitxdata
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/wbarbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wbarbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zipdma
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zipdma_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zipdma_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_mm2s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zipdma_mm2s
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_rxgears.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zipdma_rxgears
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_s2mm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zipdma_s2mm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_txgears.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zipdma_txgears
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sim_1/imports/new/TopLevel_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevel_tb

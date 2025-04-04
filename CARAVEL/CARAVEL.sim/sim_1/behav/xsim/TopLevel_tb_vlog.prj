@@ -1,0 +1,39 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../CARAVEL.srcs/sources_1/ip/clk_fix_1" \
+"../../../../CARAVEL.srcs/sources_1/ip/bram/sim/bram.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/LUT_Module/FloatingAddition.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/LUT_Module/FloatingCompare.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/LUT_Module/FloatingMultiplication.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/LUT_Module/Indexing_Unit.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/LUT_Module/LUT_Arbiter.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/LUT_Module/LUT_MAC_Module.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/LUT_Module/LUT_Module.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/Memory/Memory_Arbiter.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/LUT_Module/Memory_Unit.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/LUT_Module/Parallel_Memory_Unit.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/LUT_Module/Priority_Encoder.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/TopLevel/TopLevel.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/LUT_Module/WB3_Interface.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/LUT_Module/WB4_Interface.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/llsdspi.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/Memory/memory_intf.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/sdspi.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/DMA_Module/sfifo.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/spicmd.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/spirxdata.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/spitxdata.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/DMA_Module/wbarbiter.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_ctrl.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_fsm.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_mm2s.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_rxgears.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_s2mm.v" \
+"../../../../CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_txgears.v" \
+"../../../../CARAVEL.srcs/sim_1/imports/new/TopLevel_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
