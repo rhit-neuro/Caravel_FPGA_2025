@@ -11,7 +11,7 @@ See [this link](https://github.com/efabless/Caravel_on_FPGA) to original repo by
 - We used the Raspberry Pi Pico method of flashing the QSPI flash as described by the original repo. However, we had to alter some of the code for compatability with our flash. The updated code is found [here](Micropython_scripts/flash).
 ## Loading Caravel and Flashing the QSPI Flash
 The steps are similar to those described in the original repo:
-- We did not make our own program, we used the hex file from the original repo found [here](hex_file/debug_gpio.hex) and [here](Micropython_scripts/debug_gpio.hex).
+- We did not make our own program, we used the hex file from the original repo found [here](hex_file/debug_gpio.hex) and [here](Micropython_scripts/debug_gpio.hex) with minor changes to work with our specific flash modules.
 - We used Vivado to program the FPGA with Caravel as described by the original repo.
 - Our hardware connections are changed to the following:
 	- No need to connect an external flash
@@ -22,4 +22,13 @@ The steps are similar to those described in the original repo:
 - We followed the original repo instructions for setting up the Raspberry Pi Pico.
 ## Original Repo Step 2: Caravel implementation on FPGA
 - At this point Caravel should be flashing LED0 on the Nexys FPGA, proving that Caravel is running.
-- We did not verify that step 2 works, this is left for future groups. 
+- We did not verify that step 2 works, this is left for future groups.
+
+ # Userspace Implementation
+ ![image info](./architecture-2425.png)
+## 24-25_npu
+Our current userspace implementation [24-25_npu](https://github.com/rhit-neuro/24-25_npu) exists as a submodule in this repo and can be installed into the caravel userspace by simply importing the files and instantiating TopLevel.v in __user_project_wrapper.v
+
+### Important notes for future users
+- Copying files into the project is not advised, in this case it is easier to import without copying which allows for updating [24-25_npu](https://github.com/rhit-neuro/24-25_npu) without re-importing files.
+- Wishbone can only be driven by a single module (wbs_ack_o and wbs_dat_o). For current LED testing, we are allowing debug_regs.v to control these two lines, however that will need to be changed for testing the userspace.
