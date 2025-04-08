@@ -25,7 +25,7 @@ The steps are similar to those described in the original repo:
 - We did not verify that step 2 works, this is left for future groups.
 
  # Userspace Implementation
- ![image info](./architecture-2425.png)
+ ![architecture-2425.png](https://github.com/rhit-neuro/Caravel_FPGA_2025/blob/main/architecture-2425.PNG)
 ## 24-25_npu
 Our current userspace implementation [24-25_npu](https://github.com/rhit-neuro/24-25_npu) exists as a submodule in this repo and can be installed into the caravel userspace by simply importing the files and instantiating TopLevel.v in __user_project_wrapper.v
 
