@@ -67,19 +67,16 @@ module TopLevel #(
     input wire user_clock2,
 
     // User maskable interrupt signals
-    output wire [2:0] user_irq,
-    
-    //CUSTOM DATA FOR 7 SEG DISPLAY **NOT CARAVEL**
-    output wire [31:0] SevenSegDisplay
+    output wire [2:0] user_irq
 );
 
 //Assign Address Space
 //this will be the top 8 bits of the address
 localparam [11:0] ADDR_MEMORY = 12'h300,
-                  ADDR_DMA = 12'h304,
-                  ADDR_LUT = 12'h305,
-                  ADDR_SD = 12'h306,
-                  ADDR_SYNAPTIC = 12'h307;
+                 ADDR_DMA = 12'h304,
+                 ADDR_LUT = 12'h305,
+                 ADDR_SD = 12'h306,
+                 ADDR_SYNAPTIC = 12'h307;
 
 //Userspace Wishbone wires (B4 wishbone, DMA controlled)
 wire usr_wb_clk = wb_clk_i; //same clock for now
@@ -291,11 +288,7 @@ memory_intf Mem(
     .wb4_sel_i(usr_wb_sel),
     .wb4_dat_i(usr_wb_dat_mo),
     .wb4_dat_o(mem_dat_4),
-    .wb4_ack_o(mem_ack_4), .wb4_stall_o(mem_stall_4), .wb4_err_o(usr_wb_err),
-    
-        //CUSTOM DATA FOR 7 SEG DISPLAY **NOT CARAVEL**
-    .SevenSegDisplay(SevenSegDisplay)
-    
+    .wb4_ack_o(mem_ack_4), .wb4_stall_o(mem_stall_4), .wb4_err_o(usr_wb_err)
 );
 
 

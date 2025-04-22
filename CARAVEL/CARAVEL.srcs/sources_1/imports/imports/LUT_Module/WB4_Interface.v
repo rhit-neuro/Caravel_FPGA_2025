@@ -64,7 +64,7 @@ module WB4_Interface (
     assign wbs4_ack_o = b4_active ? (current_state == WRITE_ACK | (current_state == READ_ACK & ~b4_busy)) : 1'b0;
     
     // State transition logic
-    always @(posedge wb4_clk_i or posedge wb4_rst_i) begin
+    always @(posedge wb4_clk_i) begin
         if (wb4_rst_i) begin
             current_state <= READY;
         end else begin

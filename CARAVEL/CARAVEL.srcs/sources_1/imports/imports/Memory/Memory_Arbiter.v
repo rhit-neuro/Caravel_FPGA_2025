@@ -76,7 +76,7 @@ module Memory_Arbiter #(parameter
     assign b3_dataOut = dataOut;
     assign b4_dataOut = dataOut;
     
-    always @ (posedge clock or posedge reset)
+    always @ (posedge clock)
         if (reset) begin
             address_reg <= 32'b0;
             dataIn_reg <= 32'b0;
@@ -100,7 +100,7 @@ module Memory_Arbiter #(parameter
     end
     
     // State transition logic
-    always @(posedge clock or posedge reset) begin
+    always @(posedge clock) begin
         if (reset) begin
             current_state <= FREE;
         end else begin

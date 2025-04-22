@@ -226,7 +226,7 @@ module mgmt_protect (
 	);
 
 `else
-	assign mprj_dat_i_core_bar = ~(mprj_dat_i_user & wb_in_enable);
+	assign mprj_dat_i_core_bar = ~(mprj_dat_i_user & {32{wb_in_enable}}); //issue??????????????
 `endif
 
 	assign mprj_dat_i_core = ~mprj_dat_i_core_bar;

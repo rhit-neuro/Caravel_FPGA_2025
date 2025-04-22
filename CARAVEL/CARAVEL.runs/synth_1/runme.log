@@ -15,7 +15,7 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 30160 
+INFO: Helper process launched with PID 12796 
 WARNING: [Synth 8-2507] parameter declaration becomes local in Refreshing7SegNexysA7 with formal parameter declaration list [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/lab6ece433fall2024tempate/Refreshing7SegNexysA7.v:12]
 WARNING: [Synth 8-2507] parameter declaration becomes local in Refreshing7SegNexysA7 with formal parameter declaration list [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/lab6ece433fall2024tempate/Refreshing7SegNexysA7.v:13]
 WARNING: [Synth 8-2611] redeclaration of ansi port ser_rx_out is not allowed [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel.v:236]
@@ -25,12 +25,12 @@ WARNING: [Synth 8-2611] redeclaration of ansi port sdi_out is not allowed [C:/Xi
 WARNING: [Synth 8-2611] redeclaration of ansi port csb_out is not allowed [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel.v:241]
 WARNING: [Synth 8-2611] redeclaration of ansi port sck_out is not allowed [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel.v:242]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 802.094 ; gain = 241.594
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 803.324 ; gain = 241.941
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'caravel' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel.v:46]
 	Parameter USER_PROJECT_ID bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'clk_fix' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1/.Xil/Vivado-29740-RHIT-R912GAAZ/realtime/clk_fix_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_fix' (1#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1/.Xil/Vivado-29740-RHIT-R912GAAZ/realtime/clk_fix_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_fix' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1/.Xil/Vivado-2344-RHIT-R912GAAZ/realtime/clk_fix_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_fix' (1#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1/.Xil/Vivado-2344-RHIT-R912GAAZ/realtime/clk_fix_stub.v:5]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel.v:98]
 INFO: [Synth 8-6157] synthesizing module 'STARTUPE2' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:78135]
 	Parameter PROG_USR bound to: FALSE - type: string 
@@ -100,22 +100,6 @@ INFO: [Synth 8-6157] synthesizing module 'VexRiscv' [C:/Xilinx/CaravelFPGA/Carav
 	Parameter ShiftCtrlEnum_SLL_1 bound to: 2'b01 
 	Parameter ShiftCtrlEnum_SRL_1 bound to: 2'b10 
 	Parameter ShiftCtrlEnum_SRA_1 bound to: 2'b11 
-	Parameter FpuOpcode_LOAD bound to: 4'b0000 
-	Parameter FpuOpcode_STORE bound to: 4'b0001 
-	Parameter FpuOpcode_MUL bound to: 4'b0010 
-	Parameter FpuOpcode_ADD bound to: 4'b0011 
-	Parameter FpuOpcode_FMA bound to: 4'b0100 
-	Parameter FpuOpcode_I2F bound to: 4'b0101 
-	Parameter FpuOpcode_F2I bound to: 4'b0110 
-	Parameter FpuOpcode_CMP bound to: 4'b0111 
-	Parameter FpuOpcode_DIV bound to: 4'b1000 
-	Parameter FpuOpcode_SQRT bound to: 4'b1001 
-	Parameter FpuOpcode_MIN_MAX bound to: 4'b1010 
-	Parameter FpuOpcode_SGNJ bound to: 4'b1011 
-	Parameter FpuOpcode_FMV_X_W bound to: 4'b1100 
-	Parameter FpuOpcode_FMV_W_X bound to: 4'b1101 
-	Parameter FpuOpcode_FCLASS bound to: 4'b1110 
-	Parameter FpuOpcode_FCVT_X_X bound to: 4'b1111 
 	Parameter EnvCtrlEnum_NONE bound to: 1'b0 
 	Parameter EnvCtrlEnum_XRET bound to: 1'b1 
 	Parameter BranchCtrlEnum_INC bound to: 2'b00 
@@ -136,169 +120,32 @@ INFO: [Synth 8-6157] synthesizing module 'VexRiscv' [C:/Xilinx/CaravelFPGA/Carav
 	Parameter Src1CtrlEnum_IMU bound to: 2'b01 
 	Parameter Src1CtrlEnum_PC_INCREMENT bound to: 2'b10 
 	Parameter Src1CtrlEnum_URS1 bound to: 2'b11 
-	Parameter FpuFormat_FLOAT bound to: 1'b0 
-	Parameter FpuFormat_DOUBLE bound to: 1'b1 
-	Parameter FpuRoundMode_RNE bound to: 3'b000 
-	Parameter FpuRoundMode_RTZ bound to: 3'b001 
-	Parameter FpuRoundMode_RDN bound to: 3'b010 
-	Parameter FpuRoundMode_RUP bound to: 3'b011 
-	Parameter FpuRoundMode_RMM bound to: 3'b100 
-INFO: [Synth 8-6157] synthesizing module 'InstructionCache' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:15114]
-WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_isIoAccess_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:15388]
-WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_allowRead_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:15390]
-WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_allowWrite_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:15391]
-WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_bypassTranslation_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:15395]
-INFO: [Synth 8-6155] done synthesizing module 'InstructionCache' (11#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:15114]
-INFO: [Synth 8-6157] synthesizing module 'DataCache' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:14260]
-WARNING: [Synth 8-6014] Unused sequential element tagsWriteLastCmd_valid_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:14982]
-WARNING: [Synth 8-6014] Unused sequential element tagsWriteLastCmd_payload_way_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:14983]
-WARNING: [Synth 8-6014] Unused sequential element tagsWriteLastCmd_payload_address_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:14984]
-WARNING: [Synth 8-6014] Unused sequential element tagsWriteLastCmd_payload_data_valid_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:14985]
-WARNING: [Synth 8-6014] Unused sequential element tagsWriteLastCmd_payload_data_error_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:14986]
-WARNING: [Synth 8-6014] Unused sequential element tagsWriteLastCmd_payload_data_address_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:14987]
-WARNING: [Synth 8-6014] Unused sequential element stageA_request_totalyConsistent_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:14991]
-WARNING: [Synth 8-6014] Unused sequential element stageB_request_totalyConsistent_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:15005]
-WARNING: [Synth 8-6014] Unused sequential element stageB_mmuRsp_allowExecute_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:15013]
-WARNING: [Synth 8-6014] Unused sequential element stageB_mmuRsp_bypassTranslation_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:15016]
-WARNING: [Synth 8-6014] Unused sequential element stageB_tagsReadRsp_0_valid_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:15019]
-WARNING: [Synth 8-6014] Unused sequential element stageB_tagsReadRsp_0_address_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:15021]
-WARNING: [Synth 8-3848] Net io_cpu_writeBack_exclusiveOk in module/entity DataCache does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:14303]
-WARNING: [Synth 8-3848] Net io_cpu_writesPending in module/entity DataCache does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:14309]
-INFO: [Synth 8-6155] done synthesizing module 'DataCache' (12#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:14260]
-INFO: [Synth 8-6157] synthesizing module 'FpuCore' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:6869]
-	Parameter FpuOpcode_LOAD bound to: 4'b0000 
-	Parameter FpuOpcode_STORE bound to: 4'b0001 
-	Parameter FpuOpcode_MUL bound to: 4'b0010 
-	Parameter FpuOpcode_ADD bound to: 4'b0011 
-	Parameter FpuOpcode_FMA bound to: 4'b0100 
-	Parameter FpuOpcode_I2F bound to: 4'b0101 
-	Parameter FpuOpcode_F2I bound to: 4'b0110 
-	Parameter FpuOpcode_CMP bound to: 4'b0111 
-	Parameter FpuOpcode_DIV bound to: 4'b1000 
-	Parameter FpuOpcode_SQRT bound to: 4'b1001 
-	Parameter FpuOpcode_MIN_MAX bound to: 4'b1010 
-	Parameter FpuOpcode_SGNJ bound to: 4'b1011 
-	Parameter FpuOpcode_FMV_X_W bound to: 4'b1100 
-	Parameter FpuOpcode_FMV_W_X bound to: 4'b1101 
-	Parameter FpuOpcode_FCLASS bound to: 4'b1110 
-	Parameter FpuOpcode_FCVT_X_X bound to: 4'b1111 
-	Parameter FpuFormat_FLOAT bound to: 1'b0 
-	Parameter FpuFormat_DOUBLE bound to: 1'b1 
-	Parameter FpuRoundMode_RNE bound to: 3'b000 
-	Parameter FpuRoundMode_RTZ bound to: 3'b001 
-	Parameter FpuRoundMode_RDN bound to: 3'b010 
-	Parameter FpuRoundMode_RUP bound to: 3'b011 
-	Parameter FpuRoundMode_RMM bound to: 3'b100 
-INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:8995]
-INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:8996]
-INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:8997]
-INFO: [Synth 8-6157] synthesizing module 'StreamFork' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:16207]
-	Parameter FpuOpcode_LOAD bound to: 4'b0000 
-	Parameter FpuOpcode_STORE bound to: 4'b0001 
-	Parameter FpuOpcode_MUL bound to: 4'b0010 
-	Parameter FpuOpcode_ADD bound to: 4'b0011 
-	Parameter FpuOpcode_FMA bound to: 4'b0100 
-	Parameter FpuOpcode_I2F bound to: 4'b0101 
-	Parameter FpuOpcode_F2I bound to: 4'b0110 
-	Parameter FpuOpcode_CMP bound to: 4'b0111 
-	Parameter FpuOpcode_DIV bound to: 4'b1000 
-	Parameter FpuOpcode_SQRT bound to: 4'b1001 
-	Parameter FpuOpcode_MIN_MAX bound to: 4'b1010 
-	Parameter FpuOpcode_SGNJ bound to: 4'b1011 
-	Parameter FpuOpcode_FMV_X_W bound to: 4'b1100 
-	Parameter FpuOpcode_FMV_W_X bound to: 4'b1101 
-	Parameter FpuOpcode_FCLASS bound to: 4'b1110 
-	Parameter FpuOpcode_FCVT_X_X bound to: 4'b1111 
-INFO: [Synth 8-6155] done synthesizing module 'StreamFork' (13#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:16207]
-INFO: [Synth 8-6157] synthesizing module 'StreamArbiter' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:15977]
-	Parameter FpuOpcode_LOAD bound to: 4'b0000 
-	Parameter FpuOpcode_STORE bound to: 4'b0001 
-	Parameter FpuOpcode_MUL bound to: 4'b0010 
-	Parameter FpuOpcode_ADD bound to: 4'b0011 
-	Parameter FpuOpcode_FMA bound to: 4'b0100 
-	Parameter FpuOpcode_I2F bound to: 4'b0101 
-	Parameter FpuOpcode_F2I bound to: 4'b0110 
-	Parameter FpuOpcode_CMP bound to: 4'b0111 
-	Parameter FpuOpcode_DIV bound to: 4'b1000 
-	Parameter FpuOpcode_SQRT bound to: 4'b1001 
-	Parameter FpuOpcode_MIN_MAX bound to: 4'b1010 
-	Parameter FpuOpcode_SGNJ bound to: 4'b1011 
-	Parameter FpuOpcode_FMV_X_W bound to: 4'b1100 
-	Parameter FpuOpcode_FMV_W_X bound to: 4'b1101 
-	Parameter FpuOpcode_FCLASS bound to: 4'b1110 
-	Parameter FpuOpcode_FCVT_X_X bound to: 4'b1111 
-	Parameter FpuFormat_FLOAT bound to: 1'b0 
-	Parameter FpuFormat_DOUBLE bound to: 1'b1 
-	Parameter FpuRoundMode_RNE bound to: 3'b000 
-	Parameter FpuRoundMode_RTZ bound to: 3'b001 
-	Parameter FpuRoundMode_RDN bound to: 3'b010 
-	Parameter FpuRoundMode_RUP bound to: 3'b011 
-	Parameter FpuRoundMode_RMM bound to: 3'b100 
-INFO: [Synth 8-6155] done synthesizing module 'StreamArbiter' (14#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:15977]
-INFO: [Synth 8-6157] synthesizing module 'FpuDiv' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:15860]
-INFO: [Synth 8-6155] done synthesizing module 'FpuDiv' (15#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:15860]
-INFO: [Synth 8-6157] synthesizing module 'FpuSqrt' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:15767]
-INFO: [Synth 8-6155] done synthesizing module 'FpuSqrt' (16#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:15767]
-INFO: [Synth 8-6157] synthesizing module 'StreamArbiter_1' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:15413]
-	Parameter FpuRoundMode_RNE bound to: 3'b000 
-	Parameter FpuRoundMode_RTZ bound to: 3'b001 
-	Parameter FpuRoundMode_RDN bound to: 3'b010 
-	Parameter FpuRoundMode_RUP bound to: 3'b011 
-	Parameter FpuRoundMode_RMM bound to: 3'b100 
-INFO: [Synth 8-6155] done synthesizing module 'StreamArbiter_1' (17#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:15413]
-WARNING: [Synth 8-6014] Unused sequential element FpuPlugin_fpu_streamFork_1_io_outputs_1_rData_value_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:10932]
-WARNING: [Synth 8-6014] Unused sequential element read_s0_rData_rs1_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:11324]
-WARNING: [Synth 8-6014] Unused sequential element read_s0_rData_rs2_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:11325]
-WARNING: [Synth 8-6014] Unused sequential element read_s0_rData_rs3_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:11326]
-WARNING: [Synth 8-6014] Unused sequential element decode_shortPip_rData_value_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:11956]
-WARNING: [Synth 8-6014] Unused sequential element mul_mul_output_rData_msb1_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12521]
-WARNING: [Synth 8-6014] Unused sequential element mul_mul_output_rData_msb2_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12522]
-WARNING: [Synth 8-6014] Unused sequential element mul_sum1_output_rData_msb1_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12578]
-WARNING: [Synth 8-6014] Unused sequential element mul_sum1_output_rData_msb2_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12579]
-WARNING: [Synth 8-6014] Unused sequential element mul_sum2_output_rData_msb1_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12636]
-WARNING: [Synth 8-6014] Unused sequential element mul_sum2_output_rData_msb2_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12637]
-WARNING: [Synth 8-6014] Unused sequential element add_math_output_rData_xSign_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:13163]
-WARNING: [Synth 8-6014] Unused sequential element add_math_output_rData_ySign_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:13164]
-WARNING: [Synth 8-6014] Unused sequential element add_math_output_rData_xMantissa_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:13165]
-WARNING: [Synth 8-6014] Unused sequential element add_math_output_rData_yMantissa_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:13166]
-WARNING: [Synth 8-6014] Unused sequential element add_oh_output_rData_needCommit_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:13245]
-WARNING: [Synth 8-6014] Unused sequential element add_oh_output_rData_xSign_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:13246]
-WARNING: [Synth 8-6014] Unused sequential element add_oh_output_rData_ySign_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:13247]
-WARNING: [Synth 8-6014] Unused sequential element add_oh_output_rData_xMantissa_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:13248]
-WARNING: [Synth 8-6014] Unused sequential element add_oh_output_rData_yMantissa_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:13249]
-INFO: [Synth 8-6155] done synthesizing module 'FpuCore' (18#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:6869]
-WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_fetchPc_correctionReg_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:4108]
-WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_injector_nextPcCalc_valids_2_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:4215]
-WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_injector_nextPcCalc_valids_3_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:4216]
-WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_injector_nextPcCalc_valids_4_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:4217]
-WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_rspCounter_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:6024]
-WARNING: [Synth 8-6014] Unused sequential element DBusCachedPlugin_rspCounter_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:6026]
-WARNING: [Synth 8-6014] Unused sequential element CsrPlugin_mcycle_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:6047]
-WARNING: [Synth 8-6014] Unused sequential element CsrPlugin_minstret_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:6048]
-WARNING: [Synth 8-6014] Unused sequential element execute_CsrPlugin_wfiWake_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:6058]
-WARNING: [Synth 8-6014] Unused sequential element toplevel_dataCache_1_io_mem_cmd_rData_uncached_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:4434]
-WARNING: [Synth 8-6014] Unused sequential element toplevel_dataCache_1_io_mem_cmd_rData_last_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:4439]
-WARNING: [Synth 8-6014] Unused sequential element decode_to_execute_FORMAL_PC_NEXT_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:3475]
-WARNING: [Synth 8-6014] Unused sequential element execute_to_memory_FORMAL_PC_NEXT_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:3474]
-WARNING: [Synth 8-6014] Unused sequential element memory_to_writeBack_FORMAL_PC_NEXT_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:3473]
-WARNING: [Synth 8-6014] Unused sequential element decode_to_execute_CSR_READ_OPCODE_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:3478]
-WARNING: [Synth 8-6014] Unused sequential element DebugPlugin_firstCycle_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:6785]
-WARNING: [Synth 8-6014] Unused sequential element DebugPlugin_secondCycle_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:6789]
-WARNING: [Synth 8-5788] Register IBusCachedPlugin_fetchPc_pcReg_reg in module VexRiscv is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:4193]
-WARNING: [Synth 8-3848] Net IBusCachedPlugin_cache_io_cpu_fetch_isRemoved in module/entity VexRiscv does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:97]
-WARNING: [Synth 8-3848] Net IBusCachedPlugin_mmuBus_rsp_bypassTranslation in module/entity VexRiscv does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:783]
-WARNING: [Synth 8-3848] Net DBusCachedPlugin_mmuBus_rsp_bypassTranslation in module/entity VexRiscv does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:811]
-WARNING: [Synth 8-3848] Net dataCache_1_io_cpu_writeBack_fence_SW in module/entity VexRiscv does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:111]
-WARNING: [Synth 8-3848] Net dataCache_1_io_cpu_writeBack_fence_SR in module/entity VexRiscv does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:112]
-WARNING: [Synth 8-3848] Net dataCache_1_io_cpu_writeBack_fence_SO in module/entity VexRiscv does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:113]
-WARNING: [Synth 8-3848] Net dataCache_1_io_cpu_writeBack_fence_SI in module/entity VexRiscv does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:114]
-WARNING: [Synth 8-3848] Net dataCache_1_io_cpu_writeBack_fence_PW in module/entity VexRiscv does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:115]
-WARNING: [Synth 8-3848] Net dataCache_1_io_cpu_writeBack_fence_PR in module/entity VexRiscv does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:116]
-WARNING: [Synth 8-3848] Net dataCache_1_io_cpu_writeBack_fence_PO in module/entity VexRiscv does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:117]
-WARNING: [Synth 8-3848] Net dataCache_1_io_cpu_writeBack_fence_PI in module/entity VexRiscv does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:118]
-WARNING: [Synth 8-3848] Net dataCache_1_io_cpu_writeBack_fence_FM in module/entity VexRiscv does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:119]
-WARNING: [Synth 8-3848] Net dBus_rsp_payload_last in module/entity VexRiscv does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:796]
-INFO: [Synth 8-6155] done synthesizing module 'VexRiscv' (19#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:7]
+INFO: [Synth 8-6157] synthesizing module 'InstructionCache' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:5074]
+WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_isIoAccess_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:5348]
+WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_allowRead_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:5350]
+WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_allowWrite_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:5351]
+WARNING: [Synth 8-6014] Unused sequential element decodeStage_mmuRsp_bypassTranslation_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:5355]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionCache' (11#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:5074]
+WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_fetchPc_correctionReg_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:2902]
+WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_injector_nextPcCalc_valids_2_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:3009]
+WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_injector_nextPcCalc_valids_3_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:3010]
+WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_injector_nextPcCalc_valids_4_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:3011]
+WARNING: [Synth 8-6014] Unused sequential element IBusCachedPlugin_rspCounter_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:4411]
+WARNING: [Synth 8-6014] Unused sequential element CsrPlugin_mcycle_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:4422]
+WARNING: [Synth 8-6014] Unused sequential element CsrPlugin_minstret_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:4423]
+WARNING: [Synth 8-6014] Unused sequential element execute_CsrPlugin_wfiWake_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:4433]
+WARNING: [Synth 8-6014] Unused sequential element decode_to_execute_FORMAL_PC_NEXT_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:2234]
+WARNING: [Synth 8-6014] Unused sequential element execute_to_memory_FORMAL_PC_NEXT_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:2233]
+WARNING: [Synth 8-6014] Unused sequential element memory_to_writeBack_FORMAL_PC_NEXT_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:2232]
+WARNING: [Synth 8-6014] Unused sequential element decode_to_execute_CSR_READ_OPCODE_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:2237]
+WARNING: [Synth 8-6014] Unused sequential element dBus_cmd_rData_mask_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:4342]
+WARNING: [Synth 8-6014] Unused sequential element DebugPlugin_firstCycle_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:4990]
+WARNING: [Synth 8-6014] Unused sequential element DebugPlugin_secondCycle_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:4994]
+WARNING: [Synth 8-3936] Found unconnected internal register 'memory_to_writeBack_INSTRUCTION_reg' and it is trimmed from '32' to '30' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:2468]
+WARNING: [Synth 8-5788] Register IBusCachedPlugin_fetchPc_pcReg_reg in module VexRiscv is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:2987]
+WARNING: [Synth 8-3848] Net IBusCachedPlugin_cache_io_cpu_fetch_isRemoved in module/entity VexRiscv does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:74]
+WARNING: [Synth 8-3848] Net IBusCachedPlugin_mmuBus_rsp_bypassTranslation in module/entity VexRiscv does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:560]
+INFO: [Synth 8-6155] done synthesizing module 'VexRiscv' (12#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:7]
 WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_master_tx_fifo_source_first_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:2869]
 WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_master_tx_fifo_source_last_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:2870]
 WARNING: [Synth 8-6014] Unused sequential element mgmtsoc_master_rx_fifo_source_first_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:6905]
@@ -346,23 +193,52 @@ WARNING: [Synth 8-6014] Unused sequential element uart_enabled_re_reg was remove
 WARNING: [Synth 8-6014] Unused sequential element gpioin0_in_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7612]
 WARNING: [Synth 8-6014] Unused sequential element gpioin0_gpioin0_mode_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7616]
 WARNING: [Synth 8-6014] Unused sequential element gpioin0_gpioin0_edge_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7620]
-INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element gpioin0_status_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7621]
+WARNING: [Synth 8-6014] Unused sequential element gpioin0_enable_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7629]
+WARNING: [Synth 8-6014] Unused sequential element gpioin1_in_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7653]
+WARNING: [Synth 8-6014] Unused sequential element gpioin1_gpioin1_mode_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7657]
+WARNING: [Synth 8-6014] Unused sequential element gpioin1_gpioin1_edge_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7661]
+WARNING: [Synth 8-6014] Unused sequential element gpioin1_status_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7662]
+WARNING: [Synth 8-6014] Unused sequential element gpioin1_enable_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7670]
+WARNING: [Synth 8-6014] Unused sequential element gpioin2_in_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7694]
+WARNING: [Synth 8-6014] Unused sequential element gpioin2_gpioin2_mode_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7698]
+WARNING: [Synth 8-6014] Unused sequential element gpioin2_gpioin2_edge_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7702]
+WARNING: [Synth 8-6014] Unused sequential element gpioin2_status_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7703]
+WARNING: [Synth 8-6014] Unused sequential element gpioin2_enable_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7711]
+WARNING: [Synth 8-6014] Unused sequential element gpioin3_in_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7735]
+WARNING: [Synth 8-6014] Unused sequential element gpioin3_gpioin3_mode_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7739]
+WARNING: [Synth 8-6014] Unused sequential element gpioin3_gpioin3_edge_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7743]
+WARNING: [Synth 8-6014] Unused sequential element gpioin3_status_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7744]
+WARNING: [Synth 8-6014] Unused sequential element gpioin3_enable_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7752]
+WARNING: [Synth 8-6014] Unused sequential element gpioin4_in_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7776]
+WARNING: [Synth 8-6014] Unused sequential element gpioin4_gpioin4_mode_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7780]
+WARNING: [Synth 8-6014] Unused sequential element gpioin4_gpioin4_edge_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7784]
+WARNING: [Synth 8-6014] Unused sequential element gpioin4_status_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7785]
+WARNING: [Synth 8-6014] Unused sequential element gpioin4_enable_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7793]
+WARNING: [Synth 8-6014] Unused sequential element gpioin5_in_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7817]
+WARNING: [Synth 8-6014] Unused sequential element gpioin5_gpioin5_mode_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7821]
+WARNING: [Synth 8-6014] Unused sequential element gpioin5_gpioin5_edge_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7825]
+WARNING: [Synth 8-6014] Unused sequential element gpioin5_status_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7826]
+WARNING: [Synth 8-6014] Unused sequential element gpioin5_enable_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7834]
+WARNING: [Synth 8-6014] Unused sequential element user_irq_ena_re_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:7846]
+WARNING: [Synth 8-6014] Unused sequential element memdat_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:8398]
+WARNING: [Synth 8-6014] Unused sequential element memdat_2_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:8415]
 WARNING: [Synth 8-3936] Found unconnected internal register 'litespi_tx_mux_source_payload_mask_reg' and it is trimmed from '8' to '1' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:2187]
-INFO: [Synth 8-6155] done synthesizing module 'mgmt_core' (20#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'mgmt_core' (13#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:4]
 WARNING: [Synth 8-7023] instance 'core' of module 'mgmt_core' has 74 connections declared, but only 56 given [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core_wrapper.v:130]
-INFO: [Synth 8-6155] done synthesizing module 'mgmt_core_wrapper' (21#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core_wrapper.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'mgmt_core_wrapper' (14#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core_wrapper.v:40]
 INFO: [Synth 8-6157] synthesizing module 'mgmt_protect' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_protect.v:46]
 INFO: [Synth 8-6157] synthesizing module 'mprj_logic_high' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mprj_logic_high.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'mprj_logic_high' (22#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mprj_logic_high.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mprj_logic_high' (15#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mprj_logic_high.v:23]
 INFO: [Synth 8-6157] synthesizing module 'mprj2_logic_high' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mprj2_logic_high.v:24]
-INFO: [Synth 8-6155] done synthesizing module 'mprj2_logic_high' (23#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mprj2_logic_high.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'mprj2_logic_high' (16#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mprj2_logic_high.v:24]
 INFO: [Synth 8-6157] synthesizing module 'mgmt_protect_hv' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_protect_hv.v:33]
-INFO: [Synth 8-6155] done synthesizing module 'mgmt_protect_hv' (24#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_protect_hv.v:33]
-INFO: [Synth 8-6155] done synthesizing module 'mgmt_protect' (25#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_protect.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'mgmt_protect_hv' (17#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_protect_hv.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'mgmt_protect' (18#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_protect.v:46]
 INFO: [Synth 8-6157] synthesizing module 'user_project_wrapper' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/__user_project_wrapper.v:40]
 	Parameter BITS bound to: 32 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'debug_regs' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/debug_regs.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'debug_regs' (26#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/debug_regs.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'debug_regs' (19#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/debug_regs.v:2]
 INFO: [Synth 8-6157] synthesizing module 'TopLevel' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/TopLevel/TopLevel.v:15]
 	Parameter BITS bound to: 32 - type: integer 
 	Parameter ADDR_MEMORY bound to: 12'b001100000000 
@@ -391,7 +267,7 @@ INFO: [Synth 8-6157] synthesizing module 'zipdma_ctrl' [C:/Xilinx/CaravelFPGA/Ca
 	Parameter OPT_LOWPOWER bound to: 1'b0 
 	Parameter AW bound to: 32 - type: integer 
 WARNING: [Synth 8-3936] Found unconnected internal register 'next_tlen_reg' and it is trimmed from '32' to '11' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_ctrl.v:198]
-INFO: [Synth 8-6155] done synthesizing module 'zipdma_ctrl' (27#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_ctrl.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'zipdma_ctrl' (20#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_ctrl.v:41]
 INFO: [Synth 8-6157] synthesizing module 'zipdma_fsm' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_fsm.v:45]
 	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
 	Parameter LGDMALENGTH bound to: 32 - type: integer 
@@ -400,7 +276,7 @@ INFO: [Synth 8-6157] synthesizing module 'zipdma_fsm' [C:/Xilinx/CaravelFPGA/Car
 	Parameter S_WAIT bound to: 2'b01 
 	Parameter S_READ bound to: 2'b10 
 	Parameter S_WRITE bound to: 2'b11 
-INFO: [Synth 8-6155] done synthesizing module 'zipdma_fsm' (28#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_fsm.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'zipdma_fsm' (21#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_fsm.v:45]
 INFO: [Synth 8-6157] synthesizing module 'zipdma_mm2s' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_mm2s.v:42]
 	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
 	Parameter BUS_WIDTH bound to: 32 - type: integer 
@@ -414,13 +290,14 @@ INFO: [Synth 8-6157] synthesizing module 'zipdma_mm2s' [C:/Xilinx/CaravelFPGA/Ca
 	Parameter SZ_32B bound to: 2'b01 
 	Parameter SZ_BUS bound to: 2'b00 
 	Parameter WBLSB bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'zipdma_mm2s' (29#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_mm2s.v:42]
+WARNING: [Synth 8-6014] Unused sequential element rdack_subaddr_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_mm2s.v:588]
+INFO: [Synth 8-6155] done synthesizing module 'zipdma_mm2s' (22#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_mm2s.v:42]
 INFO: [Synth 8-6157] synthesizing module 'zipdma_rxgears' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_rxgears.v:43]
 	Parameter BUS_WIDTH bound to: 32 - type: integer 
 	Parameter OPT_LITTLE_ENDIAN bound to: 1'b0 
 	Parameter DW bound to: 32 - type: integer 
 	Parameter WBLSB bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'zipdma_rxgears' (30#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_rxgears.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'zipdma_rxgears' (23#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_rxgears.v:43]
 INFO: [Synth 8-6157] synthesizing module 'sfifo' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/sfifo.v:27]
 	Parameter BW bound to: 36 - type: integer 
 	Parameter LGFLEN bound to: 8 - type: integer 
@@ -428,7 +305,7 @@ INFO: [Synth 8-6157] synthesizing module 'sfifo' [C:/Xilinx/CaravelFPGA/Caravel_
 	Parameter OPT_WRITE_ON_FULL bound to: 1'b0 
 	Parameter OPT_READ_ON_EMPTY bound to: 1'b0 
 	Parameter FLEN bound to: 256 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sfifo' (31#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/sfifo.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'sfifo' (24#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/sfifo.v:27]
 INFO: [Synth 8-6157] synthesizing module 'zipdma_txgears' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_txgears.v:42]
 	Parameter BUS_WIDTH bound to: 32 - type: integer 
 	Parameter OPT_LITTLE_ENDIAN bound to: 1'b0 
@@ -438,7 +315,7 @@ INFO: [Synth 8-6157] synthesizing module 'zipdma_txgears' [C:/Xilinx/CaravelFPGA
 	Parameter SZ_16B bound to: 2'b10 
 	Parameter SZ_32B bound to: 2'b01 
 	Parameter SZ_BUS bound to: 2'b00 
-INFO: [Synth 8-6155] done synthesizing module 'zipdma_txgears' (32#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_txgears.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'zipdma_txgears' (25#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_txgears.v:42]
 INFO: [Synth 8-6157] synthesizing module 'zipdma_s2mm' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_s2mm.v:44]
 	Parameter ADDRESS_WIDTH bound to: 32 - type: integer 
 	Parameter BUS_WIDTH bound to: 32 - type: integer 
@@ -451,30 +328,30 @@ INFO: [Synth 8-6157] synthesizing module 'zipdma_s2mm' [C:/Xilinx/CaravelFPGA/Ca
 	Parameter SZ_32B bound to: 2'b01 
 	Parameter SZ_BUS bound to: 2'b00 
 	Parameter WBLSB bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'zipdma_s2mm' (33#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_s2mm.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'zipdma_s2mm' (26#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_s2mm.v:44]
 INFO: [Synth 8-6157] synthesizing module 'wbarbiter' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/wbarbiter.v:64]
 	Parameter DW bound to: 32 - type: integer 
 	Parameter AW bound to: 30 - type: integer 
 	Parameter SCHEME bound to: ALTERNATING - type: string 
 	Parameter OPT_ZERO_ON_IDLE bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'wbarbiter' (34#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/wbarbiter.v:64]
-INFO: [Synth 8-6155] done synthesizing module 'zipdma' (35#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'wbarbiter' (27#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/wbarbiter.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'zipdma' (28#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma.v:42]
 INFO: [Synth 8-6157] synthesizing module 'memory_intf' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/Memory/memory_intf.v:23]
 	Parameter AddressWidth bound to: 32 - type: integer 
 	Parameter DataWidth bound to: 32 - type: integer 
 	Parameter MemWidth bound to: 10 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'bram' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1/.Xil/Vivado-29740-RHIT-R912GAAZ/realtime/bram_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'bram' (36#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1/.Xil/Vivado-29740-RHIT-R912GAAZ/realtime/bram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bram' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1/.Xil/Vivado-2344-RHIT-R912GAAZ/realtime/bram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bram' (29#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1/.Xil/Vivado-2344-RHIT-R912GAAZ/realtime/bram_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'WB3_Interface' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/WB3_Interface.v:19]
 	Parameter READY bound to: 2'b00 
 	Parameter READ_ACK bound to: 2'b01 
 	Parameter WRITE_ACK bound to: 2'b10 
-INFO: [Synth 8-6155] done synthesizing module 'WB3_Interface' (37#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/WB3_Interface.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'WB3_Interface' (30#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/WB3_Interface.v:19]
 INFO: [Synth 8-6157] synthesizing module 'WB4_Interface' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/WB4_Interface.v:23]
 	Parameter READY bound to: 2'b00 
 	Parameter READ_ACK bound to: 2'b01 
 	Parameter WRITE_ACK bound to: 2'b10 
-INFO: [Synth 8-6155] done synthesizing module 'WB4_Interface' (38#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/WB4_Interface.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'WB4_Interface' (31#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/WB4_Interface.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Memory_Arbiter' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/Memory/Memory_Arbiter.v:13]
 	Parameter WAIT_TIME bound to: 0 - type: integer 
 	Parameter AddressWidth bound to: 32 - type: integer 
@@ -482,9 +359,10 @@ INFO: [Synth 8-6157] synthesizing module 'Memory_Arbiter' [C:/Xilinx/CaravelFPGA
 	Parameter FREE bound to: 2'b00 
 	Parameter PROCESSING bound to: 2'b01 
 	Parameter ACK bound to: 2'b10 
-INFO: [Synth 8-6155] done synthesizing module 'Memory_Arbiter' (39#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/Memory/Memory_Arbiter.v:13]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/Memory/Memory_Arbiter.v:96]
+INFO: [Synth 8-6155] done synthesizing module 'Memory_Arbiter' (32#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/Memory/Memory_Arbiter.v:13]
 WARNING: [Synth 8-3848] Net wb4_err_o in module/entity memory_intf does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/Memory/memory_intf.v:47]
-INFO: [Synth 8-6155] done synthesizing module 'memory_intf' (40#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/Memory/memory_intf.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'memory_intf' (33#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/Memory/memory_intf.v:23]
 INFO: [Synth 8-6157] synthesizing module 'sdspi' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/sdspi.v:44]
 	Parameter OPT_CARD_DETECT bound to: 1'b1 
 	Parameter OPT_LITTLE_ENDIAN bound to: 1'b0 
@@ -520,24 +398,25 @@ INFO: [Synth 8-6157] synthesizing module 'llsdspi' [C:/Xilinx/CaravelFPGA/Carave
 	Parameter LLSDSPI_WAIT bound to: 4'b0010 
 	Parameter LLSDSPI_START bound to: 4'b0011 
 	Parameter LLSDSPI_END bound to: 4'b1011 
-INFO: [Synth 8-6155] done synthesizing module 'llsdspi' (41#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/llsdspi.v:92]
+INFO: [Synth 8-6155] done synthesizing module 'llsdspi' (34#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/llsdspi.v:92]
 INFO: [Synth 8-6157] synthesizing module 'spicmd' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/spicmd.v:41]
 	Parameter CRC_POLYNOMIAL bound to: 7'b0001001 
-INFO: [Synth 8-6155] done synthesizing module 'spicmd' (42#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/spicmd.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'spicmd' (35#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/spicmd.v:41]
 INFO: [Synth 8-6157] synthesizing module 'spirxdata' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/spirxdata.v:43]
 	Parameter DW bound to: 32 - type: integer 
 	Parameter AW bound to: 8 - type: integer 
 	Parameter OPT_LITTLE_ENDIAN bound to: 1'b0 
 	Parameter CRC_POLYNOMIAL bound to: 16'b0001000000100001 
-INFO: [Synth 8-6155] done synthesizing module 'spirxdata' (43#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/spirxdata.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'spirxdata' (36#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/spirxdata.v:43]
 INFO: [Synth 8-6157] synthesizing module 'spitxdata' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/spitxdata.v:41]
 	Parameter DW bound to: 32 - type: integer 
 	Parameter AW bound to: 8 - type: integer 
 	Parameter RDDELAY bound to: 2 - type: integer 
 	Parameter OPT_LITTLE_ENDIAN bound to: 1'b0 
 	Parameter CRC_POLYNOMIAL bound to: 16'b0001000000100001 
-INFO: [Synth 8-6155] done synthesizing module 'spitxdata' (44#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/spitxdata.v:41]
-INFO: [Synth 8-6155] done synthesizing module 'sdspi' (45#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/sdspi.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'spitxdata' (37#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/spitxdata.v:41]
+WARNING: [Synth 8-6014] Unused sequential element dly_stb_reg was removed.  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/sdspi.v:683]
+INFO: [Synth 8-6155] done synthesizing module 'sdspi' (38#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/SD_Card_Interface_Module/sdspi.v:44]
 INFO: [Synth 8-6157] synthesizing module 'LUT_Module' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/LUT_Module.v:13]
 	Parameter AddressWidth bound to: 32 - type: integer 
 	Parameter DataWidth bound to: 32 - type: integer 
@@ -554,27 +433,27 @@ INFO: [Synth 8-6157] synthesizing module 'Parallel_Memory_Unit' [C:/Xilinx/Carav
 	Parameter SingleDataWidth bound to: 32 - type: integer 
 	Parameter MemorySize bound to: 32 - type: integer 
 	Parameter AddressWidth bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'Parallel_Memory_Unit' (46#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/Parallel_Memory_Unit.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'Parallel_Memory_Unit' (39#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/Parallel_Memory_Unit.v:14]
 INFO: [Synth 8-6157] synthesizing module 'Indexing_Unit' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/Indexing_Unit.v:13]
 INFO: [Synth 8-6157] synthesizing module 'FloatingCompare' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/FloatingCompare.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'FloatingCompare' (47#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/FloatingCompare.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'Indexing_Unit' (48#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/Indexing_Unit.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'FloatingCompare' (40#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/FloatingCompare.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Indexing_Unit' (41#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/Indexing_Unit.v:13]
 INFO: [Synth 8-6157] synthesizing module 'Memory_Unit' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/Memory_Unit.v:14]
 	Parameter DataWidth bound to: 32 - type: integer 
 	Parameter MemorySize bound to: 32 - type: integer 
 	Parameter AddressWidth bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'Memory_Unit' (49#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/Memory_Unit.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'Memory_Unit' (42#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/Memory_Unit.v:14]
 INFO: [Synth 8-6157] synthesizing module 'LUT_MAC_Module' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/LUT_MAC_Module.v:13]
 	Parameter DataWidth bound to: 32 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'FloatingMultiplication' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/FloatingMultiplication.v:4]
 	Parameter XLEN bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'FloatingMultiplication' (50#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/FloatingMultiplication.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'FloatingMultiplication' (43#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/FloatingMultiplication.v:4]
 INFO: [Synth 8-6157] synthesizing module 'FloatingAddition' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/FloatingAddition.v:4]
 	Parameter XLEN bound to: 32 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'Priority_Encoder' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/Priority_Encoder.v:15]
-INFO: [Synth 8-6155] done synthesizing module 'Priority_Encoder' (51#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/Priority_Encoder.v:15]
-INFO: [Synth 8-6155] done synthesizing module 'FloatingAddition' (52#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/FloatingAddition.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'LUT_MAC_Module' (53#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/LUT_MAC_Module.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'Priority_Encoder' (44#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/Priority_Encoder.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'FloatingAddition' (45#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/FloatingAddition.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'LUT_MAC_Module' (46#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/LUT_MAC_Module.v:13]
 WARNING: [Synth 8-7023] instance 'wb3_intf' of module 'WB3_Interface' has 17 connections declared, but only 16 given [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/LUT_Module.v:298]
 WARNING: [Synth 8-7023] instance 'wb4_intf' of module 'WB4_Interface' has 18 connections declared, but only 17 given [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/LUT_Module.v:319]
 INFO: [Synth 8-6157] synthesizing module 'LUT_Arbiter' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/LUT_Arbiter.v:13]
@@ -587,29 +466,29 @@ INFO: [Synth 8-6157] synthesizing module 'LUT_Arbiter' [C:/Xilinx/CaravelFPGA/Ca
 	Parameter READ bound to: 2'b11 
 INFO: [Synth 8-226] default block is never used [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/LUT_Arbiter.v:122]
 INFO: [Synth 8-226] default block is never used [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/LUT_Arbiter.v:157]
-INFO: [Synth 8-6155] done synthesizing module 'LUT_Arbiter' (54#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/LUT_Arbiter.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'LUT_Arbiter' (47#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/LUT_Arbiter.v:13]
 WARNING: [Synth 8-3848] Net wb4_err_o in module/entity LUT_Module does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/LUT_Module.v:44]
-INFO: [Synth 8-6155] done synthesizing module 'LUT_Module' (55#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/LUT_Module.v:13]
-WARNING: [Synth 8-3848] Net syn_stall_4 in module/entity TopLevel does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/TopLevel/TopLevel.v:210]
-WARNING: [Synth 8-3848] Net syn_ack_4 in module/entity TopLevel does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/TopLevel/TopLevel.v:209]
-WARNING: [Synth 8-3848] Net syn_dat_4 in module/entity TopLevel does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/TopLevel/TopLevel.v:211]
-INFO: [Synth 8-6155] done synthesizing module 'TopLevel' (56#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/TopLevel/TopLevel.v:15]
-INFO: [Synth 8-6155] done synthesizing module 'user_project_wrapper' (57#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/__user_project_wrapper.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'LUT_Module' (48#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/LUT_Module/LUT_Module.v:13]
+WARNING: [Synth 8-3848] Net syn_stall_4 in module/entity TopLevel does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/TopLevel/TopLevel.v:207]
+WARNING: [Synth 8-3848] Net syn_ack_4 in module/entity TopLevel does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/TopLevel/TopLevel.v:206]
+WARNING: [Synth 8-3848] Net syn_dat_4 in module/entity TopLevel does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/TopLevel/TopLevel.v:208]
+INFO: [Synth 8-6155] done synthesizing module 'TopLevel' (49#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/TopLevel/TopLevel.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'user_project_wrapper' (50#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/__user_project_wrapper.v:40]
 INFO: [Synth 8-6157] synthesizing module 'caravel_clocking' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel_clocking.v:25]
 INFO: [Synth 8-6157] synthesizing module 'clock_div' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/clock_div.v:23]
 	Parameter SIZE bound to: 3 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'even' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/clock_div.v:177]
 	Parameter SIZE bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'even' (58#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/clock_div.v:177]
+INFO: [Synth 8-6155] done synthesizing module 'even' (51#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/clock_div.v:177]
 INFO: [Synth 8-6157] synthesizing module 'odd' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/clock_div.v:68]
 	Parameter SIZE bound to: 3 - type: integer 
 	Parameter interm_init bound to: 4'b0101 
-INFO: [Synth 8-6155] done synthesizing module 'odd' (59#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/clock_div.v:68]
-INFO: [Synth 8-6155] done synthesizing module 'clock_div' (60#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/clock_div.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'odd' (52#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/clock_div.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'clock_div' (53#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/clock_div.v:23]
 WARNING: [Synth 8-5788] Register ext_clk_syncd_pre_reg in module caravel_clocking is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel_clocking.v:69]
-INFO: [Synth 8-6155] done synthesizing module 'caravel_clocking' (61#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel_clocking.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'caravel_clocking' (54#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel_clocking.v:25]
 INFO: [Synth 8-6157] synthesizing module 'FPGA_POR' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/FPGA_POR.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'FPGA_POR' (62#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/FPGA_POR.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'FPGA_POR' (55#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/FPGA_POR.v:2]
 INFO: [Synth 8-6157] synthesizing module 'housekeeping' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/housekeeping.v:63]
 	Parameter GPIO_BASE_ADR bound to: 637534208 - type: integer 
 	Parameter SPI_BASE_ADR bound to: 638582784 - type: integer 
@@ -619,10 +498,10 @@ INFO: [Synth 8-6157] synthesizing module 'housekeeping' [C:/Xilinx/CaravelFPGA/C
 	Parameter INP_DIS bound to: 3 - type: integer 
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/housekeeping.v:662]
 INFO: [Synth 8-6157] synthesizing module 'housekeeping_spi' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/housekeeping_spi.v:81]
-INFO: [Synth 8-6155] done synthesizing module 'housekeeping_spi' (63#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/housekeeping_spi.v:81]
+INFO: [Synth 8-6155] done synthesizing module 'housekeeping_spi' (56#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/housekeeping_spi.v:81]
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/housekeeping.v:1132]
 WARNING: [Synth 8-5788] Register wb_dat_o_reg in module housekeeping is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/housekeeping.v:690]
-INFO: [Synth 8-6155] done synthesizing module 'housekeeping' (64#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/housekeeping.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'housekeeping' (57#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/housekeeping.v:63]
 INFO: [Synth 8-6157] synthesizing module 'mprj_io_buffer' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mprj_io_buffer.v:16]
 WARNING: [Synth 8-6104] Input port 'mgmt_gpio_in' has an internal driver [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mprj_io_buffer.v:41]
 WARNING: [Synth 8-6104] Input port 'mgmt_gpio_oeb' has an internal driver [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mprj_io_buffer.v:42]
@@ -630,13 +509,13 @@ WARNING: [Synth 8-6104] Input port 'mgmt_gpio_out' has an internal driver [C:/Xi
 WARNING: [Synth 8-3848] Net mgmt_gpio_in_buf in module/entity mprj_io_buffer does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mprj_io_buffer.v:22]
 WARNING: [Synth 8-3848] Net mgmt_gpio_oeb_buf in module/entity mprj_io_buffer does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mprj_io_buffer.v:24]
 WARNING: [Synth 8-3848] Net mgmt_gpio_out_buf in module/entity mprj_io_buffer does not have driver. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mprj_io_buffer.v:26]
-INFO: [Synth 8-6155] done synthesizing module 'mprj_io_buffer' (65#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mprj_io_buffer.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'mprj_io_buffer' (58#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mprj_io_buffer.v:16]
 INFO: [Synth 8-6157] synthesizing module 'gpio_defaults_block' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/gpio_defaults_block.v:30]
 	Parameter GPIO_CONFIG_INIT bound to: 13'b0010000000011 
-INFO: [Synth 8-6155] done synthesizing module 'gpio_defaults_block' (66#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/gpio_defaults_block.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_defaults_block' (59#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/gpio_defaults_block.v:30]
 INFO: [Synth 8-6157] synthesizing module 'gpio_defaults_block__parameterized0' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/gpio_defaults_block.v:30]
 	Parameter GPIO_CONFIG_INIT bound to: 13'b1100000001001 
-INFO: [Synth 8-6155] done synthesizing module 'gpio_defaults_block__parameterized0' (66#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/gpio_defaults_block.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_defaults_block__parameterized0' (59#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/gpio_defaults_block.v:30]
 INFO: [Synth 8-6157] synthesizing module 'gpio_control_block' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/gpio_control_block.v:59]
 	Parameter PAD_CTRL_BITS bound to: 13 - type: integer 
 	Parameter MGMT_EN bound to: 0 - type: integer 
@@ -651,7 +530,7 @@ INFO: [Synth 8-6157] synthesizing module 'gpio_control_block' [C:/Xilinx/Caravel
 	Parameter TRIP bound to: 9 - type: integer 
 	Parameter DM bound to: 10 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'gpio_logic_high' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/gpio_logic_high.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'gpio_logic_high' (67#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/gpio_logic_high.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_logic_high' (60#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/gpio_logic_high.v:3]
 WARNING: [Synth 8-5788] Register mgmt_ena_reg in module gpio_control_block is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/gpio_control_block.v:193]
 WARNING: [Synth 8-5788] Register gpio_holdover_reg in module gpio_control_block is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/gpio_control_block.v:194]
 WARNING: [Synth 8-5788] Register gpio_slow_sel_reg in module gpio_control_block is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/gpio_control_block.v:195]
@@ -663,12 +542,12 @@ WARNING: [Synth 8-5788] Register gpio_dm_reg in module gpio_control_block is has
 WARNING: [Synth 8-5788] Register gpio_ana_en_reg in module gpio_control_block is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/gpio_control_block.v:201]
 WARNING: [Synth 8-5788] Register gpio_ana_sel_reg in module gpio_control_block is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/gpio_control_block.v:202]
 WARNING: [Synth 8-5788] Register gpio_ana_pol_reg in module gpio_control_block is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/gpio_control_block.v:203]
-INFO: [Synth 8-6155] done synthesizing module 'gpio_control_block' (68#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/gpio_control_block.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_control_block' (61#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/gpio_control_block.v:59]
 INFO: [Synth 8-6157] synthesizing module 'user_id_programming' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/user_id_programming.v:28]
 	Parameter USER_PROJECT_ID bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'user_id_programming' (69#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/user_id_programming.v:28]
-INFO: [Synth 8-6155] done synthesizing module 'caravel_core' (70#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel_core.v:45]
-INFO: [Synth 8-6155] done synthesizing module 'caravel' (71#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'user_id_programming' (62#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/user_id_programming.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'caravel_core' (63#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel_core.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'caravel' (64#1) [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel.v:46]
 WARNING: [Synth 8-3331] design even has unconnected port N[0]
 WARNING: [Synth 8-3331] design LUT_Module has unconnected port wb4_err_o
 WARNING: [Synth 8-3331] design llsdspi has unconnected port i_bus_grant
@@ -771,7 +650,7 @@ WARNING: [Synth 8-3331] design TopLevel has unconnected port la_data_in[69]
 WARNING: [Synth 8-3331] design TopLevel has unconnected port la_data_in[68]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1032.777 ; gain = 472.277
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 993.215 ; gain = 431.832
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -784,12 +663,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1045.086 ; gain = 484.586
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1004.270 ; gain = 442.887
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1045.086 ; gain = 484.586
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1004.270 ; gain = 442.887
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.616 . Memory (MB): peak = 1045.086 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.609 . Memory (MB): peak = 1004.270 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -820,20 +699,20 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/caravel_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1233.930 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1185.957 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.163 . Memory (MB): peak = 1233.930 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.140 . Memory (MB): peak = 1185.957 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1233.930 ; gain = 673.430
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1185.957 ; gain = 624.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1233.930 ; gain = 673.430
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1185.957 ; gain = 624.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -843,36 +722,10 @@ Applied set_property CLOCK_BUFFER_TYPE = NONE for clock100. (constraint file  c:
 Applied set_property DONT_TOUCH = true for clk_fix. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for chip_core/mprj/TopLevel/Mem/bram_wb. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1233.930 ; gain = 673.430
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1185.957 ; gain = 624.574
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4471] merging register 'decode_mul_rData_msb2_reg' into 'decode_mul_rData_msb1_reg' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12419]
-INFO: [Synth 8-4471] merging register 'mul_preMul_output_rData_msb2_reg' into 'mul_preMul_output_rData_msb1_reg' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12467]
-INFO: [Synth 8-4471] merging register 'load_s1_output_rData_DZ_reg' into 'load_s1_output_rData_NV_reg' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:13379]
-INFO: [Synth 8-4471] merging register 'shortPip_output_rData_DZ_reg' into 'shortPip_output_rData_scrap_reg' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:13397]
-WARNING: [Synth 8-3936] Found unconnected internal register 'load_s0_output_rData_arg_reg' and it is trimmed from '2' to '1' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:11770]
-WARNING: [Synth 8-3936] Found unconnected internal register 'decode_load_s2mPipe_m2sPipe_rData_arg_reg' and it is trimmed from '2' to '1' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:11721]
-WARNING: [Synth 8-3936] Found unconnected internal register 'decode_load_s2mPipe_rData_arg_reg' and it is trimmed from '2' to '1' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:11708]
-WARNING: [Synth 8-3936] Found unconnected internal register 'decode_load_rData_arg_reg' and it is trimmed from '2' to '1' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:11695]
-WARNING: [Synth 8-3936] Found unconnected internal register 'add_oh_output_rData_rs1_exponent_reg' and it is trimmed from '9' to '2' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:13236]
-WARNING: [Synth 8-3936] Found unconnected internal register 'add_math_output_rData_rs1_exponent_reg' and it is trimmed from '9' to '2' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:13153]
-WARNING: [Synth 8-3936] Found unconnected internal register 'add_shifter_output_rData_rs1_exponent_reg' and it is trimmed from '9' to '2' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:13103]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mul_sum2_output_rData_rs1_exponent_reg' and it is trimmed from '9' to '2' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12622]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mul_sum1_output_rData_rs1_exponent_reg' and it is trimmed from '9' to '2' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12564]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mul_mul_output_rData_rs1_exponent_reg' and it is trimmed from '9' to '2' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12507]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mul_preMul_output_rData_rs1_exponent_reg' and it is trimmed from '9' to '2' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12452]
-WARNING: [Synth 8-3936] Found unconnected internal register 'add_oh_output_rData_rs2_exponent_reg' and it is trimmed from '9' to '2' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:13240]
-WARNING: [Synth 8-3936] Found unconnected internal register 'add_math_output_rData_rs2_exponent_reg' and it is trimmed from '9' to '2' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:13157]
-WARNING: [Synth 8-3936] Found unconnected internal register 'add_shifter_output_rData_rs2_exponent_reg' and it is trimmed from '9' to '2' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:13107]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mul_sum2_output_rData_rs2_exponent_reg' and it is trimmed from '9' to '2' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12626]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mul_sum1_output_rData_rs2_exponent_reg' and it is trimmed from '9' to '2' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12568]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mul_mul_output_rData_rs2_exponent_reg' and it is trimmed from '9' to '2' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12511]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mul_preMul_output_rData_rs2_exponent_reg' and it is trimmed from '9' to '2' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:12456]
-INFO: [Synth 8-5544] ROM "scheduler_0_useRd" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "scheduler_0_useRs3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "scheduler_0_useRs2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "scheduler_0_useRs1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-3936] Found unconnected internal register 'memory_to_writeBack_INSTRUCTION_reg' and it is trimmed from '32' to '30' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:3767]
-WARNING: [Synth 8-3936] Found unconnected internal register 'execute_to_memory_INSTRUCTION_reg' and it is trimmed from '32' to '30' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:3614]
+WARNING: [Synth 8-3936] Found unconnected internal register 'execute_to_memory_INSTRUCTION_reg' and it is trimmed from '32' to '30' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:2328]
+INFO: [Synth 8-5544] ROM "_zz_dBusWishbone_SEL" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'IBusCachedPlugin_injector_port_state_reg' in module 'VexRiscv'
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:3387]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/mgmt_core.v:3357]
@@ -951,7 +804,6 @@ INFO: [Synth 8-5544] ROM "wbbd_sck" won't be mapped to Block RAM because address
 INFO: [Synth 8-5544] ROM "wbbd_write" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "wbbd_addr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "wb_dat_o" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-3971] The signal "FpuCore:/rf_ram_reg" was recognized as a true dual port RAM template.
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -1052,7 +904,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'xfer_state_reg' using enco
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'wbbd_state_reg' using encoding 'sequential' in module 'housekeeping'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1233.930 ; gain = 673.430
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1185.957 ; gain = 624.574
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_2'
 INFO: [Synth 8-223] decloning instance 'chip_core/gpio_defaults_block_0' (gpio_defaults_block) to 'chip_core/gpio_defaults_block_3'
@@ -1097,13 +949,10 @@ Report RTL Partitions:
 +------+--------------------------+------------+----------+
 |1     |LUT_Module__GB0           |           1|     27028|
 |2     |LUT_Module__GB1           |           1|     13975|
-|3     |TopLevel__GC0             |           1|     10878|
-|4     |user_project_wrapper__GC0 |           1|       563|
-|5     |caravel_core__GCB0        |           1|     32074|
-|6     |caravel_core__GCB1        |           1|     11222|
-|7     |caravel_core__GCB2        |           1|       580|
-|8     |caravel_core__GCB3        |           1|      3828|
-|9     |caravel__GC0              |           1|      1800|
+|3     |TopLevel__GC0             |           1|     10843|
+|4     |user_project_wrapper__GC0 |           1|       598|
+|5     |caravel_core__GC0         |           1|     35684|
+|6     |caravel__GC0              |           1|      1800|
 +------+--------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1112,16 +961,11 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     64 Bit       Adders := 1     
 	   3 Input     52 Bit       Adders := 1     
-	   3 Input     48 Bit       Adders := 1     
-	   2 Input     43 Bit       Adders := 1     
 	   2 Input     33 Bit       Adders := 8     
 	   3 Input     33 Bit       Adders := 1     
-	   3 Input     32 Bit       Adders := 4     
-	   2 Input     32 Bit       Adders := 12    
+	   3 Input     32 Bit       Adders := 3     
+	   2 Input     32 Bit       Adders := 9     
 	   2 Input     30 Bit       Adders := 1     
-	   3 Input     28 Bit       Adders := 4     
-	   2 Input     27 Bit       Adders := 2     
-	   4 Input     27 Bit       Adders := 1     
 	   2 Input     25 Bit       Adders := 3     
 	   2 Input     24 Bit       Adders := 4     
 	   2 Input     23 Bit       Adders := 1     
@@ -1130,76 +974,64 @@ Detailed RTL Component Info :
 	   3 Input     12 Bit       Adders := 1     
 	   3 Input     11 Bit       Adders := 2     
 	   2 Input     11 Bit       Adders := 2     
-	   4 Input     11 Bit       Adders := 1     
-	   2 Input     10 Bit       Adders := 6     
-	   3 Input     10 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
 	   4 Input      9 Bit       Adders := 1     
-	   2 Input      9 Bit       Adders := 7     
-	   3 Input      9 Bit       Adders := 4     
+	   2 Input      9 Bit       Adders := 4     
+	   3 Input      9 Bit       Adders := 1     
 	   3 Input      8 Bit       Adders := 4     
-	   2 Input      8 Bit       Adders := 12    
+	   2 Input      8 Bit       Adders := 10    
 	   2 Input      7 Bit       Adders := 2     
-	   2 Input      6 Bit       Adders := 6     
-	   5 Input      6 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 3     
 	   3 Input      5 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 5     
+	   2 Input      5 Bit       Adders := 4     
 	   4 Input      5 Bit       Adders := 1     
-	   4 Input      4 Bit       Adders := 8     
+	   4 Input      4 Bit       Adders := 2     
 	   3 Input      4 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 18    
-	   2 Input      3 Bit       Adders := 25    
+	   2 Input      4 Bit       Adders := 16    
+	   2 Input      3 Bit       Adders := 24    
 	   3 Input      3 Bit       Adders := 2     
 	   2 Input      2 Bit       Adders := 5     
-	   3 Input      2 Bit       Adders := 2     
-	   2 Input      1 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 2     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
 	   2 Input     16 Bit         XORs := 4     
 	   2 Input      7 Bit         XORs := 2     
-	   2 Input      1 Bit         XORs := 69    
-	   3 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 55    
 +---Registers : 
 	               65 Bit    Registers := 1     
 	               64 Bit    Registers := 1     
 	               52 Bit    Registers := 1     
-	               48 Bit    Registers := 1     
-	               43 Bit    Registers := 1     
 	               40 Bit    Registers := 4     
 	               38 Bit    Registers := 1     
-	               34 Bit    Registers := 4     
-	               33 Bit    Registers := 2     
-	               32 Bit    Registers := 396   
+	               34 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 386   
 	               30 Bit    Registers := 5     
-	               28 Bit    Registers := 1     
-	               27 Bit    Registers := 5     
-	               26 Bit    Registers := 3     
-	               25 Bit    Registers := 12    
-	               24 Bit    Registers := 8     
-	               23 Bit    Registers := 23    
-	               22 Bit    Registers := 2     
+	               26 Bit    Registers := 1     
+	               24 Bit    Registers := 3     
+	               22 Bit    Registers := 1     
 	               21 Bit    Registers := 1     
 	               20 Bit    Registers := 1     
 	               17 Bit    Registers := 1     
 	               16 Bit    Registers := 4     
 	               13 Bit    Registers := 78    
 	               11 Bit    Registers := 5     
-	               10 Bit    Registers := 6     
-	                9 Bit    Registers := 29    
-	                8 Bit    Registers := 51    
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 46    
 	                7 Bit    Registers := 3     
-	                6 Bit    Registers := 9     
-	                5 Bit    Registers := 41    
-	                4 Bit    Registers := 44    
-	                3 Bit    Registers := 103   
-	                2 Bit    Registers := 47    
-	                1 Bit    Registers := 1266  
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 10    
+	                4 Bit    Registers := 26    
+	                3 Bit    Registers := 76    
+	                2 Bit    Registers := 29    
+	                1 Bit    Registers := 1048  
 +---RAMs : 
 	              32K Bit         RAMs := 1     
 	               9K Bit         RAMs := 1     
-	               8K Bit         RAMs := 5     
+	               8K Bit         RAMs := 1     
 	               4K Bit         RAMs := 3     
-	               2K Bit         RAMs := 2     
-	               1K Bit         RAMs := 1     
+	               2K Bit         RAMs := 1     
 	             1024 Bit         RAMs := 1     
 	              160 Bit         RAMs := 2     
 +---Muxes : 
@@ -1213,29 +1045,26 @@ Detailed RTL Component Info :
 	   6 Input     38 Bit        Muxes := 1     
 	   2 Input     38 Bit        Muxes := 2     
 	  97 Input     38 Bit        Muxes := 1     
-	   2 Input     35 Bit        Muxes := 1     
-	   2 Input     33 Bit        Muxes := 12    
+	   2 Input     33 Bit        Muxes := 6     
 	   4 Input     33 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 221   
+	   2 Input     32 Bit        Muxes := 176   
 	  11 Input     32 Bit        Muxes := 3     
 	  13 Input     32 Bit        Muxes := 2     
 	   4 Input     32 Bit        Muxes := 10    
 	   3 Input     32 Bit        Muxes := 5     
-	   5 Input     32 Bit        Muxes := 2     
 	   7 Input     32 Bit        Muxes := 2     
+	   5 Input     32 Bit        Muxes := 1     
 	   9 Input     32 Bit        Muxes := 2     
 	   2 Input     31 Bit        Muxes := 1     
 	   2 Input     30 Bit        Muxes := 6     
 	   9 Input     30 Bit        Muxes := 1     
-	   2 Input     28 Bit        Muxes := 1     
-	   2 Input     27 Bit        Muxes := 4     
-	   2 Input     26 Bit        Muxes := 9     
+	   2 Input     26 Bit        Muxes := 1     
 	  98 Input     26 Bit        Muxes := 1     
 	  26 Input     25 Bit        Muxes := 1     
-	   2 Input     25 Bit        Muxes := 9     
-	   2 Input     24 Bit        Muxes := 14    
+	   2 Input     25 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 7     
 	  97 Input     24 Bit        Muxes := 1     
-	   2 Input     23 Bit        Muxes := 8     
+	   2 Input     23 Bit        Muxes := 1     
 	   2 Input     21 Bit        Muxes := 1     
 	   2 Input     17 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 4     
@@ -1243,60 +1072,55 @@ Detailed RTL Component Info :
 	  98 Input     13 Bit        Muxes := 38    
 	   4 Input     13 Bit        Muxes := 2     
 	   2 Input     11 Bit        Muxes := 7     
-	   2 Input     10 Bit        Muxes := 2     
 	   3 Input      9 Bit        Muxes := 2     
-	   2 Input      9 Bit        Muxes := 19    
-	   2 Input      8 Bit        Muxes := 59    
-	   4 Input      8 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 56    
 	   7 Input      8 Bit        Muxes := 3     
+	   4 Input      8 Bit        Muxes := 3     
 	   5 Input      8 Bit        Muxes := 1     
 	   3 Input      8 Bit        Muxes := 2     
 	  11 Input      8 Bit        Muxes := 2     
 	   8 Input      8 Bit        Muxes := 2     
-	   2 Input      7 Bit        Muxes := 14    
+	   2 Input      7 Bit        Muxes := 12    
 	   5 Input      7 Bit        Muxes := 1     
 	 113 Input      7 Bit        Muxes := 4     
-	   2 Input      6 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 3     
 	   9 Input      6 Bit        Muxes := 1     
 	   4 Input      6 Bit        Muxes := 1     
 	  33 Input      5 Bit        Muxes := 1     
 	  13 Input      5 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 24    
+	   2 Input      5 Bit        Muxes := 8     
 	  26 Input      5 Bit        Muxes := 1     
 	   4 Input      5 Bit        Muxes := 3     
 	   3 Input      5 Bit        Muxes := 2     
 	  13 Input      4 Bit        Muxes := 1     
-	   4 Input      4 Bit        Muxes := 5     
-	   2 Input      4 Bit        Muxes := 43    
-	   6 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 37    
+	   6 Input      4 Bit        Muxes := 2     
 	   3 Input      4 Bit        Muxes := 2     
 	   5 Input      4 Bit        Muxes := 2     
 	  11 Input      4 Bit        Muxes := 1     
-	   3 Input      3 Bit        Muxes := 6     
-	   2 Input      3 Bit        Muxes := 136   
+	   3 Input      3 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 121   
 	   4 Input      3 Bit        Muxes := 3     
-	   6 Input      3 Bit        Muxes := 1     
-	   7 Input      3 Bit        Muxes := 1     
 	   5 Input      3 Bit        Muxes := 2     
 	  10 Input      3 Bit        Muxes := 1     
 	  97 Input      3 Bit        Muxes := 1     
 	   9 Input      3 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 6     
-	   2 Input      2 Bit        Muxes := 70    
+	   2 Input      2 Bit        Muxes := 48    
 	   4 Input      2 Bit        Muxes := 6     
 	   5 Input      2 Bit        Muxes := 1     
 	   7 Input      2 Bit        Muxes := 1     
 	   6 Input      2 Bit        Muxes := 1     
 	   9 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2063  
-	   3 Input      1 Bit        Muxes := 314   
+	   2 Input      1 Bit        Muxes := 1871  
+	   3 Input      1 Bit        Muxes := 313   
 	  33 Input      1 Bit        Muxes := 1     
 	  13 Input      1 Bit        Muxes := 10    
-	   4 Input      1 Bit        Muxes := 62    
+	   4 Input      1 Bit        Muxes := 54    
 	   7 Input      1 Bit        Muxes := 13    
-	   5 Input      1 Bit        Muxes := 7     
-	  16 Input      1 Bit        Muxes := 4     
-	   6 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 1     
 	   9 Input      1 Bit        Muxes := 9     
 	  97 Input      1 Bit        Muxes := 10    
 	  98 Input      1 Bit        Muxes := 1     
@@ -1769,10 +1593,6 @@ Detailed RTL Component Info :
 	   2 Input      2 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 5     
 	   3 Input      1 Bit        Muxes := 1     
-Module memory_intf 
-Detailed RTL Component Info : 
-+---Registers : 
-	               32 Bit    Registers := 1     
 Module llsdspi 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -1902,6 +1722,8 @@ Detailed RTL Component Info :
 	   2 Input      1 Bit        Muxes := 1     
 Module user_project_wrapper 
 Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
@@ -1942,140 +1764,6 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 8     
-Module DataCache 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      8 Bit       Adders := 1     
-	   2 Input      3 Bit       Adders := 1     
-+---Registers : 
-	               32 Bit    Registers := 2     
-	               22 Bit    Registers := 1     
-	                8 Bit    Registers := 5     
-	                4 Bit    Registers := 2     
-	                3 Bit    Registers := 1     
-	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 23    
-+---RAMs : 
-	               8K Bit         RAMs := 4     
-	               2K Bit         RAMs := 1     
-+---Muxes : 
-	   2 Input     32 Bit        Muxes := 2     
-	   2 Input     10 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 1     
-	   2 Input      7 Bit        Muxes := 2     
-	   2 Input      5 Bit        Muxes := 3     
-	   4 Input      4 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 23    
-Module StreamArbiter 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input      2 Bit       Adders := 1     
-+---Registers : 
-	                1 Bit    Registers := 1     
-Module FpuDiv 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     28 Bit       Adders := 3     
-	   2 Input     27 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 1     
-+---Registers : 
-	               27 Bit    Registers := 3     
-	               25 Bit    Registers := 1     
-	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
-+---Muxes : 
-	   2 Input     27 Bit        Muxes := 4     
-	   2 Input      2 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 3     
-Module FpuSqrt 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     28 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 1     
-+---Registers : 
-	               28 Bit    Registers := 1     
-	               24 Bit    Registers := 1     
-	               23 Bit    Registers := 1     
-	                5 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
-+---Muxes : 
-	   2 Input     28 Bit        Muxes := 1     
-	   2 Input     26 Bit        Muxes := 1     
-	   2 Input     23 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 4     
-Module StreamArbiter_1 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      6 Bit       Adders := 1     
-Module FpuCore 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     48 Bit       Adders := 1     
-	   2 Input     43 Bit       Adders := 1     
-	   3 Input     32 Bit       Adders := 1     
-	   2 Input     32 Bit       Adders := 3     
-	   4 Input     27 Bit       Adders := 1     
-	   2 Input     27 Bit       Adders := 1     
-	   4 Input     11 Bit       Adders := 1     
-	   2 Input     10 Bit       Adders := 4     
-	   3 Input     10 Bit       Adders := 2     
-	   2 Input      9 Bit       Adders := 3     
-	   3 Input      9 Bit       Adders := 3     
-	   2 Input      8 Bit       Adders := 1     
-	   2 Input      6 Bit       Adders := 2     
-	   4 Input      4 Bit       Adders := 6     
-	   3 Input      2 Bit       Adders := 1     
-+---XORs : 
-	   2 Input      1 Bit         XORs := 14    
-	   3 Input      1 Bit         XORs := 1     
-+---Registers : 
-	               48 Bit    Registers := 1     
-	               43 Bit    Registers := 1     
-	               34 Bit    Registers := 3     
-	               33 Bit    Registers := 1     
-	               32 Bit    Registers := 3     
-	               27 Bit    Registers := 2     
-	               26 Bit    Registers := 2     
-	               25 Bit    Registers := 11    
-	               24 Bit    Registers := 4     
-	               23 Bit    Registers := 22    
-	               10 Bit    Registers := 4     
-	                9 Bit    Registers := 25    
-	                6 Bit    Registers := 5     
-	                5 Bit    Registers := 29    
-	                4 Bit    Registers := 10    
-	                3 Bit    Registers := 23    
-	                2 Bit    Registers := 18    
-	                1 Bit    Registers := 162   
-+---RAMs : 
-	               1K Bit         RAMs := 1     
-+---Muxes : 
-	   2 Input     35 Bit        Muxes := 1     
-	   2 Input     33 Bit        Muxes := 6     
-	   2 Input     32 Bit        Muxes := 16    
-	   5 Input     32 Bit        Muxes := 1     
-	   2 Input     26 Bit        Muxes := 7     
-	   2 Input     25 Bit        Muxes := 7     
-	   2 Input     24 Bit        Muxes := 7     
-	   2 Input     23 Bit        Muxes := 6     
-	   2 Input     10 Bit        Muxes := 1     
-	   2 Input      9 Bit        Muxes := 19    
-	   2 Input      8 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 12    
-	   2 Input      4 Bit        Muxes := 3     
-	   6 Input      3 Bit        Muxes := 1     
-	   7 Input      3 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 7     
-	   2 Input      2 Bit        Muxes := 10    
-	  16 Input      1 Bit        Muxes := 4     
-	   2 Input      1 Bit        Muxes := 87    
-	   4 Input      1 Bit        Muxes := 8     
-	   6 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
-	   5 Input      1 Bit        Muxes := 1     
 Module VexRiscv 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -2083,13 +1771,11 @@ Detailed RTL Component Info :
 	   3 Input     52 Bit       Adders := 1     
 	   2 Input     33 Bit       Adders := 1     
 	   3 Input     33 Bit       Adders := 1     
-	   3 Input     32 Bit       Adders := 1     
 	   2 Input     32 Bit       Adders := 5     
+	   3 Input     32 Bit       Adders := 1     
 	   2 Input      6 Bit       Adders := 1     
-	   5 Input      6 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 1     
 	   2 Input      3 Bit       Adders := 2     
-	   2 Input      1 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 2     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
 	   2 Input      1 Bit         XORs := 2     
@@ -2098,39 +1784,37 @@ Detailed RTL Component Info :
 	               52 Bit    Registers := 1     
 	               34 Bit    Registers := 1     
 	               33 Bit    Registers := 1     
-	               32 Bit    Registers := 32    
+	               32 Bit    Registers := 27    
 	               30 Bit    Registers := 2     
-	                6 Bit    Registers := 2     
-	                5 Bit    Registers := 2     
-	                4 Bit    Registers := 8     
-	                3 Bit    Registers := 4     
-	                2 Bit    Registers := 10    
-	                1 Bit    Registers := 113   
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 12    
+	                1 Bit    Registers := 85    
 +---RAMs : 
 	             1024 Bit         RAMs := 1     
 +---Muxes : 
 	   2 Input     33 Bit        Muxes := 3     
-	   2 Input     32 Bit        Muxes := 100   
-	   3 Input     32 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 73    
 	   4 Input     32 Bit        Muxes := 3     
+	   3 Input     32 Bit        Muxes := 3     
 	   2 Input     25 Bit        Muxes := 1     
-	   4 Input      8 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 2     
-	   2 Input      5 Bit        Muxes := 2     
-	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
 	   5 Input      4 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 4     
 	   3 Input      4 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 7     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
 	   5 Input      3 Bit        Muxes := 2     
-	   3 Input      3 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 16    
+	   2 Input      2 Bit        Muxes := 7     
 	   5 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 180   
+	   2 Input      1 Bit        Muxes := 105   
 	   6 Input      1 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 2     
 	   3 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
 	   5 Input      1 Bit        Muxes := 1     
 Module mgmt_core 
 Detailed RTL Component Info : 
@@ -2706,113 +2390,639 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3886] merging instance 'i_0/SevenSegUnit/DisplayInput/Digit6_reg[7]' (FDR) to 'i_0/SevenSegUnit/DisplayInput/Digit4_reg[7]'
-INFO: [Synth 8-3886] merging instance 'i_0/SevenSegUnit/DisplayInput/Digit5_reg[7]' (FDR) to 'i_0/SevenSegUnit/DisplayInput/Digit4_reg[7]'
-INFO: [Synth 8-3886] merging instance 'i_0/SevenSegUnit/DisplayInput/Digit4_reg[7]' (FDR) to 'i_0/SevenSegUnit/DisplayInput/Digit2_reg[7]'
-INFO: [Synth 8-3886] merging instance 'i_0/SevenSegUnit/DisplayInput/Digit3_reg[7]' (FDR) to 'i_0/SevenSegUnit/DisplayInput/Digit2_reg[7]'
-INFO: [Synth 8-3886] merging instance 'i_0/SevenSegUnit/DisplayInput/Digit2_reg[7]' (FDR) to 'i_0/SevenSegUnit/DisplayInput/Digit0_reg[7]'
-INFO: [Synth 8-3886] merging instance 'i_0/SevenSegUnit/DisplayInput/Digit1_reg[7]' (FDR) to 'i_0/SevenSegUnit/DisplayInput/Digit0_reg[7]'
-INFO: [Synth 8-3886] merging instance 'i_0/SevenSegUnit/DisplayInput/Digit0_reg[7]' (FDR) to 'i_0/SevenSegUnit/DisplayInput/Digit7_reg[7]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[0]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[1]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[2]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[3]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[4]/gpio_dm_reg[1]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[4]/gpio_dm_reg[2]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[5]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[0]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[1]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[2]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[3]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[4]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[5]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[6]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[7]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[8]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[9]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[10]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[0]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[1]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[2]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[3]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[4]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[5]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[6]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[7]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[8]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[9]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[10]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[11]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[12]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[13]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[14]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[15]/gpio_dm_reg[0]_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[0]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[0]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[1]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[1]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[2]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[2]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[3]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[3]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[4]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[5]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1a[5]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[0]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[0]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[1]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[1]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[2]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[2]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[3]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[3]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[4]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[4]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[5]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[5]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[6]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[6]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[7]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[7]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[8]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[8]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[9]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[9]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[10]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_1[10]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[0]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[0]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[1]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[1]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[2]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[2]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[3]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[3]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[4]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[4]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[5]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[5]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[6]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[6]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[7]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[7]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[8]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[8]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[9]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[9]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[10]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[10]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[11]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[11]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[12]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[12]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[13]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[13]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[14]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[14]/mgmt_ena_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[15]/gpio_outenb_reg_LDC )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_8/\gpio_control_in_2[15]/mgmt_ena_reg_LDC )
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "Invalid" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+DSP Report: Generating DSP multiplier/Product, operation Mode is: A*B.
+DSP Report: operator multiplier/Product is absorbed into DSP multiplier/Product.
+DSP Report: operator multiplier/Product is absorbed into DSP multiplier/Product.
+DSP Report: Generating DSP multiplier/Product, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multiplier/Product is absorbed into DSP multiplier/Product.
+DSP Report: operator multiplier/Product is absorbed into DSP multiplier/Product.
+INFO: [Synth 8-4471] merging register 'pre_shift_reg[1:0]' into 'pre_shift_reg[1:0]' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_mm2s.v:687]
+INFO: [Synth 8-4471] merging register 'fill_reg[3:0]' into 'fill_reg[3:0]' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/imports/DMA_Module/zipdma_rxgears.v:124]
+INFO: [Synth 8-4471] merging register 'decode_to_execute_IS_RS1_SIGNED_reg' into 'decode_to_execute_IS_RS2_SIGNED_reg' [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:2325]
+WARNING: [Synth 8-3936] Found unconnected internal register 'memory_to_writeBack_MUL_HH_reg' and it is trimmed from '34' to '32' bits. [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/VexRiscv.v:2331]
+DSP Report: Generating DSP memory_to_writeBack_MUL_HH_reg, operation Mode is: (A*B)'.
+DSP Report: register memory_to_writeBack_MUL_HH_reg is absorbed into DSP memory_to_writeBack_MUL_HH_reg.
+DSP Report: register execute_to_memory_MUL_HH_reg is absorbed into DSP memory_to_writeBack_MUL_HH_reg.
+DSP Report: operator execute_MUL_HH is absorbed into DSP memory_to_writeBack_MUL_HH_reg.
+DSP Report: Generating DSP execute_to_memory_MUL_LH_reg, operation Mode is: (A*B)'.
+DSP Report: register execute_to_memory_MUL_LH_reg is absorbed into DSP execute_to_memory_MUL_LH_reg.
+DSP Report: operator execute_MUL_LH is absorbed into DSP execute_to_memory_MUL_LH_reg.
+DSP Report: Generating DSP execute_to_memory_MUL_HL_reg, operation Mode is: (A*B)'.
+DSP Report: register execute_to_memory_MUL_HL_reg is absorbed into DSP execute_to_memory_MUL_HL_reg.
+DSP Report: operator execute_MUL_HL is absorbed into DSP execute_to_memory_MUL_HL_reg.
+DSP Report: Generating DSP execute_to_memory_MUL_LL_reg, operation Mode is: (A*B)'.
+DSP Report: register execute_to_memory_MUL_LL_reg is absorbed into DSP execute_to_memory_MUL_LL_reg.
+DSP Report: operator execute_MUL_LL is absorbed into DSP execute_to_memory_MUL_LL_reg.
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM banks_0_reg to conserve power
+INFO: [Synth 8-3971] The signal "chip_corei_5/\soc/core /VexRiscv/RegFilePlugin_regFile_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3886] merging instance 'TopLeveli_3/DMA/u_s2mm/r_data_reg[0]' (FDRE) to 'TopLeveli_3/DMA/u_s2mm/r_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'TopLeveli_3/DMA/u_s2mm/r_data_reg[1]' (FDRE) to 'TopLeveli_3/DMA/u_s2mm/r_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'TopLeveli_3/DMA/u_s2mm/r_data_reg[2]' (FDRE) to 'TopLeveli_3/DMA/u_s2mm/r_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'TopLeveli_3/DMA/u_s2mm/r_data_reg[3]' (FDRE) to 'TopLeveli_3/DMA/u_s2mm/r_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'TopLeveli_3/DMA/u_s2mm/r_data_reg[4]' (FDRE) to 'TopLeveli_3/DMA/u_s2mm/r_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'TopLeveli_3/DMA/u_s2mm/r_data_reg[5]' (FDRE) to 'TopLeveli_3/DMA/u_s2mm/r_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'TopLeveli_3/DMA/u_s2mm/r_data_reg[6]' (FDRE) to 'TopLeveli_3/DMA/u_s2mm/r_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'TopLeveli_3/DMA/u_s2mm/r_data_reg[7]' (FDRE) to 'TopLeveli_3/DMA/u_s2mm/r_sel_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (TopLeveli_3/DMA/\u_s2mm/r_sel_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\execute_to_memory_BRANCH_CALC_reg[0] )
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/CsrPlugin_interrupt_code_reg[0]' (FDSE) to 'chip_corei_5/soc/core/VexRiscv/CsrPlugin_interrupt_code_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_5/\soc/core /VexRiscv/\CsrPlugin_interrupt_code_reg[1] )
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/decode_to_execute_ALU_BITWISE_CTRL_reg[1]' (FDE) to 'chip_corei_5/soc/core/VexRiscv/decode_to_execute_INSTRUCTION_reg[12]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[0]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[0]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[1]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[1]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[2]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[2]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[3]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[3]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[4]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[4]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[5]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[5]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[6]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[6]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[7]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[7]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[8]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[8]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[9]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[9]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[10]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[10]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[11]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[11]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[12]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[12]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[13]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[13]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[14]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[14]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[15]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[15]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[16]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[16]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[17]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[17]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[18]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[18]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[19]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[19]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[20]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[20]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[21]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[21]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[22]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[22]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[23]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[23]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[24]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[24]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[25]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[25]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[26]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[26]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[27]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[27]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[28]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[28]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[29]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[29]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[30]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[30]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[31]' (FD) to 'chip_corei_5/soc/core/VexRiscv/memory_to_writeBack_MEMORY_READ_DATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/IBusCachedPlugin_fetchPc_pcReg_reg[0]' (FDCPE) to 'chip_corei_5/soc/core/VexRiscv/IBusCachedPlugin_fetchPc_pcReg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\IBusCachedPlugin_fetchPc_pcReg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/CsrPlugin_interrupt_targetPrivilege_reg[0]' (FDSE) to 'chip_corei_5/soc/core/VexRiscv/CsrPlugin_interrupt_targetPrivilege_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (chip_corei_5/\soc/core /VexRiscv/\CsrPlugin_interrupt_targetPrivilege_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\externalInterruptArray_regNext_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\externalInterruptArray_regNext_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\externalInterruptArray_regNext_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\externalInterruptArray_regNext_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\externalInterruptArray_regNext_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\externalInterruptArray_regNext_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\externalInterruptArray_regNext_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\externalInterruptArray_regNext_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\externalInterruptArray_regNext_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\externalInterruptArray_regNext_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\externalInterruptArray_regNext_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\externalInterruptArray_regNext_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\externalInterruptArray_regNext_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\externalInterruptArray_regNext_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\externalInterruptArray_regNext_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\externalInterruptArray_regNext_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\externalInterruptArray_regNext_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\externalInterruptArray_regNext_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\externalInterruptArray_regNext_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\externalInterruptArray_regNext_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\externalInterruptArray_regNext_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\externalInterruptArray_regNext_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\externalInterruptArray_regNext_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/\externalInterruptArray_regNext_reg[31] )
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/VexRiscv/_zz_IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_payload_reg[0]' (FDE) to 'chip_corei_5/soc/core/VexRiscv/_zz_IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_payload_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/CsrPlugin_mip_MTIP_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /VexRiscv/IBusCachedPlugin_s1_tightlyCoupledHit_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/housekeeping/\wbbd_addr_reg[7] )
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface18_bank_bus_dat_r_reg[1]' (FDR) to 'chip_corei_5/soc/core/interface18_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface17_bank_bus_dat_r_reg[1]' (FDR) to 'chip_corei_5/soc/core/interface17_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface16_bank_bus_dat_r_reg[1]' (FDR) to 'chip_corei_5/soc/core/interface16_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface15_bank_bus_dat_r_reg[1]' (FDR) to 'chip_corei_5/soc/core/interface15_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface14_bank_bus_dat_r_reg[1]' (FDR) to 'chip_corei_5/soc/core/interface14_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface13_bank_bus_dat_r_reg[1]' (FDR) to 'chip_corei_5/soc/core/interface13_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface12_bank_bus_dat_r_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface8_bank_bus_dat_r_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface7_bank_bus_dat_r_reg[1] )
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface5_bank_bus_dat_r_reg[1]' (FDR) to 'chip_corei_5/soc/core/interface5_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface2_bank_bus_dat_r_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface1_bank_bus_dat_r_reg[1] )
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface18_bank_bus_dat_r_reg[2]' (FDR) to 'chip_corei_5/soc/core/interface18_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface17_bank_bus_dat_r_reg[2]' (FDR) to 'chip_corei_5/soc/core/interface17_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface16_bank_bus_dat_r_reg[2]' (FDR) to 'chip_corei_5/soc/core/interface16_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface15_bank_bus_dat_r_reg[2]' (FDR) to 'chip_corei_5/soc/core/interface15_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface14_bank_bus_dat_r_reg[2]' (FDR) to 'chip_corei_5/soc/core/interface14_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface13_bank_bus_dat_r_reg[2]' (FDR) to 'chip_corei_5/soc/core/interface13_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface12_bank_bus_dat_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface8_bank_bus_dat_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface7_bank_bus_dat_r_reg[2] )
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface5_bank_bus_dat_r_reg[2]' (FDR) to 'chip_corei_5/soc/core/interface5_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface2_bank_bus_dat_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface1_bank_bus_dat_r_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface19_bank_bus_dat_r_reg[3] )
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface18_bank_bus_dat_r_reg[3]' (FDR) to 'chip_corei_5/soc/core/interface18_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface17_bank_bus_dat_r_reg[3]' (FDR) to 'chip_corei_5/soc/core/interface17_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface16_bank_bus_dat_r_reg[3]' (FDR) to 'chip_corei_5/soc/core/interface16_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface15_bank_bus_dat_r_reg[3]' (FDR) to 'chip_corei_5/soc/core/interface15_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface14_bank_bus_dat_r_reg[3]' (FDR) to 'chip_corei_5/soc/core/interface14_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface13_bank_bus_dat_r_reg[3]' (FDR) to 'chip_corei_5/soc/core/interface13_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface12_bank_bus_dat_r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface8_bank_bus_dat_r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface7_bank_bus_dat_r_reg[3] )
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface5_bank_bus_dat_r_reg[3]' (FDR) to 'chip_corei_5/soc/core/interface5_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface2_bank_bus_dat_r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface1_bank_bus_dat_r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface19_bank_bus_dat_r_reg[4] )
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface18_bank_bus_dat_r_reg[4]' (FDR) to 'chip_corei_5/soc/core/interface18_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface17_bank_bus_dat_r_reg[4]' (FDR) to 'chip_corei_5/soc/core/interface17_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface16_bank_bus_dat_r_reg[4]' (FDR) to 'chip_corei_5/soc/core/interface16_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface15_bank_bus_dat_r_reg[4]' (FDR) to 'chip_corei_5/soc/core/interface15_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface14_bank_bus_dat_r_reg[4]' (FDR) to 'chip_corei_5/soc/core/interface14_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface13_bank_bus_dat_r_reg[4]' (FDR) to 'chip_corei_5/soc/core/interface13_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface12_bank_bus_dat_r_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface8_bank_bus_dat_r_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface7_bank_bus_dat_r_reg[4] )
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface5_bank_bus_dat_r_reg[4]' (FDR) to 'chip_corei_5/soc/core/interface5_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface2_bank_bus_dat_r_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface1_bank_bus_dat_r_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface19_bank_bus_dat_r_reg[5] )
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface18_bank_bus_dat_r_reg[5]' (FDR) to 'chip_corei_5/soc/core/interface18_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface17_bank_bus_dat_r_reg[5]' (FDR) to 'chip_corei_5/soc/core/interface17_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface16_bank_bus_dat_r_reg[5]' (FDR) to 'chip_corei_5/soc/core/interface16_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface15_bank_bus_dat_r_reg[5]' (FDR) to 'chip_corei_5/soc/core/interface15_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface14_bank_bus_dat_r_reg[5]' (FDR) to 'chip_corei_5/soc/core/interface14_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface13_bank_bus_dat_r_reg[5]' (FDR) to 'chip_corei_5/soc/core/interface13_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface12_bank_bus_dat_r_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface8_bank_bus_dat_r_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface7_bank_bus_dat_r_reg[5] )
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface5_bank_bus_dat_r_reg[5]' (FDR) to 'chip_corei_5/soc/core/interface5_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface2_bank_bus_dat_r_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface1_bank_bus_dat_r_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface19_bank_bus_dat_r_reg[6] )
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface18_bank_bus_dat_r_reg[6]' (FDR) to 'chip_corei_5/soc/core/interface18_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface17_bank_bus_dat_r_reg[6]' (FDR) to 'chip_corei_5/soc/core/interface17_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface16_bank_bus_dat_r_reg[6]' (FDR) to 'chip_corei_5/soc/core/interface16_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface15_bank_bus_dat_r_reg[6]' (FDR) to 'chip_corei_5/soc/core/interface15_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface14_bank_bus_dat_r_reg[6]' (FDR) to 'chip_corei_5/soc/core/interface14_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface13_bank_bus_dat_r_reg[6]' (FDR) to 'chip_corei_5/soc/core/interface13_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface12_bank_bus_dat_r_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface8_bank_bus_dat_r_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface7_bank_bus_dat_r_reg[6] )
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface5_bank_bus_dat_r_reg[6]' (FDR) to 'chip_corei_5/soc/core/interface5_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface2_bank_bus_dat_r_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface1_bank_bus_dat_r_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface19_bank_bus_dat_r_reg[7] )
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface18_bank_bus_dat_r_reg[7]' (FDR) to 'chip_corei_5/soc/core/interface18_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface17_bank_bus_dat_r_reg[7]' (FDR) to 'chip_corei_5/soc/core/interface17_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface16_bank_bus_dat_r_reg[7]' (FDR) to 'chip_corei_5/soc/core/interface16_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface15_bank_bus_dat_r_reg[7]' (FDR) to 'chip_corei_5/soc/core/interface15_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface14_bank_bus_dat_r_reg[7]' (FDR) to 'chip_corei_5/soc/core/interface14_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface13_bank_bus_dat_r_reg[7]' (FDR) to 'chip_corei_5/soc/core/interface13_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface12_bank_bus_dat_r_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface8_bank_bus_dat_r_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface7_bank_bus_dat_r_reg[7] )
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface5_bank_bus_dat_r_reg[7]' (FDR) to 'chip_corei_5/soc/core/interface5_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface2_bank_bus_dat_r_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface1_bank_bus_dat_r_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface19_bank_bus_dat_r_reg[8] )
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface18_bank_bus_dat_r_reg[8]' (FDR) to 'chip_corei_5/soc/core/interface18_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface17_bank_bus_dat_r_reg[8]' (FDR) to 'chip_corei_5/soc/core/interface17_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface16_bank_bus_dat_r_reg[8]' (FDR) to 'chip_corei_5/soc/core/interface16_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface15_bank_bus_dat_r_reg[8]' (FDR) to 'chip_corei_5/soc/core/interface15_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface14_bank_bus_dat_r_reg[8]' (FDR) to 'chip_corei_5/soc/core/interface14_bank_bus_dat_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'chip_corei_5/soc/core/interface13_bank_bus_dat_r_reg[8]' (FDR) to 'chip_corei_5/soc/core/interface13_bank_bus_dat_r_reg[31]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface12_bank_bus_dat_r_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface8_bank_bus_dat_r_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface7_bank_bus_dat_r_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface4_bank_bus_dat_r_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface2_bank_bus_dat_r_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface1_bank_bus_dat_r_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface19_bank_bus_dat_r_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface12_bank_bus_dat_r_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface8_bank_bus_dat_r_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface7_bank_bus_dat_r_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface4_bank_bus_dat_r_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface2_bank_bus_dat_r_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface1_bank_bus_dat_r_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface19_bank_bus_dat_r_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface12_bank_bus_dat_r_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface8_bank_bus_dat_r_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface7_bank_bus_dat_r_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface4_bank_bus_dat_r_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface2_bank_bus_dat_r_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface1_bank_bus_dat_r_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface19_bank_bus_dat_r_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface12_bank_bus_dat_r_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface8_bank_bus_dat_r_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface7_bank_bus_dat_r_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface4_bank_bus_dat_r_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface2_bank_bus_dat_r_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (chip_corei_5/\soc/core /\interface1_bank_bus_dat_r_reg[11] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:14:21 ; elapsed = 00:14:25 . Memory (MB): peak = 1503.617 ; gain = 942.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------+------------+---------------+----------------+
+|Module Name  | RTL Object | Depth x Width | Implemented As | 
++-------------+------------+---------------+----------------+
+|housekeeping | spiaddr    | 1024x7        | LUT            | 
+|housekeeping | spiaddr0   | 1024x7        | LUT            | 
+|housekeeping | spiaddr1   | 1024x7        | LUT            | 
+|housekeeping | spiaddr2   | 1024x7        | LUT            | 
++-------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping	Report (see note below)
++--------------------------------------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                             | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------------------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|TopLeveli_3/SD                                          | fifo_b_reg      | 128 x 32(READ_FIRST)   | W |   | 128 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|TopLeveli_3/SD                                          | fifo_a_reg      | 128 x 32(READ_FIRST)   | W |   | 128 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|chip_corei_5/\soc/core /RAM256                          | RAM_reg         | 256 x 32(READ_FIRST)   | W |   | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|chip_corei_5/\soc/core /RAM128                          | RAM_reg         | 128 x 32(READ_FIRST)   | W |   | 128 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|chip_corei_5/\soc/core /VexRiscv/IBusCachedPlugin_cache | banks_0_reg     | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|chip_corei_5/\soc/core /VexRiscv/IBusCachedPlugin_cache | ways_0_tags_reg | 128 x 22(READ_FIRST)   | W |   | 128 x 22(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++--------------------------------------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------------------+-----------------+-----------+----------------------+--------------+
+|Module Name             | RTL Object      | Inference | Size (Depth x Width) | Primitives   | 
++------------------------+-----------------+-----------+----------------------+--------------+
+|TopLeveli_3/DMA         | u_sfifo/mem_reg | Implied   | 256 x 36             | RAM64M x 48	 | 
+|chip_corei_5/\soc/core  | storage_1_reg   | Implied   | 16 x 8               | RAM32M x 2	  | 
+|chip_corei_5/\soc/core  | storage_reg     | Implied   | 16 x 8               | RAM32M x 2	  | 
++------------------------+-----------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping	Report (see note below)
++-----------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name            | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|FloatingMultiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FloatingMultiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VexRiscv               | (A*B)'         | 17     | 17     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 1    | 1    | 
+|VexRiscv               | (A*B)'         | 17     | 17     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|VexRiscv               | (A*B)'         | 17     | 17     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|VexRiscv               | (A*B)'         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 1    | 0    | 
++-----------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------------+------------+----------+
+|      |RTL Partition             |Replication |Instances |
++------+--------------------------+------------+----------+
+|1     |LUT_Module__GB0           |           1|     20630|
+|2     |LUT_Module__GB1           |           1|     12368|
+|3     |TopLevel__GC0             |           1|      6940|
+|4     |user_project_wrapper__GC0 |           1|       310|
+|5     |caravel_core__GC0         |           1|     17897|
+|6     |caravel__GC0              |           1|       600|
++------+--------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'clock100'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:14:32 ; elapsed = 00:14:35 . Memory (MB): peak = 1503.617 ; gain = 942.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:18:23 ; elapsed = 00:18:30 . Memory (MB): peak = 5234.160 ; gain = 4672.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++--------------------------------------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                             | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------------------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|TopLeveli_3/SD                                          | fifo_b_reg      | 128 x 32(READ_FIRST)   | W |   | 128 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|TopLeveli_3/SD                                          | fifo_a_reg      | 128 x 32(READ_FIRST)   | W |   | 128 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|chip_corei_5/\soc/core /RAM256                          | RAM_reg         | 256 x 32(READ_FIRST)   | W |   | 256 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|chip_corei_5/\soc/core /RAM128                          | RAM_reg         | 128 x 32(READ_FIRST)   | W |   | 128 x 32(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|chip_corei_5/\soc/core /VexRiscv/IBusCachedPlugin_cache | banks_0_reg     | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|chip_corei_5/\soc/core /VexRiscv/IBusCachedPlugin_cache | ways_0_tags_reg | 128 x 22(READ_FIRST)   | W |   | 128 x 22(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++--------------------------------------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping	Report
++------------------------+-----------------+-----------+----------------------+--------------+
+|Module Name             | RTL Object      | Inference | Size (Depth x Width) | Primitives   | 
++------------------------+-----------------+-----------+----------------------+--------------+
+|TopLeveli_3/DMA         | u_sfifo/mem_reg | Implied   | 256 x 36             | RAM64M x 48	 | 
+|chip_corei_5/\soc/core  | storage_1_reg   | Implied   | 16 x 8               | RAM32M x 2	  | 
+|chip_corei_5/\soc/core  | storage_reg     | Implied   | 16 x 8               | RAM32M x 2	  | 
++------------------------+-----------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |caravel__GC0  |           1|       600|
+|2     |caravel_GT0   |           1|     10415|
+|3     |caravel_GT1   |           1|     41451|
+|4     |caravel_GT2   |           1|      6189|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7053] The timing for the instance chip_core/mprj/TopLevel/SD/fifo_b_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_core/mprj/TopLevel/SD/fifo_a_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_core/soc/core/RAM256/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_core/soc/core/RAM128/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_core/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_core/soc/core/VexRiscv/RegFilePlugin_regFile_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance chip_core/soc/core/VexRiscv/RegFilePlugin_regFile_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:21:00 ; elapsed = 00:21:10 . Memory (MB): peak = 5271.309 ; gain = 4709.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6030] Inout pin 'flash_io1' is read and/or written without using tristate logic. Proper direction of connection may be wrongly inferred. Please use specific direction to avoid any incorrect logic issue [C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.srcs/sources_1/imports/src/caravel.v:46]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:21:06 ; elapsed = 00:21:16 . Memory (MB): peak = 5271.309 ; gain = 4709.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:21:06 ; elapsed = 00:21:16 . Memory (MB): peak = 5271.309 ; gain = 4709.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:21:11 ; elapsed = 00:21:21 . Memory (MB): peak = 5271.309 ; gain = 4709.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:21:11 ; elapsed = 00:21:21 . Memory (MB): peak = 5271.309 ; gain = 4709.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:21:12 ; elapsed = 00:21:22 . Memory (MB): peak = 5271.309 ; gain = 4709.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:21:12 ; elapsed = 00:21:22 . Memory (MB): peak = 5271.309 ; gain = 4709.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|caravel     | chip_core/mprj/TopLevel/SD/GEN_CARD_DETECT.raw_card_present_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|caravel     | chip_core/por_fpga/reset_reg                                       | 9      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|caravel     | chip_core/gpio_control_in_1[10]/shift_register_reg[10]             | 9      | 11    | YES          | NO                 | YES               | 11     | 0       | 
+|caravel     | chip_core/gpio_control_in_1a[5]/shift_register_reg[10]             | 9      | 6     | YES          | NO                 | YES               | 6      | 0       | 
+|caravel     | chip_core/gpio_control_bidir_1[1]/shift_register_reg[10]           | 9      | 2     | YES          | NO                 | YES               | 2      | 0       | 
+|caravel     | chip_core/gpio_control_bidir_2[2]/shift_register_reg[10]           | 9      | 3     | YES          | NO                 | YES               | 3      | 0       | 
+|caravel     | chip_core/gpio_control_in_2[15]/shift_register_reg[10]             | 9      | 16    | YES          | NO                 | YES               | 16     | 0       | 
++------------+--------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_fix       |         1|
+|2     |bram          |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |bram       |     1|
+|2     |clk_fix    |     1|
+|3     |BUFG       |     4|
+|4     |CARRY4     |   481|
+|5     |DSP48E1    |     2|
+|6     |DSP48E1_1  |     1|
+|7     |DSP48E1_3  |     3|
+|8     |LUT1       |   368|
+|9     |LUT2       |   870|
+|10    |LUT3       |  1558|
+|11    |LUT4       |  1370|
+|12    |LUT5       |  2897|
+|13    |LUT6       |  7221|
+|14    |MUXF7      |   525|
+|15    |MUXF8      |    74|
+|16    |RAM32M     |     4|
+|17    |RAM64M     |    48|
+|18    |RAMB18E1   |     6|
+|19    |RAMB18E1_1 |     1|
+|20    |RAMB36E1   |     1|
+|21    |SRL16E     |    40|
+|22    |STARTUPE2  |     1|
+|23    |FDCE       |  1127|
+|24    |FDPE       |   275|
+|25    |FDRE       | 13076|
+|26    |FDSE       |   441|
+|27    |IBUF       |     2|
+|28    |IOBUF      |    40|
+|29    |OBUF       |    24|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------------------------------+------------------------+------+
+|      |Instance                         |Module                  |Cells |
++------+---------------------------------+------------------------+------+
+|1     |top                              |                        | 30493|
+|2     |  Dig0                           |HEXto7Segment           |     6|
+|3     |  Dig1                           |HEXto7Segment_0         |     6|
+|4     |  Dig2                           |HEXto7Segment_1         |     6|
+|5     |  Dig3                           |HEXto7Segment_2         |     6|
+|6     |  Dig4                           |HEXto7Segment_3         |     6|
+|7     |  Dig5                           |HEXto7Segment_4         |     6|
+|8     |  Dig6                           |HEXto7Segment_5         |     6|
+|9     |  Dig7                           |HEXto7Segment_6         |     6|
+|10    |  SevenSegUnit                   |SevenSegDriverNexysA7   |   145|
+|11    |    DisplayInput                 |DisplayMuxNexysA7       |    78|
+|12    |    Update                       |Refreshing7SegNexysA7   |    67|
+|13    |  chip_core                      |caravel_core            | 30228|
+|14    |    clock_ctrl                   |caravel_clocking        |     8|
+|15    |    \gpio_control_bidir_1[0]     |gpio_control_block      |    17|
+|16    |    \gpio_control_bidir_1[1]     |gpio_control_block_7    |    15|
+|17    |    \gpio_control_bidir_2[0]     |gpio_control_block_8    |    13|
+|18    |    \gpio_control_bidir_2[1]     |gpio_control_block_9    |    15|
+|19    |    \gpio_control_bidir_2[2]     |gpio_control_block_10   |    15|
+|20    |    \gpio_control_in_1[0]        |gpio_control_block_11   |    17|
+|21    |    \gpio_control_in_1[10]       |gpio_control_block_12   |    14|
+|22    |    \gpio_control_in_1[1]        |gpio_control_block_13   |    17|
+|23    |    \gpio_control_in_1[2]        |gpio_control_block_14   |    17|
+|24    |    \gpio_control_in_1[3]        |gpio_control_block_15   |    15|
+|25    |    \gpio_control_in_1[4]        |gpio_control_block_16   |    15|
+|26    |    \gpio_control_in_1[5]        |gpio_control_block_17   |    15|
+|27    |    \gpio_control_in_1[6]        |gpio_control_block_18   |    17|
+|28    |    \gpio_control_in_1[7]        |gpio_control_block_19   |    17|
+|29    |    \gpio_control_in_1[8]        |gpio_control_block_20   |    15|
+|30    |    \gpio_control_in_1[9]        |gpio_control_block_21   |    15|
+|31    |    \gpio_control_in_1a[0]       |gpio_control_block_22   |    15|
+|32    |    \gpio_control_in_1a[1]       |gpio_control_block_23   |    15|
+|33    |    \gpio_control_in_1a[2]       |gpio_control_block_24   |    15|
+|34    |    \gpio_control_in_1a[3]       |gpio_control_block_25   |    15|
+|35    |    \gpio_control_in_1a[4]       |gpio_control_block_26   |    17|
+|36    |    \gpio_control_in_1a[5]       |gpio_control_block_27   |    15|
+|37    |    \gpio_control_in_2[0]        |gpio_control_block_28   |    14|
+|38    |    \gpio_control_in_2[10]       |gpio_control_block_29   |    15|
+|39    |    \gpio_control_in_2[11]       |gpio_control_block_30   |    15|
+|40    |    \gpio_control_in_2[12]       |gpio_control_block_31   |    15|
+|41    |    \gpio_control_in_2[13]       |gpio_control_block_32   |    17|
+|42    |    \gpio_control_in_2[14]       |gpio_control_block_33   |    17|
+|43    |    \gpio_control_in_2[15]       |gpio_control_block_34   |    15|
+|44    |    \gpio_control_in_2[1]        |gpio_control_block_35   |    15|
+|45    |    \gpio_control_in_2[2]        |gpio_control_block_36   |    15|
+|46    |    \gpio_control_in_2[3]        |gpio_control_block_37   |    15|
+|47    |    \gpio_control_in_2[4]        |gpio_control_block_38   |    15|
+|48    |    \gpio_control_in_2[5]        |gpio_control_block_39   |    15|
+|49    |    \gpio_control_in_2[6]        |gpio_control_block_40   |    15|
+|50    |    \gpio_control_in_2[7]        |gpio_control_block_41   |    15|
+|51    |    \gpio_control_in_2[8]        |gpio_control_block_42   |    15|
+|52    |    \gpio_control_in_2[9]        |gpio_control_block_43   |    15|
+|53    |    housekeeping                 |housekeeping            |  1885|
+|54    |      hkspi                      |housekeeping_spi        |   667|
+|55    |    mprj                         |user_project_wrapper    | 20906|
+|56    |      TopLevel                   |TopLevel                | 20769|
+|57    |        DMA                      |zipdma                  |  2271|
+|58    |          u_arbiter              |wbarbiter               |     6|
+|59    |          u_controller           |zipdma_ctrl             |   237|
+|60    |          u_dma_fsm              |zipdma_fsm              |   495|
+|61    |          u_mm2s                 |zipdma_mm2s             |   566|
+|62    |          u_rxgears              |zipdma_rxgears          |   152|
+|63    |          u_s2mm                 |zipdma_s2mm             |   517|
+|64    |          u_sfifo                |sfifo                   |   180|
+|65    |          u_txgears              |zipdma_txgears          |   118|
+|66    |        LUT                      |LUT_Module              | 16978|
+|67    |          B_Unit_1               |Memory_Unit             |  1376|
+|68    |          B_Unit_2               |Memory_Unit_44          |  1376|
+|69    |          B_Unit_3               |Memory_Unit_45          |  1376|
+|70    |          MAC_Unit               |LUT_MAC_Module          |   688|
+|71    |            adder                |FloatingAddition        |    44|
+|72    |              pe                 |Priority_Encoder        |     2|
+|73    |            multiplier           |FloatingMultiplication  |   644|
+|74    |          M_Unit_1               |Memory_Unit_46          |  1487|
+|75    |          M_Unit_2               |Memory_Unit_47          |  1472|
+|76    |          M_Unit_3               |Memory_Unit_48          |  1472|
+|77    |          V_Unit_1               |Parallel_Memory_Unit    |  1376|
+|78    |          V_Unit_2               |Parallel_Memory_Unit_49 |  1376|
+|79    |          V_Unit_3               |Parallel_Memory_Unit_50 |  1376|
+|80    |          lut_arb                |LUT_Arbiter             |  3575|
+|81    |          wb3_intf               |WB3_Interface_51        |     9|
+|82    |          wb4_intf               |WB4_Interface_52        |    19|
+|83    |        Mem                      |memory_intf             |   167|
+|84    |          mem_arb                |Memory_Arbiter          |    58|
+|85    |          wb3_intf               |WB3_Interface           |    39|
+|86    |          wb4_intf               |WB4_Interface           |    38|
+|87    |        SD                       |sdspi                   |  1319|
+|88    |          lowlevel               |llsdspi                 |   112|
+|89    |          spicmdi                |spicmd                  |   295|
+|90    |          spirxdatai             |spirxdata               |   252|
+|91    |          spitxdatai             |spitxdata               |   294|
+|92    |      debug                      |debug_regs              |    97|
+|93    |    por_fpga                     |FPGA_POR                |     2|
+|94    |    soc                          |mgmt_core_wrapper       |  6743|
+|95    |      core                       |mgmt_core               |  6696|
+|96    |        RAM128                   |RAM128                  |    74|
+|97    |        RAM256                   |RAM256                  |    38|
+|98    |        VexRiscv                 |VexRiscv                |  4156|
+|99    |          IBusCachedPlugin_cache |InstructionCache        |  1863|
++------+---------------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:21:12 ; elapsed = 00:21:22 . Memory (MB): peak = 5271.309 ; gain = 4709.926
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:20:52 ; elapsed = 00:21:14 . Memory (MB): peak = 5271.309 ; gain = 4528.238
+Synthesis Optimization Complete : Time (s): cpu = 00:21:12 ; elapsed = 00:21:23 . Memory (MB): peak = 5271.309 ; gain = 4709.926
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.434 . Memory (MB): peak = 5271.309 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1187 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 5271.309 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 92 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 40 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 48 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+514 Infos, 261 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:21:21 ; elapsed = 00:21:34 . Memory (MB): peak = 5271.309 ; gain = 4979.164
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 5271.309 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/CaravelFPGA/Caravel_FPGA_2025/CARAVEL/CARAVEL.runs/synth_1/caravel.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file caravel_utilization_synth.rpt -pb caravel_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  9 16:15:04 2025...
