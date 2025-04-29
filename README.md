@@ -23,3 +23,4 @@ The steps are similar to those described in the original repo:
 ## Original Repo Step 2: Caravel implementation on FPGA
 - At this point Caravel should be flashing LED0 on the Nexys FPGA, proving that Caravel is running.
 - We did not verify that step 2 works, this is left for future groups. 
+Test
