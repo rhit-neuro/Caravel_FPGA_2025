@@ -1,5 +1,7 @@
 # Caravel FPGA 2025
 See [this link](https://github.com/efabless/Caravel_on_FPGA) to original repo by Efabless.
+
+
 ## Adding VexRiscv Core:
 - Generated compatible VexRiscv core using [this SpinalHDL](https://github.com/SpinalHDL/VexRiscv) repo. The file used is found [here](SpinalHDL_Scala_files/VexRiscvCachedWishboneForSim.scala) and was run from [this folder](https://github.com/SpinalHDL/VexRiscv/tree/master/src/main/scala/vexriscv/demo) using the SinalHDL instructions.
 - The generated verilog VexRiscv core was imported into a Vivado project containing all of the verilog from [this folder](CARAVEL/CARAVEL.srcs/sources_1/imports/src).
@@ -24,3 +26,103 @@ The steps are similar to those described in the original repo:
 - At this point Caravel should be flashing LED0 on the Nexys FPGA, proving that Caravel is running.
 - We did not verify that step 2 works, this is left for future groups. 
 Test
+
+
+# Code Compilation for Caravel:
+
+The following section will have 2 parts. 
+1.  The first part will go over the main process flow for converting a simple C program to a hexadecimal file to execute on Caravel.
+2. The second part will explain the process steps as we understand and what changes were made from the [original caravel_mgmt_soc_litex](https://github.com/efabless/caravel_mgmt_soc_litex) repository.
+
+
+>[!IMPORTANT]
+>The gnu-tool chain for the RISC-V cross compiler must be installed first before following any steps below. Navigate to the [risv-gnu-toolchain repository](https://github.com/riscv-collab/riscv-gnu-toolchain) and follow the installation steps. The installation takes about 2.5hrs and must be done in a **linux environment**.It has been confirmed to work on `wsl` for `Ubuntu 24.04`.
+<br> For compiler installation default installation paths with the `./configure --prefix=/opt/riscv --with-arch=rv32gc --with-abi=ilp32d` configuration setting were used.
+
+
+## 1. Process Flow Steps: 
+
+First clone the repository using: 
+```
+git clone https://github.com/rhit-neuro/Caravel_FPGA_2025.git
+```
+
+Ensure you are in the correct branch for the cloned repository, if not you can change the branch by
+```
+git checkout <branch name>
+```
+
+>[!NOTE]
+>All the following will assume default directory structure. If the paths are changed the commands will have to be changed accordingly. 
+
+
+Make sure to navigate to the **caravel_mgmt_soc_litex** folder from the root folder. Then navigate to the **gpio_mgmt** folder.
+
+```
+cd caravel_mgmt_soc_litex
+cd verilog/dv/tests-caravel/gpio_mgmt
+```
+
+Here the **gpio_mgmt.c** file can then be edited to write the desired C program. Currently it contains a working iteration of loading values directly into the LUT and asking it to calculated 4 values. <br>
+Note - *This iteration requires re-loading data into the LUT after each calculation*
+
+Once the C code is modified run the `make hex` command in the **gpio_mgmt** folder and a `.hex` file with the same name should be generated.
+
+>[!IMPORTANT]
+> The generated hex file for some reason has 2 more @0000xxxxx addresses instead of just the @00000000 address. This causes **errors** if not fixed.
+To fix this simply remove all the hex code including and below those addresses. 
+
+Below is an example of correct hex file:
+```
+@00000000
+6F 00 00 0B 13 00 00 00 13 00 00 00 13 00 00 00
+13 00 00 00 13 00 00 00 13 00 00 00 13 00 00 00
+23 2E 11 FE 23 2C 51 FE 23 2A 61 FE 23 28 71 FE
+.
+.
+.
+13 07 10 00 23 A0 E7 00 EF F0 0F A5 B7 07 00 30
+93 85 C7 60 37 05 C0 40 EF F0 5F DF B7 07 00 30
+93 85 07 60 B7 27 9A BE 13 85 17 68 EF F0 1F DE
+B7 07 00 30 93 85 47 60 37 05 A0 40 EF F0 1F DD
+B7 07 00 30 93 85 87 60 B7 77 37 C1 13 85 17 3A
+EF F0 DF DB 6F F0 9F FB
+```
+
+And this is the generated problematic hex file:
+```
+@00000000
+6F 00 00 0B 13 00 00 00 13 00 00 00 13 00 00 00
+13 00 00 00 13 00 00 00 13 00 00 00 13 00 00 00
+23 2E 11 FE 23 2C 51 FE 23 2A 61 FE 23 28 71 FE
+.
+.
+.
+13 07 10 00 23 A0 E7 00 EF F0 0F A5 B7 07 00 30
+93 85 C7 60 37 05 C0 40 EF F0 5F DF B7 07 00 30
+93 85 07 60 B7 27 9A BE 13 85 17 68 EF F0 1F DE
+B7 07 00 30 93 85 47 60 37 05 A0 40 EF F0 1F DD
+B7 07 00 30 93 85 87 60 B7 77 37 C1 13 85 17 3A
+EF F0 DF DB 6F F0 9F FB
+@00001028
+10 00 00 00 00 00 00 00 03 7A 52 00 01 7C 01 01
+1B 0C 02 00 24 00 00 00 18 00 00 00 D0 F0 FF FF
+24 00 00 00 00 44 0E 10 48 81 01 88 02 44 0C 08
+00 48 C1 44 C8 0C 02 10 44 0E 00 00 24 00 00 00
+.
+.
+.
+F8 00 00 00 00 44 0E 10 48 81 01 88 02 44 0C 08
+00 00 00 00
+@000011CC
+01 1B 03 3B 58 FE FF FF 0A 00 00 00 48 EF FF FF
+70 FE FF FF 6C EF FF FF 98 FE FF FF 90 EF FF FF
+.
+.
+.
+60 FF FF FF F8 FA FF FF 8C FF FF FF 10 FC FF FF
+B4 FF FF FF 64 FD FF FF E0 FF FF FF
+```
+## 2. Explanation of changes and process flow
+
+
