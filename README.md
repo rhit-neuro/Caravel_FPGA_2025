@@ -1,4 +1,4 @@
-# Caravel FPGA 2025
+# Caravel FPGA 2025 - Blinking LED
 See [this link](https://github.com/efabless/Caravel_on_FPGA) to original repo by Efabless.
 ## Adding VexRiscv Core:
 - Generated compatible VexRiscv core using [this SpinalHDL](https://github.com/SpinalHDL/VexRiscv) repo. The file used is found [here](SpinalHDL_Scala_files/VexRiscvCachedWishboneForSim.scala) and was run from [this folder](https://github.com/SpinalHDL/VexRiscv/tree/master/src/main/scala/vexriscv/demo) using the SinalHDL instructions.
