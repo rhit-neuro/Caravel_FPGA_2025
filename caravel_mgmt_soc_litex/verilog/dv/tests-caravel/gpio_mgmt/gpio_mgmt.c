@@ -325,13 +325,13 @@
     //  dma_config((uint32_t) 0x00000000,(uint32_t) 0x00000080,(uint32_t) 0x30000300,(uint32_t) 0x30501300); //Load B table
     loadMemory();
     while(1){
-        // loadMemory();
+        loadMemory();
         lut_function1(0x40c00000, &memory4);
-        // loadMemory();
+        loadMemory();
         lut_function1(0xbe9a2681, &memory1);
-        // loadMemory();
+        loadMemory();
         lut_function1(0x40a00000, &memory2);
-        // loadMemory();
+        loadMemory();
         lut_function1(0xc13773a1, &memory3);
     }
  
