@@ -41,8 +41,14 @@ The following section will have 2 parts.
 
 
 ## 1. Process Flow Steps: 
+Before starting ensure the following exports are present in the `~/.bashrc` file:
+```bash
+export DESIGNS='/home/<user>/<ROOT_FOLDER>'
+export TOOLS='/opt/riscv'
+```
+(here the `ROOT_FOLDER` is the folder in which the following repository is cloned)
 
-First clone the repository using: 
+Then clone the repository using: 
 ```
 git clone https://github.com/rhit-neuro/Caravel_FPGA_2025.git
 ```
@@ -124,5 +130,20 @@ F8 00 00 00 00 44 0E 10 48 81 01 88 02 44 0C 08
 B4 FF FF FF 64 FD FF FF E0 FF FF FF
 ```
 ## 2. Explanation of changes and process flow
+
+Code generation is done using a modified version of the [caravel_mgmt_soc_litex](https://github.com/efabless/caravel_mgmt_soc_litex) repository. 
+
+We had to modify Makefiles and ensure the correct exports in the `~/.bashrc` (which are shown in [Process Flow section](#1-process-flow-steps)) file to get code generation working for us. <br> In this section we will present the changes we made and some rationale to why they were made.
+
+### Makefiles
+
+The following Makefiles were changed and why they were changed:
+- [`cpu.makefile`](../caravel_mgmt_soc_litex/verilog/dv/make/cpu.makefile): Contains variable initializations for FIRMWARE source files and Caravel's verilog (including our VexRiscV core)
+- [`env.makefile`](../caravel_mgmt_soc_litex/verilog/dv/make/env.makefile): Contains exports for Caravel's verilog path, core verilog path, userproject verilog path and lastly the cross compiler paths (installed above)
+- [`sim.makefile`](../caravel_mgmt_soc_litex/verilog/dv/make/sim.makefile): Main Makefile to compile the hex file for the code. We had to change some makefile commands and comment out waveform simulation generation code in makefile
+- [`var.makefile`](../caravel_mgmt_soc_litex/verilog/dv/make/var.makefile): Contains variable definitions used in the `sim.makefile` for compiler flags to compile the C code (eventually turned into `hex` files). The flags involve defining CPU (vexriscv for us) type, family, endianness and other cross compiler specific settings
+
+> [!TIP]
+> Currently all code is compiled in the [gpio_mgmt](../caravel_mgmt_soc_litex/verilog/dv/tests-caravel/gpio_mgmt/) folder which is the default that the code in [Caravel_on_FPGA](https://github.com/efabless/Caravel_on_FPGA) uses to compile C code to run on caravel. However, to create your own folder structure for the C project you'd have to make the appropriate changes in the `sim.makefile` and the [local Makefile](../caravel_mgmt_soc_litex/verilog/dv/tests-caravel/gpio_mgmt/Makefile) in the gpio_mgmt folder. 
 
 
